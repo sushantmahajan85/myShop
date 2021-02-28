@@ -1,0 +1,22 @@
+{
+  "name": "myshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mahajan": "node-sass  scss/style.scss  style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushantmahajan85/myShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sushantmahajan85/myShop/issues"
+  },
+  "homepage": "https://github.com/sushantmahajan85/myShop#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
