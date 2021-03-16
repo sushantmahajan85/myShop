@@ -6,20 +6,20 @@ import call2 from "./img/core-img/call2.png";
 function Navbar() {
     return (
         <div className="Navbar">
-            <header class="header-area">
-                <div class="top-header-area">
-                    <div class="container h-100">
-                        <div class="row h-100 align-items-center">
-                            <div class="col-12 d-flex justify-content-between">
-                                <div class="logo">
+            <header className="header-area">
+                <div className="top-header-area">
+                    <div className="container h-100">
+                        <div className="row h-100 align-items-center">
+                            <div className="col-12 d-flex justify-content-between">
+                                <div className="logo">
                                     <a href="index.html">
-                                        <h2 class="logo_mahajan">
+                                        <h2 className="logo_mahajan">
                                             Mahajan Cyber World
                                         </h2>
                                     </a>
                                 </div>
 
-                                <div class="top-contact-info d-flex align-items-center">
+                                <div className="top-contact-info d-flex align-items-center">
                                     <a
                                         href="#"
                                         data-toggle="tooltip"
@@ -44,28 +44,28 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div class="credit-main-menu" id="sticker">
-                    <div class="classy-nav-container breakpoint-off">
-                        <div class="container">
+                <div className="credit-main-menu" id="sticker">
+                    <div className="classy-nav-container breakpoint-off">
+                        <div className="container">
                             <nav
-                                class="classy-navbar justify-content-between"
+                                className="classy-navbar justify-content-between"
                                 id="creditNav"
                             >
-                                <div class="classy-navbar-toggler">
-                                    <span class="navbarToggler">
+                                <div className="classy-navbar-toggler">
+                                    <span className="navbarToggler">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                     </span>
                                 </div>
-                                <div class="classy-menu">
-                                    <div class="classycloseIcon">
-                                        <div class="cross-wrap">
-                                            <span class="top"></span>
-                                            <span class="bottom"></span>
+                                <div className="classy-menu">
+                                    <div className="classycloseIcon">
+                                        <div className="cross-wrap">
+                                            <span className="top"></span>
+                                            <span className="bottom"></span>
                                         </div>
                                     </div>
-                                    <div class="classynav">
+                                    <div className="classynav">
                                         <ul>
                                             <li>
                                                 <a href="index.html">Home</a>
@@ -100,7 +100,7 @@ function Navbar() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="contact">
+                                <div className="contact">
                                     <a href="#">
                                         <img src={call2} alt="" />
                                         +91 98151 44 901
