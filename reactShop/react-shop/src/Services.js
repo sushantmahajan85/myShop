@@ -3,31 +3,31 @@ import "./index.css";
 const Services = () => {
     return (
         <div className="Services">
-            <section class="services-area section-padding-100-0">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+            <section className="services-area section-padding-100-0">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
                             <div
-                                class="section-heading text-center mb-100 wow fadeInUp"
+                                className="section-heading text-center mb-100 wow fadeInUp"
                                 data-wow-delay="100ms"
                             >
-                                <div class="line"></div>
+                                <div className="line"></div>
                                 <p>Take look at our</p>
                                 <h2>Our services</h2>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
+                    <div className="row">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div
-                                class="single-service-area d-flex mb-100 wow fadeInUp"
+                                className="single-service-area d-flex mb-100 wow fadeInUp"
                                 data-wow-delay="200ms"
                             >
-                                <div class="icon">
-                                    <i class="icon-profits"></i>
+                                <div className="icon">
+                                    <i className="icon-profits"></i>
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <h5>All the loans</h5>
                                     <p>
                                         Morbi ut dapibus dui. Sed ut iaculis
@@ -37,15 +37,15 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div
-                                class="single-service-area d-flex mb-100 wow fadeInUp"
+                                className="single-service-area d-flex mb-100 wow fadeInUp"
                                 data-wow-delay="300ms"
                             >
-                                <div class="icon">
-                                    <i class="icon-money-1"></i>
+                                <div className="icon">
+                                    <i className="icon-money-1"></i>
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <h5>Easy and fast answer</h5>
                                     <p>
                                         Morbi ut dapibus dui. Sed ut iaculis
@@ -55,15 +55,15 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div
-                                class="single-service-area d-flex mb-100 wow fadeInUp"
+                                className="single-service-area d-flex mb-100 wow fadeInUp"
                                 data-wow-delay="400ms"
                             >
-                                <div class="icon">
-                                    <i class="icon-coin"></i>
+                                <div className="icon">
+                                    <i className="icon-coin"></i>
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <h5>No additional papers</h5>
                                     <p>
                                         Morbi ut dapibus dui. Sed ut iaculis
@@ -74,15 +74,15 @@ const Services = () => {
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div
-                                class="single-service-area d-flex mb-100 wow fadeInUp"
+                                className="single-service-area d-flex mb-100 wow fadeInUp"
                                 data-wow-delay="500ms"
                             >
-                                <div class="icon">
-                                    <i class="icon-smartphone-1"></i>
+                                <div className="icon">
+                                    <i className="icon-smartphone-1"></i>
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <h5>Secure financial services</h5>
                                     <p>
                                         Morbi ut dapibus dui. Sed ut iaculis
@@ -92,15 +92,15 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div
-                                class="single-service-area d-flex mb-100 wow fadeInUp"
+                                className="single-service-area d-flex mb-100 wow fadeInUp"
                                 data-wow-delay="200ms"
                             >
-                                <div class="icon">
-                                    <i class="icon-profits"></i>
+                                <div className="icon">
+                                    <i className="icon-profits"></i>
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <h5>All the loans</h5>
                                     <p>
                                         Morbi ut dapibus dui. Sed ut iaculis
@@ -110,15 +110,15 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div
-                                class="single-service-area d-flex mb-100 wow fadeInUp"
+                                className="single-service-area d-flex mb-100 wow fadeInUp"
                                 data-wow-delay="200ms"
                             >
-                                <div class="icon">
-                                    <i class="icon-profits"></i>
+                                <div className="icon">
+                                    <i className="icon-profits"></i>
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <h5>All the loans</h5>
                                     <p>
                                         Morbi ut dapibus dui. Sed ut iaculis
@@ -128,15 +128,15 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div
-                                class="single-service-area d-flex mb-100 wow fadeInUp"
+                                className="single-service-area d-flex mb-100 wow fadeInUp"
                                 data-wow-delay="200ms"
                             >
-                                <div class="icon">
-                                    <i class="icon-profits"></i>
+                                <div className="icon">
+                                    <i className="icon-profits"></i>
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <h5>All the loans</h5>
                                     <p>
                                         Morbi ut dapibus dui. Sed ut iaculis
@@ -146,15 +146,15 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div
-                                class="single-service-area d-flex mb-100 wow fadeInUp"
+                                className="single-service-area d-flex mb-100 wow fadeInUp"
                                 data-wow-delay="600ms"
                             >
-                                <div class="icon">
-                                    <i class="icon-diamond"></i>
+                                <div className="icon">
+                                    <i className="icon-diamond"></i>
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <h5>Good investments</h5>
                                     <p>
                                         Morbi ut dapibus dui. Sed ut iaculis
@@ -164,15 +164,15 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div className="col-12 col-md-6 col-lg-4">
                             <div
-                                class="single-service-area d-flex mb-100 wow fadeInUp"
+                                className="single-service-area d-flex mb-100 wow fadeInUp"
                                 data-wow-delay="700ms"
                             >
-                                <div class="icon">
-                                    <i class="icon-piggy-bank"></i>
+                                <div className="icon">
+                                    <i className="icon-piggy-bank"></i>
                                 </div>
-                                <div class="text">
+                                <div className="text">
                                     <h5>Accumulation goals</h5>
                                     <p>
                                         Morbi ut dapibus dui. Sed ut iaculis
