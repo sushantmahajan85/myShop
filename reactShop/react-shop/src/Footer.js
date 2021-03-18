@@ -1,4 +1,5 @@
 import "./index.css";
+import { Helmet } from "react-helmet";
 
 const Footer = () => {
     return (
@@ -179,6 +180,9 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+            <Helmet>
+                <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            </Helmet>
         </div>
     );
 };

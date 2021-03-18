@@ -5,13 +5,15 @@ import Navbar from "./Navbar";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
 import Contact from "./Contact";
+import Services from "./Services";
 
 ReactDOM.render(
-    <React.StrictMode>
-        <Navbar />
-        <Carousel />
-        <Contact />
-        <Footer />
-    </React.StrictMode>,
-    document.getElementById("root")
+  <React.StrictMode>
+    <Navbar />
+    <Carousel />
+    <Contact />
+    <Services />
+    <Footer />
+  </React.StrictMode>,
+  document.getElementById("root")
 );
