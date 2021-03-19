@@ -11,8 +11,8 @@ ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Carousel />
-    <Contact />
     <Services />
+    <Contact />
     <Footer />
   </React.StrictMode>,
   document.getElementById("root")
