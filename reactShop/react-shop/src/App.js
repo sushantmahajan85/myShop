@@ -2,6 +2,8 @@ import "./index.css";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Pricing from "./Pricing";
+import Applications from "./Applications";
+import About from "./About";
 import Footer from "./Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -15,8 +17,14 @@ const App = () => {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route path="/pricing">
+                        <Route exact path="/pricing">
                             <Pricing />
+                        </Route>
+                        <Route exact path="/applications">
+                            <Applications />
+                        </Route>
+                        <Route exact path="/about">
+                            <About />
                         </Route>
                     </Switch>
                 </div>

@@ -12,7 +12,7 @@ function Navbar() {
                         <div className="row h-100 align-items-center">
                             <div className="col-12 d-flex justify-content-between">
                                 <div className="logo">
-                                    <a href="index.html">
+                                    <a href="/">
                                         <h2 className="logo_mahajan">
                                             Mahajan Cyber World
                                         </h2>
@@ -68,14 +68,15 @@ function Navbar() {
                                     <div className="classynav">
                                         <ul>
                                             <li>
-                                                <a href="index.html">Home</a>
-                                            </li>
-
-                                            <li>
-                                                <a href="post.html">Latest</a>
+                                                <a href="/">Home</a>
                                             </li>
                                             <li>
-                                                <a href="services.html">
+                                                <a href="/applications">
+                                                    Applications
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/#services">
                                                     Services
                                                 </a>
                                             </li>
@@ -83,17 +84,10 @@ function Navbar() {
                                                 <a href="/pricing">Pricing</a>
                                             </li>
                                             <li>
-                                                <a href="post.html">Reviews</a>
+                                                <a href="/#contact">Contact</a>
                                             </li>
                                             <li>
-                                                <a href="contact.html">
-                                                    Contact
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="about.html">
-                                                    About Us
-                                                </a>
+                                                <a href="/about">About Us</a>
                                             </li>
                                         </ul>
                                     </div>

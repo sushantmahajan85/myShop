@@ -2,7 +2,7 @@ import "./index.css";
 
 const Services = () => {
     return (
-        <div className="Services">
+        <div className="Services" id="services">
             <section className="services-area section-padding-100-0">
                 <div className="container">
                     <div className="row">
