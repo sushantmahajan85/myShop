@@ -5,4 +5,3 @@ const Pricing = () => {
 };
 
 export default Pricing;
-test;
