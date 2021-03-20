@@ -80,9 +80,7 @@ function Navbar() {
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="services.html">
-                                                    Pricing
-                                                </a>
+                                                <a href="/pricing">Pricing</a>
                                             </li>
                                             <li>
                                                 <a href="post.html">Reviews</a>

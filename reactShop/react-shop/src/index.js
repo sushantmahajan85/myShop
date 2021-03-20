@@ -1,19 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Navbar from "./Navbar";
-import Carousel from "./Carousel";
-import Footer from "./Footer";
-import Contact from "./Contact";
-import Services from "./Services";
+import App from "./App";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Navbar />
-    <Carousel />
-    <Services />
-    <Contact />
-    <Footer />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById("root")
 );
