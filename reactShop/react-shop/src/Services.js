@@ -46,7 +46,9 @@ const Services = () => {
                 </div>
                 <div className="text">
                   <h5>Passport & Driving license</h5>
-                  <p></p>
+                  <p>
+                    Appointments for new/renew of passports/driving lisence.
+                  </p>
                 </div>
               </div>
             </div>
@@ -60,10 +62,7 @@ const Services = () => {
                 </div>
                 <div className="text">
                   <h5>Online Money Transfer</h5>
-                  {/* <p>
-                    Morbi ut dapibus dui. Sed ut iaculis elit, quis varius
-                    mauris. Integer ut ultricies orci, lobortis egestas sem.
-                  </p> */}
+                  <p>Transfer money to any bank with nominal charges.</p>
                 </div>
               </div>
             </div>
@@ -79,8 +78,7 @@ const Services = () => {
                 <div className="text">
                   <h5>Printing & Scanning</h5>
                   <p>
-                    Morbi ut dapibus dui. Sed ut iaculis elit, quis varius
-                    mauris. Integer ut ultricies orci, lobortis egestas sem.
+                    Colored and black & white printing/scanning of documents.
                   </p>
                 </div>
               </div>
@@ -96,8 +94,8 @@ const Services = () => {
                 <div className="text">
                   <h5>Computer accessories</h5>
                   <p>
-                    Morbi ut dapibus dui. Sed ut iaculis elit, quis varius
-                    mauris. Integer ut ultricies orci, lobortis egestas sem.
+                    All kind of computer accessories available like keyboard,
+                    mouse etc.
                   </p>
                 </div>
               </div>
@@ -113,8 +111,8 @@ const Services = () => {
                 <div className="text">
                   <h5>Photostat & Lamination</h5>
                   <p>
-                    Morbi ut dapibus dui. Sed ut iaculis elit, quis varius
-                    mauris. Integer ut ultricies orci, lobortis egestas sem.
+                    Photoshat & lamination & binding(spiral/book binding)
+                    facility available.
                   </p>
                 </div>
               </div>
@@ -130,8 +128,8 @@ const Services = () => {
                 <div className="text">
                   <h5>Online bill payment</h5>
                   <p>
-                    Morbi ut dapibus dui. Sed ut iaculis elit, quis varius
-                    mauris. Integer ut ultricies orci, lobortis egestas sem.
+                    All kind of online bill payment facility available like
+                    electricity, mobile recharge, exam fees etc.
                   </p>
                 </div>
               </div>
@@ -147,8 +145,8 @@ const Services = () => {
                 <div className="text">
                   <h5>Online money withdraw</h5>
                   <p>
-                    Morbi ut dapibus dui. Sed ut iaculis elit, quis varius
-                    mauris. Integer ut ultricies orci, lobortis egestas sem.
+                    Money withdrawal from back account facility available at
+                    nominal charges
                   </p>
                 </div>
               </div>
@@ -163,10 +161,7 @@ const Services = () => {
                 </div>
                 <div className="text">
                   <h5>Surfing facility</h5>
-                  <p>
-                    Morbi ut dapibus dui. Sed ut iaculis elit, quis varius
-                    mauris. Integer ut ultricies orci, lobortis egestas sem.
-                  </p>
+                  <p>Systems available for high speed internet surfing.</p>
                 </div>
               </div>
             </div>
