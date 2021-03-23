@@ -13,7 +13,7 @@ const Footer = () => {
                   <i className="fas fa-map-marker-alt"></i>
                   <div className="cta-text">
                     <h4>Find us</h4>
-                    <span>1010 Avenue, sw 54321, chandigarh</span>
+                    <span>Mugrala road, Dinanagar, Punjab</span>
                   </div>
                 </div>
               </div>
@@ -22,7 +22,7 @@ const Footer = () => {
                   <i className="fas fa-phone"></i>
                   <div className="cta-text">
                     <h4>Call us</h4>
-                    <span>9876543210 0</span>
+                    <span>+91 9815144901</span>
                   </div>
                 </div>
               </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                   <i className="far fa-envelope-open"></i>
                   <div className="cta-text">
                     <h4>Mail us</h4>
-                    <span>mail@info.com</span>
+                    <span>mahajan.cyber1@gmail.com</span>
                   </div>
                 </div>
               </div>
