@@ -2872,6 +2872,10 @@ ul {
 
 /* pricing */
 
+.box-product {
+    text-align: center;
+}
+
 .box-product-outer {
     margin-bottom: 5px;
     padding-top: 15px;
@@ -2893,6 +2897,7 @@ ul {
 .box-product .img-wrapper {
     position: relative;
     overflow: hidden;
+    margin-bottom: 25px;
 }
 .box-product .img-wrapper > :first-child {
     position: relative;
