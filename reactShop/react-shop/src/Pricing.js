@@ -41,7 +41,7 @@ const Pricing = () => {
                                     Starting from{" "}
                                     <span class="price-down"> ₹ 600</span>
                                 </div>
-                                <span class="price-old">$15.00</span>
+                                <span class="price-old">Minimum 40% OFF</span>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const Pricing = () => {
                                     Starting from{" "}
                                     <span class="price-down"> ₹ 600</span>
                                 </div>
-                                <span class="price-old">$15.00</span>
+                                <span class="price-old">Minimum 40% OFF</span>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ const Pricing = () => {
                                     Starting from{" "}
                                     <span class="price-down"> ₹ 600</span>
                                 </div>
-                                <span class="price-old">$15.00</span>
+                                <span class="price-old">Minimum 40% OFF</span>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ const Pricing = () => {
                                     Starting from{" "}
                                     <span class="price-down"> ₹ 600</span>
                                 </div>
-                                <span class="price-old">$15.00</span>
+                                <span class="price-old">Minimum 40% OFF</span>
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,7 @@ const Pricing = () => {
                                     Starting from{" "}
                                     <span class="price-down"> ₹ 600</span>
                                 </div>
-                                <span class="price-old">$15.00</span>
+                                <span class="price-old">Minimum 40% OFF</span>
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ const Pricing = () => {
                                     Starting from{" "}
                                     <span class="price-down"> ₹ 600</span>
                                 </div>
-                                <span class="price-old">$15.00</span>
+                                <span class="price-old">Minimum 40% OFF</span>
                             </div>
                         </div>
                     </div>
@@ -255,7 +255,7 @@ const Pricing = () => {
                                     Starting from{" "}
                                     <span class="price-down"> ₹ 600</span>
                                 </div>
-                                <span class="price-old">$15.00</span>
+                                <span class="price-old">Minimum 40% OFF</span>
                             </div>
                         </div>
                     </div>
@@ -303,7 +303,10 @@ const Pricing = () => {
                                     Starting from{" "}
                                     <span class="price-down"> ₹ 600</span>
                                 </div>
-                                <span class="price-old">$15.00</span>
+                                <span class="price-old">
+                                    {/* <strong className="price-down">Sale</strong>{" "} */}
+                                    Minimum 40% OFF
+                                </span>
                             </div>
                         </div>
                     </div>
