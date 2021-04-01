@@ -54,7 +54,7 @@ class Applications extends Component {
                                         {applications.length
                                             ? applications
                                                   .slice(0, 14)
-                                                  .map((applications) => (
+                                                  .map((application) => (
                                                       <tr>
                                                           <td class="column1">
                                                               2017-09-29 01:22
