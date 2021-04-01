@@ -1,5 +1,4 @@
 import "./index.css";
-import contactImg from "./img/core-img/contact_thumb.png";
 
 const Form = () => {
     return (
