@@ -3,7 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-
+var mongoose = require("mongoose");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var applicationsRouter = require("./routes/applications");
@@ -28,6 +28,18 @@ app.use("/api/v1/applications", applicationsRouter);
 app.use(function (req, res, next) {
     next(createError(404));
 });
+
+mongoose.connect(
+    "mongodb+srv://reactShop:b38hD5ZcAz0aZBfi@cluster0.fdtux.mongodb.net/test",
+    { useNewUrlParser: true, useUnifiedTopology: true },
+    (error) => {
+        if (!error) {
+            console.log("Connection to db successful");
+        } else {
+            console.log(error);
+        }
+    }
+);
 
 // error handler
 app.use(function (err, req, res, next) {
