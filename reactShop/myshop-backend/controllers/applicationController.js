@@ -13,3 +13,17 @@ exports.postApplication = async (req, res, next) => {
         console.log(error);
     }
 };
+
+exports.getAllApplications = async (req, res, next) => {
+    try {
+        const applicationQuery = await Application.find();
+        res.status(200).json({
+            status: "success",
+            data: {
+                applicationQuery,
+            },
+        });
+    } catch (error) {
+        console.log(error);
+    }
+};
