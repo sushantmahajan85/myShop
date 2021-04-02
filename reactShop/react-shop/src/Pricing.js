@@ -19,7 +19,7 @@ class Pricing extends react.Component {
         };
     }
 
-    componentWillMount() {
+    componentDidMount() {
         fetch("https://jsonplaceholder.typicode.com/todos/1")
             .then((res) => res.json())
             .then((res) => this.setState({ data: res }));

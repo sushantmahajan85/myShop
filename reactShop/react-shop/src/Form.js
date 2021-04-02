@@ -4,7 +4,7 @@ import axios from "axios";
 
 class Form extends Component {
     constructor() {
-        super(props);
+        super();
 
         this.state = {
             organization: "",
@@ -21,17 +21,27 @@ class Form extends Component {
     };
 
     submitHandler = (e) => {
+        e.preventDefault();
         axios
-            .post("http://localhost:5000/api/vi/application", this.state)
+            .post("http://localhost:5000/api/v1/applications", this.state)
             .then((response) => {
                 console.log(response);
             })
             .catch((error) => {
                 console.log(error);
             });
+        console.log("Hello");
     };
 
     render() {
+        const {
+            organization,
+            vacancyType,
+            noOfVacancies,
+            qualification,
+            age,
+            lastDate,
+        } = this.state;
         return (
             <div className="Form">
                 <div
@@ -45,11 +55,9 @@ class Form extends Component {
                                     <h3>Application Form</h3>
                                     <form
                                         id="form_contacted"
-                                        action=""
-                                        method="POST"
                                         onSubmit={this.submitHandler}
                                     >
-                                        <label for="organization">
+                                        <label htmlFor="organization">
                                             Organization/Department
                                         </label>
                                         <input
@@ -58,7 +66,7 @@ class Form extends Component {
                                             value={organization}
                                             onChange={this.changeHandler}
                                         />
-                                        <label for="vacancy_type">
+                                        <label htmlFor="vacancy_type">
                                             Vacancy Type
                                         </label>
                                         <input
@@ -67,7 +75,7 @@ class Form extends Component {
                                             value={vacancyType}
                                             onChange={this.changeHandler}
                                         />
-                                        <label for="no_of_vacancies">
+                                        <label htmlFor="no_of_vacancies">
                                             No. of Vacancies
                                         </label>
                                         <input
@@ -76,7 +84,7 @@ class Form extends Component {
                                             value={noOfVacancies}
                                             onChange={this.changeHandler}
                                         />
-                                        <label for="qualification">
+                                        <label htmlFor="qualification">
                                             Qualification
                                         </label>
                                         <input
@@ -85,14 +93,16 @@ class Form extends Component {
                                             value={qualification}
                                             onChange={this.changeHandler}
                                         />
-                                        <label for="age">Age</label>
+                                        <label htmlFor="age">Age</label>
                                         <input
                                             type="number"
                                             name="age"
                                             value={age}
                                             onChange={this.changeHandler}
                                         />
-                                        <label for="last_date">Last Date</label>
+                                        <label htmlFor="last_date">
+                                            Last Date
+                                        </label>
                                         <input
                                             type="date"
                                             name="lastDate"
