@@ -16,7 +16,9 @@ class Applications extends Component {
             .get("http://localhost:5000/api/v1/applications")
             .then((response) => {
                 console.log(response);
-                this.setState({ applications: response.data });
+                this.setState({
+                    applications: response.data.data.applicationQuery,
+                });
             })
             .catch((error) => {
                 console.log(error);
@@ -27,27 +29,29 @@ class Applications extends Component {
         const { applications } = this.state;
         return (
             <div className="Applications">
-                <div class="limiter">
-                    <div class="container-table100">
-                        <div class="wrap-table100">
-                            <div class="table100">
+                <div className="limiter">
+                    <div className="container-table100">
+                        <div className="wrap-table100">
+                            <div className="table100">
                                 <table>
                                     <thead>
-                                        <tr class="table100-head">
-                                            <th class="column1">
+                                        <tr className="table100-head">
+                                            <th className="column1">
                                                 Organization/Department
                                             </th>
-                                            <th class="column2">
+                                            <th className="column2">
                                                 Vacancy type
                                             </th>
-                                            <th class="column3">
+                                            <th className="column3">
                                                 No. of Vacancies
                                             </th>
-                                            <th class="column4">
+                                            <th className="column4">
                                                 Qualification
                                             </th>
-                                            <th class="column5">Age</th>
-                                            <th class="column6">Last Date</th>
+                                            <th className="column5">Age</th>
+                                            <th className="column6">
+                                                Last Date
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -56,23 +60,33 @@ class Applications extends Component {
                                                   .slice(0, 14)
                                                   .map((application) => (
                                                       <tr>
-                                                          <td class="column1">
-                                                              2017-09-29 01:22
+                                                          <td className="column1">
+                                                              {
+                                                                  application.organization
+                                                              }
                                                           </td>
-                                                          <td class="column2">
-                                                              200398
+                                                          <td className="column2">
+                                                              {
+                                                                  application.vacancyType
+                                                              }
                                                           </td>
-                                                          <td class="column3">
-                                                              iPhone X 64Gb Grey
+                                                          <td className="column3">
+                                                              {
+                                                                  application.noOfVacancies
+                                                              }
                                                           </td>
-                                                          <td class="column4">
-                                                              $999.00
+                                                          <td className="column4">
+                                                              {
+                                                                  application.qualification
+                                                              }
                                                           </td>
-                                                          <td class="column5">
-                                                              1
+                                                          <td className="column5">
+                                                              {application.age}
                                                           </td>
-                                                          <td class="column6">
-                                                              $999.00
+                                                          <td className="column6">
+                                                              {
+                                                                  application.lastDate
+                                                              }
                                                           </td>
                                                       </tr>
                                                   ))
