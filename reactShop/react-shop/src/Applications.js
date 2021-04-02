@@ -13,7 +13,7 @@ class Applications extends Component {
 
     componentDidMount() {
         axios
-            .get("https://jsonplaceholder.typicode.com/posts")
+            .get("http://localhost:5000/api/v1/applications")
             .then((response) => {
                 console.log(response);
                 this.setState({ applications: response.data });
