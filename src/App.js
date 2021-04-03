@@ -15,21 +15,15 @@ const App = () => {
                 <Navbar />
                 <div className="content">
                     <Switch>
-                        <Route exact path="/">
-                            <Home />
-                        </Route>
-                        <Route exact path="/pricing">
-                            <Pricing />
-                        </Route>
-                        <Route exact path="/applications">
-                            <Applications />
-                        </Route>
-                        <Route exact path="/about">
-                            <About />
-                        </Route>
-                        <Route exact path="/xyzform">
-                            <Form />
-                        </Route>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/pricing" component={Pricing} />
+                        <Route
+                            exact
+                            path="/applications"
+                            component={Applications}
+                        />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/xyzform" component={Form} />
                     </Switch>
                 </div>
                 <Footer />
