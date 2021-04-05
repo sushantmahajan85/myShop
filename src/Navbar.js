@@ -12,7 +12,7 @@ function Navbar() {
                         <div className="row h-100 align-items-center">
                             <div className="col-12 d-flex justify-content-between">
                                 <div className="logo">
-                                    <a href="/">
+                                    <a href="/myShop">
                                         <h2 className="logo_mahajan">
                                             Mahajan Cyber World
                                         </h2>
