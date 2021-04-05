@@ -23,7 +23,10 @@ class Form extends Component {
     submitHandler = (e) => {
         e.preventDefault();
         axios
-            .post("http://localhost:5000/api/v1/applications", this.state)
+            .post(
+                "https://quiet-chamber-71605.herokuapp.com/api/v1/applications",
+                this.state
+            )
             .then((response) => {
                 console.log(response);
             })

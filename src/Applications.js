@@ -13,7 +13,9 @@ class Applications extends Component {
 
     componentDidMount() {
         axios
-            .get("http://localhost:5000/api/v1/applications")
+            .get(
+                "https://quiet-chamber-71605.herokuapp.com/api/v1/applications"
+            )
             .then((response) => {
                 console.log(response);
                 this.setState({
