@@ -68,26 +68,32 @@ function Navbar() {
                                     <div className="classynav">
                                         <ul>
                                             <li>
-                                                <a href="/">Home</a>
+                                                <a href="/myShop">Home</a>
                                             </li>
                                             <li>
-                                                <a href="/applications">
+                                                <a href="/myShop/applications">
                                                     Applications
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/#services">
+                                                <a href="/myShop/#services">
                                                     Services
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/pricing">Pricing</a>
+                                                <a href="/myShop/pricing">
+                                                    Pricing
+                                                </a>
                                             </li>
                                             <li>
-                                                <a href="/#contact">Contact</a>
+                                                <a href="/myShop/#contact">
+                                                    Contact
+                                                </a>
                                             </li>
                                             <li>
-                                                <a href="/about">About Us</a>
+                                                <a href="/myShop/about">
+                                                    About Us
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
