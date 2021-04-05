@@ -13,16 +13,6 @@ import react from "react";
 class Pricing extends react.Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            data: "",
-        };
-    }
-
-    componentDidMount() {
-        fetch("https://jsonplaceholder.typicode.com/todos/1")
-            .then((res) => res.json())
-            .then((res) => this.setState({ data: res }));
     }
 
     render() {
