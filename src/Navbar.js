@@ -12,7 +12,7 @@ function Navbar() {
                         <div className="row h-100 align-items-center">
                             <div className="col-12 d-flex justify-content-between">
                                 <div className="logo">
-                                    <a href="/myShop">
+                                    <a href="/">
                                         <h2 className="logo_mahajan">
                                             Mahajan Cyber World
                                         </h2>
@@ -68,32 +68,26 @@ function Navbar() {
                                     <div className="classynav">
                                         <ul>
                                             <li>
-                                                <a href="/myShop">Home</a>
+                                                <a href="/">Home</a>
                                             </li>
                                             <li>
-                                                <a href="/myShop/applications">
+                                                <a href="/applications">
                                                     Applications
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/myShop/#services">
+                                                <a href="/#services">
                                                     Services
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/myShop/pricing">
-                                                    Pricing
-                                                </a>
+                                                <a href="/pricing">Pricing</a>
                                             </li>
                                             <li>
-                                                <a href="/myShop/#contact">
-                                                    Contact
-                                                </a>
+                                                <a href="/#contact">Contact</a>
                                             </li>
                                             <li>
-                                                <a href="/myShop/about">
-                                                    About Us
-                                                </a>
+                                                <a href="/about">About Us</a>
                                             </li>
                                         </ul>
                                     </div>

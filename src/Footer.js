@@ -70,25 +70,19 @@ const Footer = () => {
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="/myShop">Home</a>
+                                            <a href="/">Home</a>
                                         </li>
                                         <li>
-                                            <a href="/myShop/#services">
-                                                Services
-                                            </a>
+                                            <a href="/#services">Services</a>
                                         </li>
                                         <li>
-                                            <a href="/myShop/pricing">
-                                                Pricing
-                                            </a>
+                                            <a href="/pricing">Pricing</a>
                                         </li>
                                         <li>
-                                            <a href="/myShop/#contact">
-                                                Contact
-                                            </a>
+                                            <a href="/#contact">Contact</a>
                                         </li>
                                         <li>
-                                            <a href="/myShop/about">About Us</a>
+                                            <a href="/about">About Us</a>
                                         </li>
                                     </ul>
                                 </div>
