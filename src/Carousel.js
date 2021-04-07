@@ -1,5 +1,5 @@
 import "./index.css";
-import img from "./img/carouselImages/one.jpg";
+import img from "./img/carouselImages/carouselImg.JPG";
 import { Helmet } from "react-helmet";
 
 const Carousel = () => {
