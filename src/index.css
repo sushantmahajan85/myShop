@@ -3109,10 +3109,10 @@ iframe {
     width: 100%;
     min-height: 100vh;
     background: #c850c0;
-    background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
-    background: -o-linear-gradient(45deg, #4158d0, #c850c0);
-    background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
-    background: linear-gradient(45deg, #4158d0, #c850c0);
+    background: -webkit-linear-gradient(to right bottom, #6d6e6e, #8a8888);
+    background: -o-linear-gradient(to right bottom, #6d6e6e, #8a8888);
+    background: -moz-linear-gradient(to right bottom, #6d6e6e, #8a8888);
+    background: linear-gradient(to right bottom, #6d6e6e, #8a8888);
 
     display: -webkit-box;
     display: -webkit-flex;
@@ -3148,7 +3148,7 @@ table th {
 }
 table thead tr {
     height: 60px;
-    background: #36304a;
+    background: #003679;
 }
 table tbody tr {
     height: 50px;
@@ -3174,8 +3174,7 @@ table th.r {
 }
 
 .table100-head th {
-    font-family: OpenSans-Regular;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     line-height: 1.2;
     font-weight: unset;
@@ -3186,7 +3185,6 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr {
-    font-family: OpenSans-Regular;
     font-size: 15px;
     color: #808080;
     line-height: 1.2;
@@ -3205,26 +3203,23 @@ tbody tr:hover {
 }
 
 .column2 {
-    width: 160px;
+    width: 200px;
 }
 
 .column3 {
-    width: 245px;
+    width: 150px;
 }
 
 .column4 {
-    width: 110px;
-    text-align: right;
+    width: 170px;
 }
 
 .column5 {
-    width: 170px;
-    text-align: right;
+    width: 120px;
 }
 
 .column6 {
-    width: 222px;
-    text-align: right;
+    width: 200px;
     padding-right: 62px;
 }
 
@@ -3253,7 +3248,6 @@ tbody tr:hover {
         margin-bottom: 0;
     }
     table tbody tr td:before {
-        font-family: OpenSans-Regular;
         font-size: 14px;
         color: #999999;
         line-height: 1.2;
