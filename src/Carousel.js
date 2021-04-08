@@ -1,5 +1,5 @@
 import "./index.css";
-import img from "./img/carouselImages/carouselImg.JPG";
+import img from "./img/carouselImages/carouselImg.jpg";
 import { Helmet } from "react-helmet";
 
 const Carousel = () => {
@@ -34,11 +34,11 @@ const Carousel = () => {
                                             data-animation="fadeInUp"
                                             data-delay="500ms"
                                         >
-                                            Vestibulum eu vehicula elit, nec
+                                            {/* Vestibulum eu vehicula elit, nec
                                             elementum orci. Praesent aliquet ves
                                             tibulum tempus. Pellentesque posuere
                                             pharetra turpis, eget finibus erat
-                                            porta placerat.
+                                            porta placerat. */}
                                         </p>
                                         <a
                                             href="#"

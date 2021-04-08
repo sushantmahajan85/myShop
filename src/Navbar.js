@@ -2,6 +2,7 @@ import "./index.css";
 import placeholder from "./img/core-img/placeholder.png";
 import message from "./img/core-img/message.png";
 import call2 from "./img/core-img/call2.png";
+import { Helmet } from "react-helmet";
 
 function Navbar() {
     return (
@@ -103,6 +104,13 @@ function Navbar() {
                     </div>
                 </div>
             </header>
+            <Helmet>
+                <script src="/js/jquery/jquery-2.2.4.min.js"></script>
+                <script src="/js/bootstrap/popper.min.js"></script>
+                <script src="/js/bootstrap/bootstrap.min.js"></script>
+                <script src="./js/plugins/plugins.js"></script>
+                <script src="/js/active.js"></script>
+            </Helmet>
         </div>
     );
 }

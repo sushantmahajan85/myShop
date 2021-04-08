@@ -3022,6 +3022,18 @@ ul {
         max-width: 100%;
         /* margin-right: 30px; */
     }
+    .logo_mahajan {
+        font-size: 14px;
+    }
+    .breakpoint-off .classynav {
+        display: none;
+    }
+    .header-area .top-header-area .top-contact-info a:first-child {
+        margin-right: 10px;
+    }
+    .contact img {
+        margin-right: 9px;
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////
