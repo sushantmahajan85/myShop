@@ -3013,6 +3013,16 @@ ul {
     display: flex;
     justify-content: space-around;
 }
+@media (max-width: 600px) {
+    .row-main {
+        width: 100%;
+        display: unset;
+    }
+    .box-product-outer {
+        max-width: 100%;
+        /* margin-right: 30px; */
+    }
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
