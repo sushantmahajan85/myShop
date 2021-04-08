@@ -39,7 +39,7 @@ class Applications extends Component {
                                     <thead>
                                         <tr className="table100-head">
                                             <th className="column1">
-                                                Organization/Department
+                                                Organization
                                             </th>
                                             <th className="column2">
                                                 Vacancy type

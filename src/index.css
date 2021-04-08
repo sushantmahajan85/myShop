@@ -3280,22 +3280,22 @@ tbody tr:hover {
         top: 0;
     }
     table tbody tr td:nth-child(1):before {
-        content: "Date";
+        content: "Organization";
     }
     table tbody tr td:nth-child(2):before {
-        content: "Order ID";
+        content: "Vacancy type";
     }
     table tbody tr td:nth-child(3):before {
-        content: "Name";
+        content: "No. of Vacancies";
     }
     table tbody tr td:nth-child(4):before {
-        content: "Price";
+        content: "Qualification";
     }
     table tbody tr td:nth-child(5):before {
-        content: "Quantity";
+        content: "Age";
     }
     table tbody tr td:nth-child(6):before {
-        content: "Total";
+        content: "Last Date";
     }
 
     .column4,
