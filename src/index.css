@@ -3034,6 +3034,9 @@ ul {
     .contact img {
         margin-right: 9px;
     }
+    .single-slide .slide-bg-img {
+        background-size: 150% 100%;
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////
