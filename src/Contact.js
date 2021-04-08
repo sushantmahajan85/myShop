@@ -9,19 +9,24 @@ const Contact = () => {
                     <div className="row">
                         <div className="col-xl-5 col-lg-6">
                             <div className="form_wrap">
-                                <h3>Get Free Quote</h3>
+                                <h3>Contact Us</h3>
                                 <form
                                     id="form_contacted"
-                                    action="https://formspree.io/mahajan.cyber1@gmail.com"
+                                    action="https://formspree.io/f/mleaewjv"
                                     method="POST"
                                 >
                                     <input
                                         type="text"
                                         placeholder="Your Name"
+                                        name="name"
                                     />
-                                    <input type="email" placeholder="Email" />
+                                    <input
+                                        type="email"
+                                        placeholder="Email"
+                                        name="_replyto"
+                                    />
                                     <textarea
-                                        name="#"
+                                        name="message"
                                         id=""
                                         cols="30"
                                         rows="10"
