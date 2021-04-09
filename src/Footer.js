@@ -49,18 +49,6 @@ const Footer = () => {
                                             <img src={logo} />
                                         </a>
                                     </div>
-                                    <div className="footer-social-icon">
-                                        <span>Follow us</span>
-                                        <a href="#">
-                                            <i className="fab fa-facebook-f facebook-bg"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i className="fab fa-twitter twitter-bg"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i className="fab fa-google-plus-g google-bg"></i>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
