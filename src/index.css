@@ -857,7 +857,7 @@ img {
     bottom: 0;
     -webkit-animation: slide-bg linear 10000ms infinite;
     animation: slide-bg linear 10000ms infinite;
-    background-size: 100% 130%;
+    background-size: 100% 150%;
 }
 .single-slide .slide-du-indicator {
     position: absolute;
