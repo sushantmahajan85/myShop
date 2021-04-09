@@ -6,11 +6,11 @@ import Applications from "./Applications";
 import About from "./About";
 import Footer from "./Footer";
 import Form from "./Form";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const App = () => {
     return (
-        <Router basename="/">
+        <BrowserRouter basename="/">
             <div className="App">
                 <Navbar />
                 <div className="content">
@@ -28,7 +28,7 @@ const App = () => {
                 </div>
                 <Footer />
             </div>
-        </Router>
+        </BrowserRouter>
     );
 };
 
