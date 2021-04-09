@@ -82,8 +82,11 @@ const Footer = () => {
                                     </div>
                                     <div className="footer-text mb-25">
                                         <p>
-                                            Don’t miss to subscribe to our new
-                                            feeds, kindly fill the form below.
+                                            Mahajan Cyber World was started in
+                                            2008 with only four computer
+                                            systems. At Mahajan Cyber World, we
+                                            deal in all kinds of computer
+                                            software/hardware solutions.
                                         </p>
                                     </div>
                                 </div>
