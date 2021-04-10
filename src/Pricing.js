@@ -113,35 +113,6 @@ class Pricing extends react.Component {
                                     <a href="detail.html">
                                         <img alt="Product" src={mousepad} />
                                     </a>
-                                    <div className="option">
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Add to Cart"
-                                        >
-                                            <i className="ace-icon fa fa-shopping-cart"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Compare"
-                                        >
-                                            <i className="ace-icon fa fa-align-left"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Wishlist"
-                                        >
-                                            <i className="ace-icon fa fa-heart"></i>
-                                        </a>
-                                    </div>
                                 </div>
                                 <h6>
                                     <a href="#">Mouse Pad</a>
@@ -169,17 +140,6 @@ class Pricing extends react.Component {
                                     <a href="detail.html">
                                         <img alt="Product" src={pendrive} />
                                     </a>
-                                    <div className="option">
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Add to Cart"
-                                        >
-                                            <i className="ace-icon fa fa-shopping-cart"></i>
-                                        </a>
-                                    </div>
                                 </div>
                                 <h6>
                                     <a href="#">Pendrives</a>
@@ -205,35 +165,6 @@ class Pricing extends react.Component {
                                     <a href="detail.html">
                                         <img alt="Product" src={antivirus} />
                                     </a>
-                                    <div className="option">
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Add to Cart"
-                                        >
-                                            <i className="ace-icon fa fa-shopping-cart"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Compare"
-                                        >
-                                            <i className="ace-icon fa fa-align-left"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Wishlist"
-                                        >
-                                            <i className="ace-icon fa fa-heart"></i>
-                                        </a>
-                                    </div>
                                 </div>
                                 <h6>
                                     <a href="#">Antivirus</a>
@@ -259,35 +190,6 @@ class Pricing extends react.Component {
                                     <a href="detail.html">
                                         <img alt="Product" src={headphone} />
                                     </a>
-                                    <div className="option">
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Add to Cart"
-                                        >
-                                            <i className="ace-icon fa fa-shopping-cart"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Compare"
-                                        >
-                                            <i className="ace-icon fa fa-align-left"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Wishlist"
-                                        >
-                                            <i className="ace-icon fa fa-heart"></i>
-                                        </a>
-                                    </div>
                                 </div>
                                 <h6>
                                     <a href="#">Headphones</a>
@@ -313,35 +215,6 @@ class Pricing extends react.Component {
                                     <a href="detail.html">
                                         <img alt="Product" src={speaker} />
                                     </a>
-                                    <div className="option">
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Add to Cart"
-                                        >
-                                            <i className="ace-icon fa fa-shopping-cart"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Compare"
-                                        >
-                                            <i className="ace-icon fa fa-align-left"></i>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title=""
-                                            data-original-title="Wishlist"
-                                        >
-                                            <i className="ace-icon fa fa-heart"></i>
-                                        </a>
-                                    </div>
                                 </div>
                                 <h6>
                                     <a href="#">Speakers</a>

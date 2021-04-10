@@ -3,13 +3,24 @@ import placeholder from "./img/core-img/placeholder.png";
 import message from "./img/core-img/message.png";
 import call2 from "./img/core-img/call2.png";
 import { Helmet } from "react-helmet";
+import react from "react";
 import ScriptTag from "react-script-tag";
-class Navbar extends component {
-    handleToggler = () => {
-        console.log("hey there");
-        document.getElementById("classy-menu").style.display = "block";
-    };
+
+class Navbar extends react.Component {
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { display: "none" };
+    // }
+    // handleToggler = (display) => {
+    //     this.setState({
+
+    //     document.getElementById("classy-menu").style.display = "block";
+    //         // display: "block",
+    //     });
+    //     console.log("hey there");
+    // };
     render() {
+        // const { display } = this.state;
         return (
             <div className="Navbar">
                 <header className="header-area">
@@ -64,7 +75,9 @@ class Navbar extends component {
                                     <div
                                         className="classy-navbar-toggler"
                                         id="classy-navbar-toggler"
-                                        onClick={() => this.handleToggler()}
+                                        // onClick={() =>
+                                        //     this.handleToggler(display)
+                                        // }
                                     >
                                         <span className="navbarToggler">
                                             <span></span>
@@ -72,10 +85,7 @@ class Navbar extends component {
                                             <span></span>
                                         </span>
                                     </div>
-                                    <div
-                                        className="classy-menu"
-                                        id="classy-menu"
-                                    >
+                                    <div className="classy-menu">
                                         <div className="classycloseIcon">
                                             <div className="cross-wrap">
                                                 <span className="top"></span>

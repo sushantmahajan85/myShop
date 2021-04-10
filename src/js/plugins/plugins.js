@@ -1,5 +1,5 @@
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+(function () {
     var method;
     var noop = function noop() {};
     var methods = [
@@ -44,14 +44,14 @@
  * Released under the GPL v2 License
  *
  * Date: Nov 26, 2013
- */ (function(e) {
+ */ (function (e) {
     "use strict";
-    e.fn.counterUp = function(t) {
+    e.fn.counterUp = function (t) {
         var n = e.extend({ time: 400, delay: 10 }, t);
-        return this.each(function() {
+        return this.each(function () {
             var t = e(this),
                 r = n,
-                i = function() {
+                i = function () {
                     var e = [],
                         n = r.time / r.delay,
                         i = t.text(),
@@ -72,7 +72,7 @@
                     }
                     t.data("counterup-nums", e);
                     t.text("0");
-                    var c = function() {
+                    var c = function () {
                         t.text(t.data("counterup-nums").shift());
                         if (t.data("counterup-nums").length)
                             setTimeout(t.data("counterup-func"), r.delay);
@@ -94,69 +94,69 @@
 (jQuery.easing.jswing = jQuery.easing.swing),
     jQuery.extend(jQuery.easing, {
         def: "easeOutQuad",
-        swing: function(n, e, t, r, u) {
+        swing: function (n, e, t, r, u) {
             return jQuery.easing[jQuery.easing.def](n, e, t, r, u);
         },
-        easeInQuad: function(n, e, t, r, u) {
+        easeInQuad: function (n, e, t, r, u) {
             return r * (e /= u) * e + t;
         },
-        easeOutQuad: function(n, e, t, r, u) {
+        easeOutQuad: function (n, e, t, r, u) {
             return -r * (e /= u) * (e - 2) + t;
         },
-        easeInOutQuad: function(n, e, t, r, u) {
+        easeInOutQuad: function (n, e, t, r, u) {
             return (e /= u / 2) < 1
                 ? (r / 2) * e * e + t
                 : (-r / 2) * (--e * (e - 2) - 1) + t;
         },
-        easeInCubic: function(n, e, t, r, u) {
+        easeInCubic: function (n, e, t, r, u) {
             return r * (e /= u) * e * e + t;
         },
-        easeOutCubic: function(n, e, t, r, u) {
+        easeOutCubic: function (n, e, t, r, u) {
             return r * ((e = e / u - 1) * e * e + 1) + t;
         },
-        easeInOutCubic: function(n, e, t, r, u) {
+        easeInOutCubic: function (n, e, t, r, u) {
             return (e /= u / 2) < 1
                 ? (r / 2) * e * e * e + t
                 : (r / 2) * ((e -= 2) * e * e + 2) + t;
         },
-        easeInQuart: function(n, e, t, r, u) {
+        easeInQuart: function (n, e, t, r, u) {
             return r * (e /= u) * e * e * e + t;
         },
-        easeOutQuart: function(n, e, t, r, u) {
+        easeOutQuart: function (n, e, t, r, u) {
             return -r * ((e = e / u - 1) * e * e * e - 1) + t;
         },
-        easeInOutQuart: function(n, e, t, r, u) {
+        easeInOutQuart: function (n, e, t, r, u) {
             return (e /= u / 2) < 1
                 ? (r / 2) * e * e * e * e + t
                 : (-r / 2) * ((e -= 2) * e * e * e - 2) + t;
         },
-        easeInQuint: function(n, e, t, r, u) {
+        easeInQuint: function (n, e, t, r, u) {
             return r * (e /= u) * e * e * e * e + t;
         },
-        easeOutQuint: function(n, e, t, r, u) {
+        easeOutQuint: function (n, e, t, r, u) {
             return r * ((e = e / u - 1) * e * e * e * e + 1) + t;
         },
-        easeInOutQuint: function(n, e, t, r, u) {
+        easeInOutQuint: function (n, e, t, r, u) {
             return (e /= u / 2) < 1
                 ? (r / 2) * e * e * e * e * e + t
                 : (r / 2) * ((e -= 2) * e * e * e * e + 2) + t;
         },
-        easeInSine: function(n, e, t, r, u) {
+        easeInSine: function (n, e, t, r, u) {
             return -r * Math.cos((e / u) * (Math.PI / 2)) + r + t;
         },
-        easeOutSine: function(n, e, t, r, u) {
+        easeOutSine: function (n, e, t, r, u) {
             return r * Math.sin((e / u) * (Math.PI / 2)) + t;
         },
-        easeInOutSine: function(n, e, t, r, u) {
+        easeInOutSine: function (n, e, t, r, u) {
             return (-r / 2) * (Math.cos((Math.PI * e) / u) - 1) + t;
         },
-        easeInExpo: function(n, e, t, r, u) {
+        easeInExpo: function (n, e, t, r, u) {
             return 0 == e ? t : r * Math.pow(2, 10 * (e / u - 1)) + t;
         },
-        easeOutExpo: function(n, e, t, r, u) {
+        easeOutExpo: function (n, e, t, r, u) {
             return e == u ? t + r : r * (-Math.pow(2, (-10 * e) / u) + 1) + t;
         },
-        easeInOutExpo: function(n, e, t, r, u) {
+        easeInOutExpo: function (n, e, t, r, u) {
             return 0 == e
                 ? t
                 : e == u
@@ -165,18 +165,18 @@
                 ? (r / 2) * Math.pow(2, 10 * (e - 1)) + t
                 : (r / 2) * (-Math.pow(2, -10 * --e) + 2) + t;
         },
-        easeInCirc: function(n, e, t, r, u) {
+        easeInCirc: function (n, e, t, r, u) {
             return -r * (Math.sqrt(1 - (e /= u) * e) - 1) + t;
         },
-        easeOutCirc: function(n, e, t, r, u) {
+        easeOutCirc: function (n, e, t, r, u) {
             return r * Math.sqrt(1 - (e = e / u - 1) * e) + t;
         },
-        easeInOutCirc: function(n, e, t, r, u) {
+        easeInOutCirc: function (n, e, t, r, u) {
             return (e /= u / 2) < 1
                 ? (-r / 2) * (Math.sqrt(1 - e * e) - 1) + t
                 : (r / 2) * (Math.sqrt(1 - (e -= 2) * e) + 1) + t;
         },
-        easeInElastic: function(n, e, t, r, u) {
+        easeInElastic: function (n, e, t, r, u) {
             var a = 1.70158,
                 i = 0,
                 s = r;
@@ -194,7 +194,7 @@
                 ) + t
             );
         },
-        easeOutElastic: function(n, e, t, r, u) {
+        easeOutElastic: function (n, e, t, r, u) {
             var a = 1.70158,
                 i = 0,
                 s = r;
@@ -212,7 +212,7 @@
                 t
             );
         },
-        easeInOutElastic: function(n, e, t, r, u) {
+        easeInOutElastic: function (n, e, t, r, u) {
             var a = 1.70158,
                 i = 0,
                 s = r;
@@ -235,19 +235,19 @@
                       r +
                       t;
         },
-        easeInBack: function(n, e, t, r, u, a) {
+        easeInBack: function (n, e, t, r, u, a) {
             return (
                 void 0 == a && (a = 1.70158),
                 r * (e /= u) * e * ((a + 1) * e - a) + t
             );
         },
-        easeOutBack: function(n, e, t, r, u, a) {
+        easeOutBack: function (n, e, t, r, u, a) {
             return (
                 void 0 == a && (a = 1.70158),
                 r * ((e = e / u - 1) * e * ((a + 1) * e + a) + 1) + t
             );
         },
-        easeInOutBack: function(n, e, t, r, u, a) {
+        easeInOutBack: function (n, e, t, r, u, a) {
             return (
                 void 0 == a && (a = 1.70158),
                 (e /= u / 2) < 1
@@ -257,10 +257,10 @@
                       t
             );
         },
-        easeInBounce: function(n, e, t, r, u) {
+        easeInBounce: function (n, e, t, r, u) {
             return r - jQuery.easing.easeOutBounce(n, u - e, 0, r, u) + t;
         },
-        easeOutBounce: function(n, e, t, r, u) {
+        easeOutBounce: function (n, e, t, r, u) {
             return (e /= u) < 1 / 2.75
                 ? r * (7.5625 * e * e) + t
                 : 2 / 2.75 > e
@@ -269,7 +269,7 @@
                 ? r * (7.5625 * (e -= 2.25 / 2.75) * e + 0.9375) + t
                 : r * (7.5625 * (e -= 2.625 / 2.75) * e + 0.984375) + t;
         },
-        easeInOutBounce: function(n, e, t, r, u) {
+        easeInOutBounce: function (n, e, t, r, u) {
             return u / 2 > e
                 ? 0.5 * jQuery.easing.easeInBounce(n, 2 * e, 0, r, u) + t
                 : 0.5 * jQuery.easing.easeOutBounce(n, 2 * e - u, 0, r, u) +
@@ -283,7 +283,7 @@
  * Copyright 2013-2017 David Deutsch
  * Licensed under  ()
  */
-!(function(a, b, c, d) {
+!(function (a, b, c, d) {
     function e(b, c) {
         (this.settings = null),
             (this.options = a.extend({}, e.Defaults, c)),
@@ -319,13 +319,13 @@
             }),
             a.each(
                 ["onResize", "onThrottledResize"],
-                a.proxy(function(b, c) {
+                a.proxy(function (b, c) {
                     this._handlers[c] = a.proxy(this[c], this);
                 }, this)
             ),
             a.each(
                 e.Plugins,
-                a.proxy(function(a, b) {
+                a.proxy(function (a, b) {
                     this._plugins[
                         a.charAt(0).toLowerCase() + a.slice(1)
                     ] = new b(this);
@@ -333,7 +333,7 @@
             ),
             a.each(
                 e.Workers,
-                a.proxy(function(b, c) {
+                a.proxy(function (b, c) {
                     this._pipe.push({
                         filter: c.filter,
                         run: a.proxy(c.run, this),
@@ -387,13 +387,13 @@
         (e.Workers = [
             {
                 filter: ["width", "settings"],
-                run: function() {
+                run: function () {
                     this._width = this.$element.width();
                 },
             },
             {
                 filter: ["width", "items", "settings"],
-                run: function(a) {
+                run: function (a) {
                     a.current =
                         this._items &&
                         this._items[this.relative(this._current)];
@@ -401,13 +401,13 @@
             },
             {
                 filter: ["items", "settings"],
-                run: function() {
+                run: function () {
                     this.$stage.children(".cloned").remove();
                 },
             },
             {
                 filter: ["width", "items", "settings"],
-                run: function(a) {
+                run: function (a) {
                     var b = this.settings.margin || "",
                         c = !this.settings.autoWidth,
                         d = this.settings.rtl,
@@ -421,7 +421,7 @@
             },
             {
                 filter: ["width", "items", "settings"],
-                run: function(a) {
+                run: function (a) {
                     var b =
                             (this.width() / this.settings.items).toFixed(3) -
                             this.settings.margin,
@@ -442,7 +442,7 @@
             },
             {
                 filter: ["items", "settings"],
-                run: function() {
+                run: function () {
                     var b = [],
                         c = this._items,
                         d = this.settings,
@@ -467,17 +467,13 @@
                             ),
                             (i = c[b[b.length - 1]][0].outerHTML + i);
                     (this._clones = b),
-                        a(h)
-                            .addClass("cloned")
-                            .appendTo(this.$stage),
-                        a(i)
-                            .addClass("cloned")
-                            .prependTo(this.$stage);
+                        a(h).addClass("cloned").appendTo(this.$stage),
+                        a(i).addClass("cloned").prependTo(this.$stage);
                 },
             },
             {
                 filter: ["width", "items", "settings"],
-                run: function() {
+                run: function () {
                     for (
                         var a = this.settings.rtl ? 1 : -1,
                             b = this._clones.length + this._items.length,
@@ -498,7 +494,7 @@
             },
             {
                 filter: ["width", "items", "settings"],
-                run: function() {
+                run: function () {
                     var a = this.settings.stagePadding,
                         b = this._coordinates,
                         c = {
@@ -511,7 +507,7 @@
             },
             {
                 filter: ["width", "items", "settings"],
-                run: function(a) {
+                run: function (a) {
                     var b = this._coordinates.length,
                         c = !this.settings.autoWidth,
                         d = this.$stage.children();
@@ -524,14 +520,14 @@
             },
             {
                 filter: ["items"],
-                run: function() {
+                run: function () {
                     this._coordinates.length < 1 &&
                         this.$stage.removeAttr("style");
                 },
             },
             {
                 filter: ["width", "items", "settings"],
-                run: function(a) {
+                run: function (a) {
                     (a.current = a.current
                         ? this.$stage.children().index(a.current)
                         : 0),
@@ -544,13 +540,13 @@
             },
             {
                 filter: ["position"],
-                run: function() {
+                run: function () {
                     this.animate(this.coordinates(this._current));
                 },
             },
             {
                 filter: ["width", "position", "items", "settings"],
-                run: function() {
+                run: function () {
                     var a,
                         b,
                         c,
@@ -581,7 +577,7 @@
                 },
             },
         ]),
-        (e.prototype.initialize = function() {
+        (e.prototype.initialize = function () {
             if (
                 (this.enter("initializing"),
                 this.trigger("initialize"),
@@ -621,13 +617,13 @@
                 this.leave("initializing"),
                 this.trigger("initialized");
         }),
-        (e.prototype.setup = function() {
+        (e.prototype.setup = function () {
             var b = this.viewport(),
                 c = this.options.responsive,
                 d = -1,
                 e = null;
             c
-                ? (a.each(c, function(a) {
+                ? (a.each(c, function (a) {
                       a <= b && a > d && (d = Number(a));
                   }),
                   (e = a.extend({}, this.options, c[d])),
@@ -660,11 +656,11 @@
                     property: { name: "settings", value: this.settings },
                 });
         }),
-        (e.prototype.optionsLogic = function() {
+        (e.prototype.optionsLogic = function () {
             this.settings.autoWidth &&
                 ((this.settings.stagePadding = !1), (this.settings.merge = !1));
         }),
-        (e.prototype.prepare = function(b) {
+        (e.prototype.prepare = function (b) {
             var c = this.trigger("prepare", { content: b });
             return (
                 c.data ||
@@ -675,11 +671,11 @@
                 c.data
             );
         }),
-        (e.prototype.update = function() {
+        (e.prototype.update = function () {
             for (
                 var b = 0,
                     c = this._pipe.length,
-                    d = a.proxy(function(a) {
+                    d = a.proxy(function (a) {
                         return this[a];
                     }, this._invalidated),
                     e = {};
@@ -692,7 +688,7 @@
                     b++;
             (this._invalidated = {}), !this.is("valid") && this.enter("valid");
         }),
-        (e.prototype.width = function(a) {
+        (e.prototype.width = function (a) {
             switch ((a = a || e.Width.Default)) {
                 case e.Width.Inner:
                 case e.Width.Outer:
@@ -705,7 +701,7 @@
                     );
             }
         }),
-        (e.prototype.refresh = function() {
+        (e.prototype.refresh = function () {
             this.enter("refreshing"),
                 this.trigger("refresh"),
                 this.setup(),
@@ -716,28 +712,28 @@
                 this.leave("refreshing"),
                 this.trigger("refreshed");
         }),
-        (e.prototype.onThrottledResize = function() {
+        (e.prototype.onThrottledResize = function () {
             b.clearTimeout(this.resizeTimer),
                 (this.resizeTimer = b.setTimeout(
                     this._handlers.onResize,
                     this.settings.responsiveRefreshRate
                 ));
         }),
-        (e.prototype.onResize = function() {
+        (e.prototype.onResize = function () {
             return (
                 !!this._items.length &&
                 this._width !== this.$element.width() &&
-                    !!this.$element.is(":visible") &&
-                        (this.enter("resizing"),
-                        this.trigger("resize").isDefaultPrevented()
-                            ? (this.leave("resizing"), !1)
-                            : (this.invalidate("width"),
-                              this.refresh(),
-                              this.leave("resizing"),
-                              void this.trigger("resized")))
+                !!this.$element.is(":visible") &&
+                (this.enter("resizing"),
+                this.trigger("resize").isDefaultPrevented()
+                    ? (this.leave("resizing"), !1)
+                    : (this.invalidate("width"),
+                      this.refresh(),
+                      this.leave("resizing"),
+                      void this.trigger("resized")))
             );
         }),
-        (e.prototype.registerEventHandlers = function() {
+        (e.prototype.registerEventHandlers = function () {
             a.support.transition &&
                 this.$stage.on(
                     a.support.transition.end + ".owl.core",
@@ -753,7 +749,7 @@
                     ),
                     this.$stage.on(
                         "dragstart.owl.core selectstart.owl.core",
-                        function() {
+                        function () {
                             return !1;
                         }
                     )),
@@ -767,7 +763,7 @@
                         a.proxy(this.onDragEnd, this)
                     ));
         }),
-        (e.prototype.onDragStart = function(b) {
+        (e.prototype.onDragStart = function (b) {
             var d = null;
             3 !== b.which &&
                 (a.support.transform
@@ -810,7 +806,7 @@
                 ),
                 a(c).one(
                     "mousemove.owl.core touchmove.owl.core",
-                    a.proxy(function(b) {
+                    a.proxy(function (b) {
                         var d = this.difference(
                             this._drag.pointer,
                             this.pointer(b)
@@ -827,7 +823,7 @@
                     }, this)
                 ));
         }),
-        (e.prototype.onDragMove = function(a) {
+        (e.prototype.onDragMove = function (a) {
             var b = null,
                 c = null,
                 d = null,
@@ -850,7 +846,7 @@
                 (this._drag.stage.current = f),
                 this.animate(f.x));
         }),
-        (e.prototype.onDragEnd = function(b) {
+        (e.prototype.onDragEnd = function (b) {
             var d = this.difference(this._drag.pointer, this.pointer(b)),
                 e = this._drag.stage.current,
                 f = (d.x > 0) ^ this.settings.rtl ? "left" : "right";
@@ -868,13 +864,13 @@
                     (this._drag.direction = f),
                     (Math.abs(d.x) > 3 ||
                         new Date().getTime() - this._drag.time > 300) &&
-                        this._drag.target.one("click.owl.core", function() {
+                        this._drag.target.one("click.owl.core", function () {
                             return !1;
                         })),
                 this.is("dragging") &&
                     (this.leave("dragging"), this.trigger("dragged"));
         }),
-        (e.prototype.closest = function(b, c) {
+        (e.prototype.closest = function (b, c) {
             var d = -1,
                 e = 30,
                 f = this.width(),
@@ -883,7 +879,7 @@
                 this.settings.freeDrag ||
                     a.each(
                         g,
-                        a.proxy(function(a, h) {
+                        a.proxy(function (a, h) {
                             return (
                                 "left" === c && b > h - e && b < h + e
                                     ? (d = a)
@@ -906,7 +902,7 @@
                 d
             );
         }),
-        (e.prototype.animate = function(b) {
+        (e.prototype.animate = function (b) {
             var c = this.speed() > 0;
             this.is("animating") && this.onTransitionEnd(),
                 c && (this.enter("animating"), this.trigger("translate")),
@@ -924,10 +920,10 @@
                       )
                     : this.$stage.css({ left: b + "px" });
         }),
-        (e.prototype.is = function(a) {
+        (e.prototype.is = function (a) {
             return this._states.current[a] && this._states.current[a] > 0;
         }),
-        (e.prototype.current = function(a) {
+        (e.prototype.current = function (a) {
             if (a === d) return this._current;
             if (0 === this._items.length) return d;
             if (((a = this.normalize(a)), this._current !== a)) {
@@ -943,17 +939,17 @@
             }
             return this._current;
         }),
-        (e.prototype.invalidate = function(b) {
+        (e.prototype.invalidate = function (b) {
             return (
                 "string" === a.type(b) &&
                     ((this._invalidated[b] = !0),
                     this.is("valid") && this.leave("valid")),
-                a.map(this._invalidated, function(a, b) {
+                a.map(this._invalidated, function (a, b) {
                     return b;
                 })
             );
         }),
-        (e.prototype.reset = function(a) {
+        (e.prototype.reset = function (a) {
             (a = this.normalize(a)),
                 a !== d &&
                     ((this._speed = 0),
@@ -962,7 +958,7 @@
                     this.animate(this.coordinates(a)),
                     this.release(["translate", "translated"]));
         }),
-        (e.prototype.normalize = function(a, b) {
+        (e.prototype.normalize = function (a, b) {
             var c = this._items.length,
                 e = b ? 0 : this._clones.length;
             return (
@@ -973,10 +969,10 @@
                 a
             );
         }),
-        (e.prototype.relative = function(a) {
+        (e.prototype.relative = function (a) {
             return (a -= this._clones.length / 2), this.normalize(a, !0);
         }),
-        (e.prototype.maximum = function(a) {
+        (e.prototype.maximum = function (a) {
             var b,
                 c,
                 d,
@@ -1000,44 +996,44 @@
                     : this._items.length - e.items;
             return a && (f -= this._clones.length / 2), Math.max(f, 0);
         }),
-        (e.prototype.minimum = function(a) {
+        (e.prototype.minimum = function (a) {
             return a ? 0 : this._clones.length / 2;
         }),
-        (e.prototype.items = function(a) {
+        (e.prototype.items = function (a) {
             return a === d
                 ? this._items.slice()
                 : ((a = this.normalize(a, !0)), this._items[a]);
         }),
-        (e.prototype.mergers = function(a) {
+        (e.prototype.mergers = function (a) {
             return a === d
                 ? this._mergers.slice()
                 : ((a = this.normalize(a, !0)), this._mergers[a]);
         }),
-        (e.prototype.clones = function(b) {
+        (e.prototype.clones = function (b) {
             var c = this._clones.length / 2,
                 e = c + this._items.length,
-                f = function(a) {
+                f = function (a) {
                     return a % 2 === 0 ? e + a / 2 : c - (a + 1) / 2;
                 };
             return b === d
-                ? a.map(this._clones, function(a, b) {
+                ? a.map(this._clones, function (a, b) {
                       return f(b);
                   })
-                : a.map(this._clones, function(a, c) {
+                : a.map(this._clones, function (a, c) {
                       return a === b ? f(c) : null;
                   });
         }),
-        (e.prototype.speed = function(a) {
+        (e.prototype.speed = function (a) {
             return a !== d && (this._speed = a), this._speed;
         }),
-        (e.prototype.coordinates = function(b) {
+        (e.prototype.coordinates = function (b) {
             var c,
                 e = 1,
                 f = b - 1;
             return b === d
                 ? a.map(
                       this._coordinates,
-                      a.proxy(function(a, b) {
+                      a.proxy(function (a, b) {
                           return this.coordinates(b);
                       }, this)
                   )
@@ -1051,13 +1047,13 @@
                       : (c = this._coordinates[f] || 0),
                   (c = Math.ceil(c)));
         }),
-        (e.prototype.duration = function(a, b, c) {
+        (e.prototype.duration = function (a, b, c) {
             return 0 === c
                 ? 0
                 : Math.min(Math.max(Math.abs(b - a), 1), 6) *
                       Math.abs(c || this.settings.smartSpeed);
         }),
-        (e.prototype.to = function(a, b) {
+        (e.prototype.to = function (a, b) {
             var c = this.current(),
                 d = null,
                 e = a - this.relative(c),
@@ -1082,13 +1078,13 @@
                 this.current(a),
                 this.$element.is(":visible") && this.update();
         }),
-        (e.prototype.next = function(a) {
+        (e.prototype.next = function (a) {
             (a = a || !1), this.to(this.relative(this.current()) + 1, a);
         }),
-        (e.prototype.prev = function(a) {
+        (e.prototype.prev = function (a) {
             (a = a || !1), this.to(this.relative(this.current()) - 1, a);
         }),
-        (e.prototype.onTransitionEnd = function(a) {
+        (e.prototype.onTransitionEnd = function (a) {
             if (
                 a !== d &&
                 (a.stopPropagation(),
@@ -1098,7 +1094,7 @@
                 return !1;
             this.leave("animating"), this.trigger("translated");
         }),
-        (e.prototype.viewport = function() {
+        (e.prototype.viewport = function () {
             var d;
             return (
                 this.options.responsiveBaseElement !== b
@@ -1111,18 +1107,18 @@
                 d
             );
         }),
-        (e.prototype.replace = function(b) {
+        (e.prototype.replace = function (b) {
             this.$stage.empty(),
                 (this._items = []),
                 b && (b = b instanceof jQuery ? b : a(b)),
                 this.settings.nestedItemSelector &&
                     (b = b.find("." + this.settings.nestedItemSelector)),
                 b
-                    .filter(function() {
+                    .filter(function () {
                         return 1 === this.nodeType;
                     })
                     .each(
-                        a.proxy(function(a, b) {
+                        a.proxy(function (a, b) {
                             (b = this.prepare(b)),
                                 this.$stage.append(b),
                                 this._items.push(b),
@@ -1142,7 +1138,7 @@
                 ),
                 this.invalidate("items");
         }),
-        (e.prototype.add = function(b, c) {
+        (e.prototype.add = function (b, c) {
             var e = this.relative(this._current);
             (c = c === d ? this._items.length : this.normalize(c, !0)),
                 (b = b instanceof jQuery ? b : a(b)),
@@ -1174,7 +1170,7 @@
                 this.invalidate("items"),
                 this.trigger("added", { content: b, position: c });
         }),
-        (e.prototype.remove = function(a) {
+        (e.prototype.remove = function (a) {
             (a = this.normalize(a, !0)),
                 a !== d &&
                     (this.trigger("remove", {
@@ -1187,15 +1183,15 @@
                     this.invalidate("items"),
                     this.trigger("removed", { content: null, position: a }));
         }),
-        (e.prototype.preloadAutoWidthImages = function(b) {
+        (e.prototype.preloadAutoWidthImages = function (b) {
             b.each(
-                a.proxy(function(b, c) {
+                a.proxy(function (b, c) {
                     this.enter("pre-loading"),
                         (c = a(c)),
                         a(new Image())
                             .one(
                                 "load",
-                                a.proxy(function(a) {
+                                a.proxy(function (a) {
                                     c.attr("src", a.target.src),
                                         c.css("opacity", 1),
                                         this.leave("pre-loading"),
@@ -1213,7 +1209,7 @@
                 }, this)
             );
         }),
-        (e.prototype.destroy = function() {
+        (e.prototype.destroy = function () {
             this.$element.off(".owl.core"),
                 this.$stage.off(".owl.core"),
                 a(c).off(".owl.core"),
@@ -1223,10 +1219,7 @@
             for (var d in this._plugins) this._plugins[d].destroy();
             this.$stage.children(".cloned").remove(),
                 this.$stage.unwrap(),
-                this.$stage
-                    .children()
-                    .contents()
-                    .unwrap(),
+                this.$stage.children().contents().unwrap(),
                 this.$stage.children().unwrap(),
                 this.$element
                     .removeClass(this.options.refreshClass)
@@ -1249,7 +1242,7 @@
                     )
                     .removeData("owl.carousel");
         }),
-        (e.prototype.op = function(a, b, c) {
+        (e.prototype.op = function (a, b, c) {
             var d = this.settings.rtl;
             switch (b) {
                 case "<":
@@ -1262,23 +1255,23 @@
                     return d ? a >= c : a <= c;
             }
         }),
-        (e.prototype.on = function(a, b, c, d) {
+        (e.prototype.on = function (a, b, c, d) {
             a.addEventListener
                 ? a.addEventListener(b, c, d)
                 : a.attachEvent && a.attachEvent("on" + b, c);
         }),
-        (e.prototype.off = function(a, b, c, d) {
+        (e.prototype.off = function (a, b, c, d) {
             a.removeEventListener
                 ? a.removeEventListener(b, c, d)
                 : a.detachEvent && a.detachEvent("on" + b, c);
         }),
-        (e.prototype.trigger = function(b, c, d, f, g) {
+        (e.prototype.trigger = function (b, c, d, f, g) {
             var h = {
                     item: { count: this._items.length, index: this.current() },
                 },
                 i = a.camelCase(
                     a
-                        .grep(["on", b, d], function(a) {
+                        .grep(["on", b, d], function (a) {
                             return a;
                         })
                         .join("-")
@@ -1290,7 +1283,7 @@
                 );
             return (
                 this._supress[b] ||
-                    (a.each(this._plugins, function(a, b) {
+                    (a.each(this._plugins, function (a, b) {
                         b.onTrigger && b.onTrigger(j);
                     }),
                     this.register({ type: e.Type.Event, name: b }),
@@ -1301,32 +1294,32 @@
                 j
             );
         }),
-        (e.prototype.enter = function(b) {
+        (e.prototype.enter = function (b) {
             a.each(
                 [b].concat(this._states.tags[b] || []),
-                a.proxy(function(a, b) {
+                a.proxy(function (a, b) {
                     this._states.current[b] === d &&
                         (this._states.current[b] = 0),
                         this._states.current[b]++;
                 }, this)
             );
         }),
-        (e.prototype.leave = function(b) {
+        (e.prototype.leave = function (b) {
             a.each(
                 [b].concat(this._states.tags[b] || []),
-                a.proxy(function(a, b) {
+                a.proxy(function (a, b) {
                     this._states.current[b]--;
                 }, this)
             );
         }),
-        (e.prototype.register = function(b) {
+        (e.prototype.register = function (b) {
             if (b.type === e.Type.Event) {
                 if (
                     (a.event.special[b.name] || (a.event.special[b.name] = {}),
                     !a.event.special[b.name].owl)
                 ) {
                     var c = a.event.special[b.name]._default;
-                    (a.event.special[b.name]._default = function(a) {
+                    (a.event.special[b.name]._default = function (a) {
                         return !c ||
                             !c.apply ||
                             (a.namespace && a.namespace.indexOf("owl") !== -1)
@@ -1344,30 +1337,30 @@
                         : (this._states.tags[b.name] = b.tags),
                     (this._states.tags[b.name] = a.grep(
                         this._states.tags[b.name],
-                        a.proxy(function(c, d) {
+                        a.proxy(function (c, d) {
                             return (
                                 a.inArray(c, this._states.tags[b.name]) === d
                             );
                         }, this)
                     )));
         }),
-        (e.prototype.suppress = function(b) {
+        (e.prototype.suppress = function (b) {
             a.each(
                 b,
-                a.proxy(function(a, b) {
+                a.proxy(function (a, b) {
                     this._supress[b] = !0;
                 }, this)
             );
         }),
-        (e.prototype.release = function(b) {
+        (e.prototype.release = function (b) {
             a.each(
                 b,
-                a.proxy(function(a, b) {
+                a.proxy(function (a, b) {
                     delete this._supress[b];
                 }, this)
             );
         }),
-        (e.prototype.pointer = function(a) {
+        (e.prototype.pointer = function (a) {
             var c = { x: null, y: null };
             return (
                 (a = a.originalEvent || a || b.event),
@@ -1383,15 +1376,15 @@
                 c
             );
         }),
-        (e.prototype.isNumeric = function(a) {
+        (e.prototype.isNumeric = function (a) {
             return !isNaN(parseFloat(a));
         }),
-        (e.prototype.difference = function(a, b) {
+        (e.prototype.difference = function (a, b) {
             return { x: a.x - b.x, y: a.y - b.y };
         }),
-        (a.fn.owlCarousel = function(b) {
+        (a.fn.owlCarousel = function (b) {
             var c = Array.prototype.slice.call(arguments, 1);
-            return this.each(function() {
+            return this.each(function () {
                 var d = a(this),
                     f = d.data("owl.carousel");
                 f ||
@@ -1408,11 +1401,11 @@
                             "add",
                             "remove",
                         ],
-                        function(b, c) {
+                        function (b, c) {
                             f.register({ type: e.Type.Event, name: c }),
                                 f.$element.on(
                                     c + ".owl.carousel.core",
-                                    a.proxy(function(a) {
+                                    a.proxy(function (a) {
                                         a.namespace &&
                                             a.relatedTarget !== this &&
                                             (this.suppress([c]),
@@ -1432,13 +1425,13 @@
         }),
         (a.fn.owlCarousel.Constructor = e);
 })(window.Zepto || window.jQuery, window, document),
-    (function(a, b, c, d) {
-        var e = function(b) {
+    (function (a, b, c, d) {
+        var e = function (b) {
             (this._core = b),
                 (this._interval = null),
                 (this._visible = null),
                 (this._handlers = {
-                    "initialized.owl.carousel": a.proxy(function(a) {
+                    "initialized.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this._core.settings.autoRefresh &&
                             this.watch();
@@ -1452,7 +1445,7 @@
                 this._core.$element.on(this._handlers);
         };
         (e.Defaults = { autoRefresh: !0, autoRefreshInterval: 500 }),
-            (e.prototype.watch = function() {
+            (e.prototype.watch = function () {
                 this._interval ||
                     ((this._visible = this._core.$element.is(":visible")),
                     (this._interval = b.setInterval(
@@ -1460,7 +1453,7 @@
                         this._core.settings.autoRefreshInterval
                     )));
             }),
-            (e.prototype.refresh = function() {
+            (e.prototype.refresh = function () {
                 this._core.$element.is(":visible") !== this._visible &&
                     ((this._visible = !this._visible),
                     this._core.$element.toggleClass(
@@ -1471,7 +1464,7 @@
                         this._core.invalidate("width") &&
                         this._core.refresh());
             }),
-            (e.prototype.destroy = function() {
+            (e.prototype.destroy = function () {
                 var a, c;
                 b.clearInterval(this._interval);
                 for (a in this._handlers)
@@ -1481,13 +1474,13 @@
             }),
             (a.fn.owlCarousel.Constructor.Plugins.AutoRefresh = e);
     })(window.Zepto || window.jQuery, window, document),
-    (function(a, b, c, d) {
-        var e = function(b) {
+    (function (a, b, c, d) {
+        var e = function (b) {
             (this._core = b),
                 (this._loaded = []),
                 (this._handlers = {
                     "initialized.owl.carousel change.owl.carousel resized.owl.carousel": a.proxy(
-                        function(b) {
+                        function (b) {
                             if (
                                 b.namespace &&
                                 this._core.settings &&
@@ -1509,7 +1502,7 @@
                                                 ? b.property.value
                                                 : this._core.current()) + f,
                                         h = this._core.clones().length,
-                                        i = a.proxy(function(a, b) {
+                                        i = a.proxy(function (a, b) {
                                             this.load(b);
                                         }, this);
                                     f++ < e;
@@ -1536,13 +1529,13 @@
                 this._core.$element.on(this._handlers);
         };
         (e.Defaults = { lazyLoad: !1 }),
-            (e.prototype.load = function(c) {
+            (e.prototype.load = function (c) {
                 var d = this._core.$stage.children().eq(c),
                     e = d && d.find(".owl-lazy");
                 !e ||
                     a.inArray(d.get(0), this._loaded) > -1 ||
                     (e.each(
-                        a.proxy(function(c, d) {
+                        a.proxy(function (c, d) {
                             var e,
                                 f = a(d),
                                 g =
@@ -1558,7 +1551,7 @@
                                     ? f
                                           .one(
                                               "load.owl.lazy",
-                                              a.proxy(function() {
+                                              a.proxy(function () {
                                                   f.css("opacity", 1),
                                                       this._core.trigger(
                                                           "loaded",
@@ -1572,7 +1565,7 @@
                                           )
                                           .attr("src", g)
                                     : ((e = new Image()),
-                                      (e.onload = a.proxy(function() {
+                                      (e.onload = a.proxy(function () {
                                           f.css({
                                               "background-image":
                                                   'url("' + g + '")',
@@ -1589,7 +1582,7 @@
                     ),
                     this._loaded.push(d.get(0)));
             }),
-            (e.prototype.destroy = function() {
+            (e.prototype.destroy = function () {
                 var a, b;
                 for (a in this.handlers)
                     this._core.$element.off(a, this.handlers[a]);
@@ -1598,25 +1591,25 @@
             }),
             (a.fn.owlCarousel.Constructor.Plugins.Lazy = e);
     })(window.Zepto || window.jQuery, window, document),
-    (function(a, b, c, d) {
-        var e = function(b) {
+    (function (a, b, c, d) {
+        var e = function (b) {
             (this._core = b),
                 (this._handlers = {
                     "initialized.owl.carousel refreshed.owl.carousel": a.proxy(
-                        function(a) {
+                        function (a) {
                             a.namespace &&
                                 this._core.settings.autoHeight &&
                                 this.update();
                         },
                         this
                     ),
-                    "changed.owl.carousel": a.proxy(function(a) {
+                    "changed.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this._core.settings.autoHeight &&
                             "position" == a.property.name &&
                             this.update();
                     }, this),
-                    "loaded.owl.lazy": a.proxy(function(a) {
+                    "loaded.owl.lazy": a.proxy(function (a) {
                         a.namespace &&
                             this._core.settings.autoHeight &&
                             a.element
@@ -1633,16 +1626,13 @@
                 this._core.$element.on(this._handlers);
         };
         (e.Defaults = { autoHeight: !1, autoHeightClass: "owl-height" }),
-            (e.prototype.update = function() {
+            (e.prototype.update = function () {
                 var b = this._core._current,
                     c = b + this._core.settings.items,
-                    d = this._core.$stage
-                        .children()
-                        .toArray()
-                        .slice(b, c),
+                    d = this._core.$stage.children().toArray().slice(b, c),
                     e = [],
                     f = 0;
-                a.each(d, function(b, c) {
+                a.each(d, function (b, c) {
                     e.push(a(c).height());
                 }),
                     (f = Math.max.apply(null, e)),
@@ -1651,7 +1641,7 @@
                         .height(f)
                         .addClass(this._core.settings.autoHeightClass);
             }),
-            (e.prototype.destroy = function() {
+            (e.prototype.destroy = function () {
                 var a, b;
                 for (a in this._handlers)
                     this._core.$element.off(a, this._handlers[a]);
@@ -1660,13 +1650,13 @@
             }),
             (a.fn.owlCarousel.Constructor.Plugins.AutoHeight = e);
     })(window.Zepto || window.jQuery, window, document),
-    (function(a, b, c, d) {
-        var e = function(b) {
+    (function (a, b, c, d) {
+        var e = function (b) {
             (this._core = b),
                 (this._videos = {}),
                 (this._playing = null),
                 (this._handlers = {
-                    "initialized.owl.carousel": a.proxy(function(a) {
+                    "initialized.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this._core.register({
                                 type: "state",
@@ -1674,26 +1664,26 @@
                                 tags: ["interacting"],
                             });
                     }, this),
-                    "resize.owl.carousel": a.proxy(function(a) {
+                    "resize.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this._core.settings.video &&
                             this.isInFullScreen() &&
                             a.preventDefault();
                     }, this),
-                    "refreshed.owl.carousel": a.proxy(function(a) {
+                    "refreshed.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this._core.is("resizing") &&
                             this._core.$stage
                                 .find(".cloned .owl-video-frame")
                                 .remove();
                     }, this),
-                    "changed.owl.carousel": a.proxy(function(a) {
+                    "changed.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             "position" === a.property.name &&
                             this._playing &&
                             this.stop();
                     }, this),
-                    "prepared.owl.carousel": a.proxy(function(b) {
+                    "prepared.owl.carousel": a.proxy(function (b) {
                         if (b.namespace) {
                             var c = a(b.content).find(".owl-video");
                             c.length &&
@@ -1711,14 +1701,14 @@
                 this._core.$element.on(
                     "click.owl.video",
                     ".owl-video-play-icon",
-                    a.proxy(function(a) {
+                    a.proxy(function (a) {
                         this.play(a);
                     }, this)
                 );
         };
         (e.Defaults = { video: !1, videoHeight: !1, videoWidth: !1 }),
-            (e.prototype.fetch = function(a, b) {
-                var c = (function() {
+            (e.prototype.fetch = function (a, b) {
+                var c = (function () {
                         return a.attr("data-vimeo-id")
                             ? "vimeo"
                             : a.attr("data-vzaar-id")
@@ -1753,7 +1743,7 @@
                     b.attr("data-video", g),
                     this.thumbnail(a, this._videos[g]);
             }),
-            (e.prototype.thumbnail = function(b, c) {
+            (e.prototype.thumbnail = function (b, c) {
                 var d,
                     e,
                     f,
@@ -1769,7 +1759,7 @@
                     i = "src",
                     j = "",
                     k = this._core.settings,
-                    l = function(a) {
+                    l = function (a) {
                         (e = '<div class="owl-video-play-icon"></div>'),
                             (d = k.lazyLoad
                                 ? '<div class="owl-video-tn ' +
@@ -1801,7 +1791,7 @@
                           url: "//vimeo.com/api/v2/video/" + c.id + ".json",
                           jsonp: "callback",
                           dataType: "jsonp",
-                          success: function(a) {
+                          success: function (a) {
                               (f = a[0].thumbnail_large), l(f);
                           },
                       })
@@ -1811,12 +1801,12 @@
                           url: "//vzaar.com/api/videos/" + c.id + ".json",
                           jsonp: "callback",
                           dataType: "jsonp",
-                          success: function(a) {
+                          success: function (a) {
                               (f = a.framegrab_url), l(f);
                           },
                       });
             }),
-            (e.prototype.stop = function() {
+            (e.prototype.stop = function () {
                 this._core.trigger("stop", null, "video"),
                     this._playing.find(".owl-video-frame").remove(),
                     this._playing.removeClass("owl-video-playing"),
@@ -1824,7 +1814,7 @@
                     this._core.leave("playing"),
                     this._core.trigger("stopped", null, "video");
             }),
-            (e.prototype.play = function(b) {
+            (e.prototype.play = function (b) {
                 var c,
                     d = a(b.target),
                     e = d.closest("." + this._core.settings.itemClass),
@@ -1870,19 +1860,14 @@
                     ).insertAfter(e.find(".owl-video")),
                     (this._playing = e.addClass("owl-video-playing")));
             }),
-            (e.prototype.isInFullScreen = function() {
+            (e.prototype.isInFullScreen = function () {
                 var b =
                     c.fullscreenElement ||
                     c.mozFullScreenElement ||
                     c.webkitFullscreenElement;
-                return (
-                    b &&
-                    a(b)
-                        .parent()
-                        .hasClass("owl-video-frame")
-                );
+                return b && a(b).parent().hasClass("owl-video-frame");
             }),
-            (e.prototype.destroy = function() {
+            (e.prototype.destroy = function () {
                 var a, b;
                 this._core.$element.off("click.owl.video");
                 for (a in this._handlers)
@@ -1892,8 +1877,8 @@
             }),
             (a.fn.owlCarousel.Constructor.Plugins.Video = e);
     })(window.Zepto || window.jQuery, window, document),
-    (function(a, b, c, d) {
-        var e = function(b) {
+    (function (a, b, c, d) {
+        var e = function (b) {
             (this.core = b),
                 (this.core.options = a.extend(
                     {},
@@ -1904,20 +1889,20 @@
                 (this.previous = d),
                 (this.next = d),
                 (this.handlers = {
-                    "change.owl.carousel": a.proxy(function(a) {
+                    "change.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             "position" == a.property.name &&
                             ((this.previous = this.core.current()),
                             (this.next = a.property.value));
                     }, this),
                     "drag.owl.carousel dragged.owl.carousel translated.owl.carousel": a.proxy(
-                        function(a) {
+                        function (a) {
                             a.namespace &&
                                 (this.swapping = "translated" == a.type);
                         },
                         this
                     ),
-                    "translate.owl.carousel": a.proxy(function(a) {
+                    "translate.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this.swapping &&
                             (this.core.options.animateOut ||
@@ -1928,7 +1913,7 @@
                 this.core.$element.on(this.handlers);
         };
         (e.Defaults = { animateOut: !1, animateIn: !1 }),
-            (e.prototype.swap = function() {
+            (e.prototype.swap = function () {
                 if (
                     1 === this.core.settings.items &&
                     a.support.animation &&
@@ -1958,7 +1943,7 @@
                                 .addClass(f));
                 }
             }),
-            (e.prototype.clear = function(b) {
+            (e.prototype.clear = function (b) {
                 a(b.target)
                     .css({ left: "" })
                     .removeClass("animated owl-animated-out owl-animated-in")
@@ -1966,7 +1951,7 @@
                     .removeClass(this.core.settings.animateOut),
                     this.core.onTransitionEnd();
             }),
-            (e.prototype.destroy = function() {
+            (e.prototype.destroy = function () {
                 var a, b;
                 for (a in this.handlers)
                     this.core.$element.off(a, this.handlers[a]);
@@ -1975,13 +1960,13 @@
             }),
             (a.fn.owlCarousel.Constructor.Plugins.Animate = e);
     })(window.Zepto || window.jQuery, window, document),
-    (function(a, b, c, d) {
-        var e = function(b) {
+    (function (a, b, c, d) {
+        var e = function (b) {
             (this._core = b),
                 (this._timeout = null),
                 (this._paused = !1),
                 (this._handlers = {
-                    "changed.owl.carousel": a.proxy(function(a) {
+                    "changed.owl.carousel": a.proxy(function (a) {
                         a.namespace && "settings" === a.property.name
                             ? this._core.settings.autoplay
                                 ? this.play()
@@ -1991,33 +1976,33 @@
                               this._core.settings.autoplay &&
                               this._setAutoPlayInterval();
                     }, this),
-                    "initialized.owl.carousel": a.proxy(function(a) {
+                    "initialized.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this._core.settings.autoplay &&
                             this.play();
                     }, this),
-                    "play.owl.autoplay": a.proxy(function(a, b, c) {
+                    "play.owl.autoplay": a.proxy(function (a, b, c) {
                         a.namespace && this.play(b, c);
                     }, this),
-                    "stop.owl.autoplay": a.proxy(function(a) {
+                    "stop.owl.autoplay": a.proxy(function (a) {
                         a.namespace && this.stop();
                     }, this),
-                    "mouseover.owl.autoplay": a.proxy(function() {
+                    "mouseover.owl.autoplay": a.proxy(function () {
                         this._core.settings.autoplayHoverPause &&
                             this._core.is("rotating") &&
                             this.pause();
                     }, this),
-                    "mouseleave.owl.autoplay": a.proxy(function() {
+                    "mouseleave.owl.autoplay": a.proxy(function () {
                         this._core.settings.autoplayHoverPause &&
                             this._core.is("rotating") &&
                             this.play();
                     }, this),
-                    "touchstart.owl.core": a.proxy(function() {
+                    "touchstart.owl.core": a.proxy(function () {
                         this._core.settings.autoplayHoverPause &&
                             this._core.is("rotating") &&
                             this.pause();
                     }, this),
-                    "touchend.owl.core": a.proxy(function() {
+                    "touchend.owl.core": a.proxy(function () {
                         this._core.settings.autoplayHoverPause && this.play();
                     }, this),
                 }),
@@ -2034,17 +2019,17 @@
             autoplayHoverPause: !1,
             autoplaySpeed: !1,
         }),
-            (e.prototype.play = function(a, b) {
+            (e.prototype.play = function (a, b) {
                 (this._paused = !1),
                     this._core.is("rotating") ||
                         (this._core.enter("rotating"),
                         this._setAutoPlayInterval());
             }),
-            (e.prototype._getNextTimeout = function(d, e) {
+            (e.prototype._getNextTimeout = function (d, e) {
                 return (
                     this._timeout && b.clearTimeout(this._timeout),
                     b.setTimeout(
-                        a.proxy(function() {
+                        a.proxy(function () {
                             this._paused ||
                                 this._core.is("busy") ||
                                 this._core.is("interacting") ||
@@ -2057,18 +2042,18 @@
                     )
                 );
             }),
-            (e.prototype._setAutoPlayInterval = function() {
+            (e.prototype._setAutoPlayInterval = function () {
                 this._timeout = this._getNextTimeout();
             }),
-            (e.prototype.stop = function() {
+            (e.prototype.stop = function () {
                 this._core.is("rotating") &&
                     (b.clearTimeout(this._timeout),
                     this._core.leave("rotating"));
             }),
-            (e.prototype.pause = function() {
+            (e.prototype.pause = function () {
                 this._core.is("rotating") && (this._paused = !0);
             }),
-            (e.prototype.destroy = function() {
+            (e.prototype.destroy = function () {
                 var a, b;
                 this.stop();
                 for (a in this._handlers)
@@ -2078,9 +2063,9 @@
             }),
             (a.fn.owlCarousel.Constructor.Plugins.autoplay = e);
     })(window.Zepto || window.jQuery, window, document),
-    (function(a, b, c, d) {
+    (function (a, b, c, d) {
         "use strict";
-        var e = function(b) {
+        var e = function (b) {
             (this._core = b),
                 (this._initialized = !1),
                 (this._pages = []),
@@ -2093,7 +2078,7 @@
                     to: this._core.to,
                 }),
                 (this._handlers = {
-                    "prepared.owl.carousel": a.proxy(function(b) {
+                    "prepared.owl.carousel": a.proxy(function (b) {
                         b.namespace &&
                             this._core.settings.dotsData &&
                             this._templates.push(
@@ -2107,7 +2092,7 @@
                                     "</div>"
                             );
                     }, this),
-                    "added.owl.carousel": a.proxy(function(a) {
+                    "added.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this._core.settings.dotsData &&
                             this._templates.splice(
@@ -2116,17 +2101,17 @@
                                 this._templates.pop()
                             );
                     }, this),
-                    "remove.owl.carousel": a.proxy(function(a) {
+                    "remove.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this._core.settings.dotsData &&
                             this._templates.splice(a.position, 1);
                     }, this),
-                    "changed.owl.carousel": a.proxy(function(a) {
+                    "changed.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             "position" == a.property.name &&
                             this.draw();
                     }, this),
-                    "initialized.owl.carousel": a.proxy(function(a) {
+                    "initialized.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             !this._initialized &&
                             (this._core.trigger(
@@ -2144,7 +2129,7 @@
                                 "navigation"
                             ));
                     }, this),
-                    "refreshed.owl.carousel": a.proxy(function(a) {
+                    "refreshed.owl.carousel": a.proxy(function (a) {
                         a.namespace &&
                             this._initialized &&
                             (this._core.trigger("refresh", null, "navigation"),
@@ -2181,7 +2166,7 @@
             dotsSpeed: !1,
             dotsContainer: !1,
         }),
-            (e.prototype.initialize = function() {
+            (e.prototype.initialize = function () {
                 var b,
                     c = this._core.settings;
                 (this._controls.$relative = (c.navContainer
@@ -2196,7 +2181,7 @@
                         .prependTo(this._controls.$relative)
                         .on(
                             "click",
-                            a.proxy(function(a) {
+                            a.proxy(function (a) {
                                 this.prev(c.navSpeed);
                             }, this)
                         )),
@@ -2206,7 +2191,7 @@
                         .appendTo(this._controls.$relative)
                         .on(
                             "click",
-                            a.proxy(function(a) {
+                            a.proxy(function (a) {
                                 this.next(c.navSpeed);
                             }, this)
                         )),
@@ -2226,21 +2211,19 @@
                     this._controls.$absolute.on(
                         "click",
                         "div",
-                        a.proxy(function(b) {
+                        a.proxy(function (b) {
                             var d = a(b.target)
                                 .parent()
                                 .is(this._controls.$absolute)
                                 ? a(b.target).index()
-                                : a(b.target)
-                                      .parent()
-                                      .index();
+                                : a(b.target).parent().index();
                             b.preventDefault(), this.to(d, c.dotsSpeed);
                         }, this)
                     );
                 for (b in this._overrides)
                     this._core[b] = a.proxy(this[b], this);
             }),
-            (e.prototype.destroy = function() {
+            (e.prototype.destroy = function () {
                 var a, b, c, d;
                 for (a in this._handlers)
                     this.$element.off(a, this._handlers[a]);
@@ -2249,7 +2232,7 @@
                 for (c in Object.getOwnPropertyNames(this))
                     "function" != typeof this[c] && (this[c] = null);
             }),
-            (e.prototype.update = function() {
+            (e.prototype.update = function () {
                 var a,
                     b,
                     c,
@@ -2281,7 +2264,7 @@
                         b += this._core.mergers(this._core.relative(a));
                     }
             }),
-            (e.prototype.draw = function() {
+            (e.prototype.draw = function () {
                 var b,
                     c = this._core.settings,
                     d = this._core.items().length <= c.items,
@@ -2326,7 +2309,7 @@
                             .eq(a.inArray(this.current(), this._pages))
                             .addClass("active"));
             }),
-            (e.prototype.onTrigger = function(b) {
+            (e.prototype.onTrigger = function (b) {
                 var c = this._core.settings;
                 b.page = {
                     index: a.inArray(this.current(), this._pages),
@@ -2338,18 +2321,18 @@
                             : c.dotsEach || c.items),
                 };
             }),
-            (e.prototype.current = function() {
+            (e.prototype.current = function () {
                 var b = this._core.relative(this._core.current());
                 return a
                     .grep(
                         this._pages,
-                        a.proxy(function(a, c) {
+                        a.proxy(function (a, c) {
                             return a.start <= b && a.end >= b;
                         }, this)
                     )
                     .pop();
             }),
-            (e.prototype.getPosition = function(b) {
+            (e.prototype.getPosition = function (b) {
                 var c,
                     d,
                     e = this._core.settings;
@@ -2365,19 +2348,19 @@
                     c
                 );
             }),
-            (e.prototype.next = function(b) {
+            (e.prototype.next = function (b) {
                 a.proxy(this._overrides.to, this._core)(
                     this.getPosition(!0),
                     b
                 );
             }),
-            (e.prototype.prev = function(b) {
+            (e.prototype.prev = function (b) {
                 a.proxy(this._overrides.to, this._core)(
                     this.getPosition(!1),
                     b
                 );
             }),
-            (e.prototype.to = function(b, c, d) {
+            (e.prototype.to = function (b, c, d) {
                 var e;
                 !d && this._pages.length
                     ? ((e = this._pages.length),
@@ -2389,19 +2372,19 @@
             }),
             (a.fn.owlCarousel.Constructor.Plugins.Navigation = e);
     })(window.Zepto || window.jQuery, window, document),
-    (function(a, b, c, d) {
+    (function (a, b, c, d) {
         "use strict";
-        var e = function(c) {
+        var e = function (c) {
             (this._core = c),
                 (this._hashes = {}),
                 (this.$element = this._core.$element),
                 (this._handlers = {
-                    "initialized.owl.carousel": a.proxy(function(c) {
+                    "initialized.owl.carousel": a.proxy(function (c) {
                         c.namespace &&
                             "URLHash" === this._core.settings.startPosition &&
                             a(b).trigger("hashchange.owl.navigation");
                     }, this),
-                    "prepared.owl.carousel": a.proxy(function(b) {
+                    "prepared.owl.carousel": a.proxy(function (b) {
                         if (b.namespace) {
                             var c = a(b.content)
                                 .find("[data-hash]")
@@ -2411,13 +2394,13 @@
                             this._hashes[c] = b.content;
                         }
                     }, this),
-                    "changed.owl.carousel": a.proxy(function(c) {
+                    "changed.owl.carousel": a.proxy(function (c) {
                         if (c.namespace && "position" === c.property.name) {
                             var d = this._core.items(
                                     this._core.relative(this._core.current())
                                 ),
                                 e = a
-                                    .map(this._hashes, function(a, b) {
+                                    .map(this._hashes, function (a, b) {
                                         return a === d ? b : null;
                                     })
                                     .join();
@@ -2434,7 +2417,7 @@
                 this.$element.on(this._handlers),
                 a(b).on(
                     "hashchange.owl.navigation",
-                    a.proxy(function(a) {
+                    a.proxy(function (a) {
                         var c = b.location.hash.substring(1),
                             e = this._core.$stage.children(),
                             f = this._hashes[c] && e.index(this._hashes[c]);
@@ -2445,7 +2428,7 @@
                 );
         };
         (e.Defaults = { URLhashListener: !1 }),
-            (e.prototype.destroy = function() {
+            (e.prototype.destroy = function () {
                 var c, d;
                 a(b).off("hashchange.owl.navigation");
                 for (c in this._handlers)
@@ -2455,17 +2438,17 @@
             }),
             (a.fn.owlCarousel.Constructor.Plugins.Hash = e);
     })(window.Zepto || window.jQuery, window, document),
-    (function(a, b, c, d) {
+    (function (a, b, c, d) {
         function e(b, c) {
             var e = !1,
                 f = b.charAt(0).toUpperCase() + b.slice(1);
             return (
-                a.each((b + " " + h.join(f + " ") + f).split(" "), function(
-                    a,
-                    b
-                ) {
-                    if (g[b] !== d) return (e = !c || b), !1;
-                }),
+                a.each(
+                    (b + " " + h.join(f + " ") + f).split(" "),
+                    function (a, b) {
+                        if (g[b] !== d) return (e = !c || b), !1;
+                    }
+                ),
                 e
             );
         }
@@ -2493,16 +2476,16 @@
                 },
             },
             j = {
-                csstransforms: function() {
+                csstransforms: function () {
                     return !!e("transform");
                 },
-                csstransforms3d: function() {
+                csstransforms3d: function () {
                     return !!e("perspective");
                 },
-                csstransitions: function() {
+                csstransitions: function () {
                     return !!e("transition");
                 },
-                cssanimations: function() {
+                cssanimations: function () {
                     return !!e("animation");
                 },
             };
@@ -2522,7 +2505,7 @@
 /*! Magnific Popup - v1.1.0 - 2016-02-20
  * http://dimsemenov.com/plugins/magnific-popup/
  * Copyright (c) 2016 Dmitry Semenov; */
-!(function(a) {
+!(function (a) {
     "function" == typeof define && define.amd
         ? define(["jquery"], a)
         : a(
@@ -2530,7 +2513,7 @@
                   ? require("jquery")
                   : window.jQuery || window.Zepto
           );
-})(function(a) {
+})(function (a) {
     var b,
         c,
         d,
@@ -2549,13 +2532,13 @@
         q = "mfp-ready",
         r = "mfp-removing",
         s = "mfp-prevent-close",
-        t = function() {},
+        t = function () {},
         u = !!window.jQuery,
         v = a(window),
-        w = function(a, c) {
+        w = function (a, c) {
             b.ev.on(o + a + p, c);
         },
-        x = function(b, c, d, e) {
+        x = function (b, c, d, e) {
             var f = document.createElement("div");
             return (
                 (f.className = "mfp-" + b),
@@ -2564,14 +2547,14 @@
                 f
             );
         },
-        y = function(c, d) {
+        y = function (c, d) {
             b.ev.triggerHandler(o + c, d),
                 b.st.callbacks &&
                     ((c = c.charAt(0).toLowerCase() + c.slice(1)),
                     b.st.callbacks[c] &&
                         b.st.callbacks[c].apply(b, a.isArray(d) ? d : [d]));
         },
-        z = function(c) {
+        z = function (c) {
             return (
                 (c === g && b.currTemplate.closeBtn) ||
                     ((b.currTemplate.closeBtn = a(
@@ -2581,11 +2564,11 @@
                 b.currTemplate.closeBtn
             );
         },
-        A = function() {
+        A = function () {
             a.magnificPopup.instance ||
                 ((b = new t()), b.init(), (a.magnificPopup.instance = b));
         },
-        B = function() {
+        B = function () {
             var a = document.createElement("p").style,
                 b = ["ms", "O", "Moz", "Webkit"];
             if (void 0 !== a.transition) return !0;
@@ -2594,7 +2577,7 @@
         };
     (t.prototype = {
         constructor: t,
-        init: function() {
+        init: function () {
             var c = navigator.appVersion;
             (b.isLowIE = b.isIE8 = document.all && !document.addEventListener),
                 (b.isAndroid = /android/gi.test(c)),
@@ -2609,7 +2592,7 @@
                 (d = a(document)),
                 (b.popupsCache = {});
         },
-        open: function(c) {
+        open: function (c) {
             var e;
             if (c.isObj === !1) {
                 (b.items = c.items.toArray()), (b.index = 0);
@@ -2646,12 +2629,12 @@
                     (b.st.showCloseBtn = !1),
                     (b.st.enableEscapeKey = !1)),
                 b.bgOverlay ||
-                    ((b.bgOverlay = x("bg").on("click" + p, function() {
+                    ((b.bgOverlay = x("bg").on("click" + p, function () {
                         b.close();
                     })),
                     (b.wrap = x("wrap")
                         .attr("tabindex", -1)
-                        .on("click" + p, function(a) {
+                        .on("click" + p, function (a) {
                             b._checkIfClose(a.target) && b.close();
                         })),
                     (b.container = x("container", b.wrap))),
@@ -2667,7 +2650,7 @@
             y("BeforeOpen"),
                 b.st.showCloseBtn &&
                     (b.st.closeBtnInside
-                        ? (w(l, function(a, b, c, d) {
+                        ? (w(l, function (a, b, c, d) {
                               c.close_replaceWith = z(d.type);
                           }),
                           (f += " mfp-close-btn-in"))
@@ -2687,10 +2670,10 @@
                         position: "absolute",
                     }),
                 b.st.enableEscapeKey &&
-                    d.on("keyup" + p, function(a) {
+                    d.on("keyup" + p, function (a) {
                         27 === a.keyCode && b.close();
                     }),
-                v.on("resize" + p, function() {
+                v.on("resize" + p, function () {
                     b.updateSize();
                 }),
                 b.st.closeOnContentClick || (f += " mfp-auto-cursor"),
@@ -2716,7 +2699,7 @@
                     .add(b.wrap)
                     .prependTo(b.st.prependTo || a(document.body)),
                 (b._lastFocusedEl = document.activeElement),
-                setTimeout(function() {
+                setTimeout(function () {
                     b.content
                         ? (b._addClassToMFP(q), b._setFocus())
                         : b.bgOverlay.addClass(q),
@@ -2728,18 +2711,18 @@
                 c
             );
         },
-        close: function() {
+        close: function () {
             b.isOpen &&
                 (y(i),
                 (b.isOpen = !1),
                 b.st.removalDelay && !b.isLowIE && b.supportsTransition
                     ? (b._addClassToMFP(r),
-                      setTimeout(function() {
+                      setTimeout(function () {
                           b._close();
                       }, b.st.removalDelay))
                     : b._close());
         },
-        _close: function() {
+        _close: function () {
             y(h);
             var c = r + " " + q + " ";
             if (
@@ -2775,7 +2758,7 @@
                 (b.prevHeight = 0),
                 y(j);
         },
-        updateSize: function(a) {
+        updateSize: function (a) {
             if (b.isIOS) {
                 var c =
                         document.documentElement.clientWidth /
@@ -2785,7 +2768,7 @@
             } else b.wH = a || v.height();
             b.fixedContentPos || b.wrap.css("height", b.wH), y("Resize");
         },
-        updateItemHTML: function() {
+        updateItemHTML: function () {
             var c = b.items[b.index];
             b.contentContainer.detach(),
                 b.content && b.content.detach(),
@@ -2814,7 +2797,7 @@
                 b.container.prepend(b.contentContainer),
                 y("AfterChange");
         },
-        appendContent: function(a, c) {
+        appendContent: function (a, c) {
             (b.content = a),
                 a
                     ? b.st.showCloseBtn &&
@@ -2828,7 +2811,7 @@
                 b.container.addClass("mfp-" + c + "-holder"),
                 b.contentContainer.append(b.content);
         },
-        parseEl: function(c) {
+        parseEl: function (c) {
             var d,
                 e = b.items[c];
             if (
@@ -2854,8 +2837,8 @@
                 b.items[c]
             );
         },
-        addGroup: function(a, c) {
-            var d = function(d) {
+        addGroup: function (a, c) {
+            var d = function (d) {
                 (d.mfpEl = this), b._openClick(d, a, c);
             };
             c || (c = {});
@@ -2868,7 +2851,7 @@
                           ? a.off(e).on(e, c.delegate, d)
                           : ((c.items = a), a.off(e).on(e, d)));
         },
-        _openClick: function(c, d, e) {
+        _openClick: function (c, d, e) {
             var f =
                 void 0 !== e.midClick
                     ? e.midClick
@@ -2897,7 +2880,7 @@
                     b.open(e);
             }
         },
-        updateStatus: function(a, d) {
+        updateStatus: function (a, d) {
             if (b.preloader) {
                 c !== a && b.container.removeClass("mfp-s-" + c),
                     d || "loading" !== a || (d = b.st.tLoading);
@@ -2906,14 +2889,14 @@
                     (a = e.status),
                     (d = e.text),
                     b.preloader.html(d),
-                    b.preloader.find("a").on("click", function(a) {
+                    b.preloader.find("a").on("click", function (a) {
                         a.stopImmediatePropagation();
                     }),
                     b.container.addClass("mfp-s-" + a),
                     (c = a);
             }
         },
-        _checkIfClose: function(c) {
+        _checkIfClose: function (c) {
             if (!a(c).hasClass(s)) {
                 var d = b.st.closeOnContentClick,
                     e = b.st.closeOnBgClick;
@@ -2930,31 +2913,31 @@
                 return !1;
             }
         },
-        _addClassToMFP: function(a) {
+        _addClassToMFP: function (a) {
             b.bgOverlay.addClass(a), b.wrap.addClass(a);
         },
-        _removeClassFromMFP: function(a) {
+        _removeClassFromMFP: function (a) {
             this.bgOverlay.removeClass(a), b.wrap.removeClass(a);
         },
-        _hasScrollBar: function(a) {
+        _hasScrollBar: function (a) {
             return (
                 (b.isIE7 ? d.height() : document.body.scrollHeight) >
                 (a || v.height())
             );
         },
-        _setFocus: function() {
+        _setFocus: function () {
             (b.st.focus ? b.content.find(b.st.focus).eq(0) : b.wrap).focus();
         },
-        _onFocusIn: function(c) {
+        _onFocusIn: function (c) {
             return c.target === b.wrap[0] || a.contains(b.wrap[0], c.target)
                 ? void 0
                 : (b._setFocus(), !1);
         },
-        _parseMarkup: function(b, c, d) {
+        _parseMarkup: function (b, c, d) {
             var e;
             d.data && (c = a.extend(d.data, c)),
                 y(l, [b, c, d]),
-                a.each(c, function(c, d) {
+                a.each(c, function (c, d) {
                     if (void 0 === d || d === !1) return !0;
                     if (((e = c.split("_")), e.length > 1)) {
                         var f = b.find(p + "-" + e[0]);
@@ -2975,7 +2958,7 @@
                     } else b.find(p + "-" + c).html(d);
                 });
         },
-        _getScrollbarSize: function() {
+        _getScrollbarSize: function () {
             if (void 0 === b.scrollbarSize) {
                 var a = document.createElement("div");
                 (a.style.cssText =
@@ -2991,7 +2974,7 @@
             instance: null,
             proto: t.prototype,
             modules: [],
-            open: function(b, c) {
+            open: function (b, c) {
                 return (
                     A(),
                     (b = b ? a.extend(!0, {}, b) : {}),
@@ -3000,12 +2983,12 @@
                     this.instance.open(b)
                 );
             },
-            close: function() {
+            close: function () {
                 return (
                     a.magnificPopup.instance && a.magnificPopup.instance.close()
                 );
             },
-            registerModule: function(b, c) {
+            registerModule: function (b, c) {
                 c.options && (a.magnificPopup.defaults[b] = c.options),
                     a.extend(this.proto, c.proto),
                     this.modules.push(b);
@@ -3036,7 +3019,7 @@
                 autoFocusLast: !0,
             },
         }),
-        (a.fn.magnificPopup = function(c) {
+        (a.fn.magnificPopup = function (c) {
             A();
             var d = a(this);
             if ("string" == typeof c)
@@ -3063,7 +3046,7 @@
         D,
         E,
         F = "inline",
-        G = function() {
+        G = function () {
             E && (D.after(E.addClass(C)).detach(), (E = null));
         };
     a.magnificPopup.registerModule(F, {
@@ -3073,13 +3056,13 @@
             tNotFound: "Content not found",
         },
         proto: {
-            initInline: function() {
+            initInline: function () {
                 b.types.push(F),
-                    w(h + "." + F, function() {
+                    w(h + "." + F, function () {
                         G();
                     });
             },
-            getInline: function(c, d) {
+            getInline: function (c, d) {
                 if ((G(), c.src)) {
                     var e = b.st.inline,
                         f = a(c.src);
@@ -3091,10 +3074,7 @@
                                 ((C = e.hiddenClass),
                                 (D = x(C)),
                                 (C = "mfp-" + C)),
-                            (E = f
-                                .after(D)
-                                .detach()
-                                .removeClass(C))),
+                            (E = f.after(D).detach().removeClass(C))),
                             b.updateStatus("ready");
                     } else
                         b.updateStatus("error", e.tNotFound), (f = a("<div>"));
@@ -3106,10 +3086,10 @@
     });
     var H,
         I = "ajax",
-        J = function() {
+        J = function () {
             H && a(document.body).removeClass(H);
         },
-        K = function() {
+        K = function () {
             J(), b.req && b.req.abort();
         };
     a.magnificPopup.registerModule(I, {
@@ -3119,31 +3099,31 @@
             tError: '<a href="%url%">The content</a> could not be loaded.',
         },
         proto: {
-            initAjax: function() {
+            initAjax: function () {
                 b.types.push(I),
                     (H = b.st.ajax.cursor),
                     w(h + "." + I, K),
                     w("BeforeChange." + I, K);
             },
-            getAjax: function(c) {
+            getAjax: function (c) {
                 H && a(document.body).addClass(H), b.updateStatus("loading");
                 var d = a.extend(
                     {
                         url: c.src,
-                        success: function(d, e, f) {
+                        success: function (d, e, f) {
                             var g = { data: d, xhr: f };
                             y("ParseAjax", g),
                                 b.appendContent(a(g.data), I),
                                 (c.finished = !0),
                                 J(),
                                 b._setFocus(),
-                                setTimeout(function() {
+                                setTimeout(function () {
                                     b.wrap.addClass(q);
                                 }, 16),
                                 b.updateStatus("ready"),
                                 y("AjaxContentAdded");
                         },
-                        error: function() {
+                        error: function () {
                             J(),
                                 (c.finished = c.loadError = !0),
                                 b.updateStatus(
@@ -3159,7 +3139,7 @@
         },
     });
     var L,
-        M = function(c) {
+        M = function (c) {
             if (c.data && void 0 !== c.data.title) return c.data.title;
             var d = b.st.image.titleSrc;
             if (d) {
@@ -3178,23 +3158,23 @@
             tError: '<a href="%url%">The image</a> could not be loaded.',
         },
         proto: {
-            initImage: function() {
+            initImage: function () {
                 var c = b.st.image,
                     d = ".image";
                 b.types.push("image"),
-                    w(m + d, function() {
+                    w(m + d, function () {
                         "image" === b.currItem.type &&
                             c.cursor &&
                             a(document.body).addClass(c.cursor);
                     }),
-                    w(h + d, function() {
+                    w(h + d, function () {
                         c.cursor && a(document.body).removeClass(c.cursor),
                             v.off("resize" + p);
                     }),
                     w("Resize" + d, b.resizeImage),
                     b.isLowIE && w("AfterChange", b.resizeImage);
             },
-            resizeImage: function() {
+            resizeImage: function () {
                 var a = b.currItem;
                 if (a && a.img && b.st.image.verticalFit) {
                     var c = 0;
@@ -3205,7 +3185,7 @@
                         a.img.css("max-height", b.wH - c);
                 }
             },
-            _onImageHasSize: function(a) {
+            _onImageHasSize: function (a) {
                 a.img &&
                     ((a.hasSize = !0),
                     L && clearInterval(L),
@@ -3215,12 +3195,12 @@
                         (b.content && b.content.removeClass("mfp-loading"),
                         (a.imgHidden = !1)));
             },
-            findImageSize: function(a) {
+            findImageSize: function (a) {
                 var c = 0,
                     d = a.img[0],
-                    e = function(f) {
+                    e = function (f) {
                         L && clearInterval(L),
-                            (L = setInterval(function() {
+                            (L = setInterval(function () {
                                 return d.naturalWidth > 0
                                     ? void b._onImageHasSize(a)
                                     : (c > 200 && clearInterval(L),
@@ -3234,9 +3214,9 @@
                     };
                 e(1);
             },
-            getImage: function(c, d) {
+            getImage: function (c, d) {
                 var e = 0,
-                    f = function() {
+                    f = function () {
                         c &&
                             (c.img[0].complete
                                 ? (c.img.off(".mfploader"),
@@ -3248,7 +3228,7 @@
                                   y("ImageLoadComplete"))
                                 : (e++, 200 > e ? setTimeout(f, 100) : g()));
                     },
-                    g = function() {
+                    g = function () {
                         c &&
                             (c.img.off(".mfploader"),
                             c === b.currItem &&
@@ -3309,7 +3289,7 @@
         },
     });
     var N,
-        O = function() {
+        O = function () {
             return (
                 void 0 === N &&
                     (N =
@@ -3323,12 +3303,12 @@
             enabled: !1,
             easing: "ease-in-out",
             duration: 300,
-            opener: function(a) {
+            opener: function (a) {
                 return a.is("img") ? a : a.find("img");
             },
         },
         proto: {
-            initZoom: function() {
+            initZoom: function () {
                 var a,
                     c = b.st.zoom,
                     d = ".zoom";
@@ -3336,7 +3316,7 @@
                     var e,
                         f,
                         g = c.duration,
-                        j = function(a) {
+                        j = function (a) {
                             var b = a
                                     .clone()
                                     .removeAttr("style")
@@ -3359,10 +3339,10 @@
                                 b
                             );
                         },
-                        k = function() {
+                        k = function () {
                             b.content.css("visibility", "visible");
                         };
-                    w("BuildControls" + d, function() {
+                    w("BuildControls" + d, function () {
                         if (b._allowZoom()) {
                             if (
                                 (clearTimeout(e),
@@ -3374,11 +3354,11 @@
                             (f = j(a)),
                                 f.css(b._getOffset()),
                                 b.wrap.append(f),
-                                (e = setTimeout(function() {
+                                (e = setTimeout(function () {
                                     f.css(b._getOffset(!0)),
-                                        (e = setTimeout(function() {
+                                        (e = setTimeout(function () {
                                             k(),
-                                                setTimeout(function() {
+                                                setTimeout(function () {
                                                     f.remove(),
                                                         (a = f = null),
                                                         y("ZoomAnimationEnded");
@@ -3387,7 +3367,7 @@
                                 }, 16));
                         }
                     }),
-                        w(i + d, function() {
+                        w(i + d, function () {
                             if (b._allowZoom()) {
                                 if (
                                     (clearTimeout(e),
@@ -3400,24 +3380,24 @@
                                 f.css(b._getOffset(!0)),
                                     b.wrap.append(f),
                                     b.content.css("visibility", "hidden"),
-                                    setTimeout(function() {
+                                    setTimeout(function () {
                                         f.css(b._getOffset());
                                     }, 16);
                             }
                         }),
-                        w(h + d, function() {
+                        w(h + d, function () {
                             b._allowZoom() &&
                                 (k(), f && f.remove(), (a = null));
                         });
                 }
             },
-            _allowZoom: function() {
+            _allowZoom: function () {
                 return "image" === b.currItem.type;
             },
-            _getItemToZoom: function() {
+            _getItemToZoom: function () {
                 return b.currItem.hasSize ? b.currItem.img : !1;
             },
-            _getOffset: function(c) {
+            _getOffset: function (c) {
                 var d;
                 d = c
                     ? b.currItem.img
@@ -3442,7 +3422,7 @@
     });
     var P = "iframe",
         Q = "//about:blank",
-        R = function(a) {
+        R = function (a) {
             if (b.currTemplate[P]) {
                 var c = b.currTemplate[P].find("iframe");
                 c.length &&
@@ -3470,19 +3450,19 @@
             },
         },
         proto: {
-            initIframe: function() {
+            initIframe: function () {
                 b.types.push(P),
-                    w("BeforeChange", function(a, b, c) {
+                    w("BeforeChange", function (a, b, c) {
                         b !== c && (b === P ? R() : c === P && R(!0));
                     }),
-                    w(h + "." + P, function() {
+                    w(h + "." + P, function () {
                         R();
                     });
             },
-            getIframe: function(c, d) {
+            getIframe: function (c, d) {
                 var e = c.src,
                     f = b.st.iframe;
-                a.each(f.patterns, function() {
+                a.each(f.patterns, function () {
                     return e.indexOf(this.index) > -1
                         ? (this.id &&
                               (e =
@@ -3507,11 +3487,11 @@
             },
         },
     });
-    var S = function(a) {
+    var S = function (a) {
             var c = b.items.length;
             return a > c - 1 ? a - c : 0 > a ? c + a : a;
         },
-        T = function(a, b, c) {
+        T = function (a, b, c) {
             return a.replace(/%curr%/gi, b + 1).replace(/%total%/gi, c);
         };
     a.magnificPopup.registerModule("gallery", {
@@ -3527,31 +3507,31 @@
             tCounter: "%curr% of %total%",
         },
         proto: {
-            initGallery: function() {
+            initGallery: function () {
                 var c = b.st.gallery,
                     e = ".mfp-gallery";
                 return (
                     (b.direction = !0),
                     c && c.enabled
                         ? ((f += " mfp-gallery"),
-                          w(m + e, function() {
+                          w(m + e, function () {
                               c.navigateByImgClick &&
                                   b.wrap.on(
                                       "click" + e,
                                       ".mfp-img",
-                                      function() {
+                                      function () {
                                           return b.items.length > 1
                                               ? (b.next(), !1)
                                               : void 0;
                                       }
                                   ),
-                                  d.on("keydown" + e, function(a) {
+                                  d.on("keydown" + e, function (a) {
                                       37 === a.keyCode
                                           ? b.prev()
                                           : 39 === a.keyCode && b.next();
                                   });
                           }),
-                          w("UpdateStatus" + e, function(a, c) {
+                          w("UpdateStatus" + e, function (a, c) {
                               c.text &&
                                   (c.text = T(
                                       c.text,
@@ -3559,12 +3539,12 @@
                                       b.items.length
                                   ));
                           }),
-                          w(l + e, function(a, d, e, f) {
+                          w(l + e, function (a, d, e, f) {
                               var g = b.items.length;
                               e.counter =
                                   g > 1 ? T(c.tCounter, f.index, g) : "";
                           }),
-                          w("BuildControls" + e, function() {
+                          w("BuildControls" + e, function () {
                               if (
                                   b.items.length > 1 &&
                                   c.arrows &&
@@ -3581,24 +3561,24 @@
                                               .replace(/%title%/gi, c.tNext)
                                               .replace(/%dir%/gi, "right")
                                       ).addClass(s));
-                                  e.click(function() {
+                                  e.click(function () {
                                       b.prev();
                                   }),
-                                      f.click(function() {
+                                      f.click(function () {
                                           b.next();
                                       }),
                                       b.container.append(e.add(f));
                               }
                           }),
-                          w(n + e, function() {
+                          w(n + e, function () {
                               b._preloadTimeout &&
                                   clearTimeout(b._preloadTimeout),
-                                  (b._preloadTimeout = setTimeout(function() {
+                                  (b._preloadTimeout = setTimeout(function () {
                                       b.preloadNearbyImages(),
                                           (b._preloadTimeout = null);
                                   }, 16));
                           }),
-                          void w(h + e, function() {
+                          void w(h + e, function () {
                               d.off(e),
                                   b.wrap.off("click" + e),
                                   (b.arrowRight = b.arrowLeft = null);
@@ -3606,20 +3586,20 @@
                         : !1
                 );
             },
-            next: function() {
+            next: function () {
                 (b.direction = !0),
                     (b.index = S(b.index + 1)),
                     b.updateItemHTML();
             },
-            prev: function() {
+            prev: function () {
                 (b.direction = !1),
                     (b.index = S(b.index - 1)),
                     b.updateItemHTML();
             },
-            goTo: function(a) {
+            goTo: function (a) {
                 (b.direction = a >= b.index), (b.index = a), b.updateItemHTML();
             },
-            preloadNearbyImages: function() {
+            preloadNearbyImages: function () {
                 var a,
                     c = b.st.gallery.preload,
                     d = Math.min(c[0], b.items.length),
@@ -3629,17 +3609,17 @@
                 for (a = 1; a <= (b.direction ? d : e); a++)
                     b._preloadItem(b.index - a);
             },
-            _preloadItem: function(c) {
+            _preloadItem: function (c) {
                 if (((c = S(c)), !b.items[c].preloaded)) {
                     var d = b.items[c];
                     d.parsed || (d = b.parseEl(c)),
                         y("LazyLoad", d),
                         "image" === d.type &&
                             (d.img = a('<img class="mfp-img" />')
-                                .on("load.mfploader", function() {
+                                .on("load.mfploader", function () {
                                     d.hasSize = !0;
                                 })
-                                .on("error.mfploader", function() {
+                                .on("error.mfploader", function () {
                                     (d.hasSize = !0),
                                         (d.loadError = !0),
                                         y("LazyLoadError", d);
@@ -3653,27 +3633,27 @@
     var U = "retina";
     a.magnificPopup.registerModule(U, {
         options: {
-            replaceSrc: function(a) {
-                return a.src.replace(/\.\w+$/, function(a) {
+            replaceSrc: function (a) {
+                return a.src.replace(/\.\w+$/, function (a) {
                     return "@2x" + a;
                 });
             },
             ratio: 1,
         },
         proto: {
-            initRetina: function() {
+            initRetina: function () {
                 if (window.devicePixelRatio > 1) {
                     var a = b.st.retina,
                         c = a.ratio;
                     (c = isNaN(c) ? c() : c),
                         c > 1 &&
-                            (w("ImageHasSize." + U, function(a, b) {
+                            (w("ImageHasSize." + U, function (a, b) {
                                 b.img.css({
                                     "max-width": b.img[0].naturalWidth / c,
                                     width: "100%",
                                 });
                             }),
-                            w("ElementParse." + U, function(b, d) {
+                            w("ElementParse." + U, function (b, d) {
                                 d.src = a.replaceSrc(d, c);
                             }));
                 }
@@ -3689,13 +3669,13 @@
  * Copyright (c) Mark Goodyear — @markgdyr — http://markgoodyear.com
  * License: MIT
  */
-!(function(l, o, e) {
+!(function (l, o, e) {
     "use strict";
-    (l.fn.scrollUp = function(o) {
+    (l.fn.scrollUp = function (o) {
         l.data(e.body, "scrollUp") ||
             (l.data(e.body, "scrollUp", !0), l.fn.scrollUp.init(o));
     }),
-        (l.fn.scrollUp.init = function(r) {
+        (l.fn.scrollUp.init = function (r) {
             var s,
                 t,
                 c,
@@ -3742,7 +3722,7 @@
                 "top" === p.scrollFrom
                     ? p.scrollDistance
                     : l(e).height() - l(o).height() - p.scrollDistance),
-                (n = l(o).scroll(function() {
+                (n = l(o).scroll(function () {
                     l(o).scrollTop() > i
                         ? f || (d[s](c), (f = !0))
                         : f && (d[t](c), (f = !1));
@@ -3753,7 +3733,7 @@
                         : "string" == typeof p.scrollTarget &&
                           (a = Math.floor(l(p.scrollTarget).offset().top))
                     : (a = 0),
-                d.click(function(o) {
+                d.click(function (o) {
                     o.preventDefault(),
                         l("html, body").animate(
                             { scrollTop: a },
@@ -3778,7 +3758,7 @@
             activeOverlay: !1,
             zIndex: 2147483647,
         }),
-        (l.fn.scrollUp.destroy = function(r) {
+        (l.fn.scrollUp.destroy = function (r) {
             l.removeData(e.body, "scrollUp"),
                 l("#" + l.fn.scrollUp.settings.scrollName).remove(),
                 l("#" + l.fn.scrollUp.settings.scrollName + "-active").remove(),
@@ -3796,25 +3776,25 @@ Copyright (c) 2011-2013 Caleb Troughton
 Dual licensed under the MIT license and GPL license.
 https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 */
-(function() {
+(function () {
     var t =
             [].indexOf ||
-            function(t) {
+            function (t) {
                 for (var e = 0, n = this.length; e < n; e++) {
                     if (e in this && this[e] === t) return e;
                 }
                 return -1;
             },
         e = [].slice;
-    (function(t, e) {
+    (function (t, e) {
         if (typeof define === "function" && define.amd) {
-            return define("waypoints", ["jquery"], function(n) {
+            return define("waypoints", ["jquery"], function (n) {
                 return e(n, t);
             });
         } else {
             return e(t.jQuery, t);
         }
-    })(this, function(n, r) {
+    })(this, function (n, r) {
         var i, o, l, s, f, u, a, c, h, d, p, y, v, w, g, m;
         i = n(r);
         c = t.call(r, "ontouchstart") >= 0;
@@ -3828,7 +3808,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         w = "waypoints-waypoint-ids";
         g = "waypoint";
         m = "waypoints";
-        o = (function() {
+        o = (function () {
             function t(t) {
                 var e = this;
                 this.$element = t;
@@ -3840,22 +3820,22 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 this.waypoints = { horizontal: {}, vertical: {} };
                 t.data(u, this.id);
                 a[this.id] = this;
-                t.bind(y, function() {
+                t.bind(y, function () {
                     var t;
                     if (!(e.didScroll || c)) {
                         e.didScroll = true;
-                        t = function() {
+                        t = function () {
                             e.doScroll();
                             return (e.didScroll = false);
                         };
                         return r.setTimeout(t, n[m].settings.scrollThrottle);
                     }
                 });
-                t.bind(p, function() {
+                t.bind(p, function () {
                     var t;
                     if (!e.didResize) {
                         e.didResize = true;
-                        t = function() {
+                        t = function () {
                             n[m]("refresh");
                             return (e.didResize = false);
                         };
@@ -3863,7 +3843,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     }
                 });
             }
-            t.prototype.doScroll = function() {
+            t.prototype.doScroll = function () {
                 var t,
                     e = this;
                 t = {
@@ -3883,12 +3863,12 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 if (c && (!t.vertical.oldScroll || !t.vertical.newScroll)) {
                     n[m]("refresh");
                 }
-                n.each(t, function(t, r) {
+                n.each(t, function (t, r) {
                     var i, o, l;
                     l = [];
                     o = r.newScroll > r.oldScroll;
                     i = o ? r.forward : r.backward;
-                    n.each(e.waypoints[t], function(t, e) {
+                    n.each(e.waypoints[t], function (t, e) {
                         var n, i;
                         if (r.oldScroll < (n = e.offset) && n <= r.newScroll) {
                             return l.push(e);
@@ -3899,13 +3879,13 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             return l.push(e);
                         }
                     });
-                    l.sort(function(t, e) {
+                    l.sort(function (t, e) {
                         return t.offset - e.offset;
                     });
                     if (!o) {
                         l.reverse();
                     }
-                    return n.each(l, function(t, e) {
+                    return n.each(l, function (t, e) {
                         if (e.options.continuous || t === l.length - 1) {
                             return e.trigger([i]);
                         }
@@ -3916,7 +3896,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     y: t.vertical.newScroll,
                 });
             };
-            t.prototype.refresh = function() {
+            t.prototype.refresh = function () {
                 var t,
                     e,
                     r,
@@ -3946,8 +3926,8 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         offsetProp: "top",
                     },
                 };
-                return n.each(t, function(t, e) {
-                    return n.each(i.waypoints[t], function(t, r) {
+                return n.each(t, function (t, e) {
+                    return n.each(i.waypoints[t], function (t, r) {
                         var i, o, l, s, f;
                         i = r.options.offset;
                         l = r.offset;
@@ -3987,7 +3967,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     });
                 });
             };
-            t.prototype.checkEmpty = function() {
+            t.prototype.checkEmpty = function () {
                 if (
                     n.isEmptyObject(this.waypoints.horizontal) &&
                     n.isEmptyObject(this.waypoints.vertical)
@@ -3998,12 +3978,12 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             };
             return t;
         })();
-        l = (function() {
+        l = (function () {
             function t(t, e, r) {
                 var i, o;
                 r = n.extend({}, n.fn[g].defaults, r);
                 if (r.offset === "bottom-in-view") {
-                    r.offset = function() {
+                    r.offset = function () {
                         var t;
                         t = n[m]("viewportHeight");
                         if (!n.isWindow(e.element)) {
@@ -4027,7 +4007,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 i.push(this.id);
                 t.data(w, i);
             }
-            t.prototype.trigger = function(t) {
+            t.prototype.trigger = function (t) {
                 if (!this.enabled) {
                     return;
                 }
@@ -4038,33 +4018,33 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     return this.destroy();
                 }
             };
-            t.prototype.disable = function() {
+            t.prototype.disable = function () {
                 return (this.enabled = false);
             };
-            t.prototype.enable = function() {
+            t.prototype.enable = function () {
                 this.context.refresh();
                 return (this.enabled = true);
             };
-            t.prototype.destroy = function() {
+            t.prototype.destroy = function () {
                 delete s[this.axis][this.id];
                 delete this.context.waypoints[this.axis][this.id];
                 return this.context.checkEmpty();
             };
-            t.getWaypointsByElement = function(t) {
+            t.getWaypointsByElement = function (t) {
                 var e, r;
                 r = n(t).data(w);
                 if (!r) {
                     return [];
                 }
                 e = n.extend({}, s.horizontal, s.vertical);
-                return n.map(r, function(t) {
+                return n.map(r, function (t) {
                     return e[t];
                 });
             };
             return t;
         })();
         d = {
-            init: function(t, e) {
+            init: function (t, e) {
                 var r;
                 if (e == null) {
                     e = {};
@@ -4072,7 +4052,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 if ((r = e.handler) == null) {
                     e.handler = t;
                 }
-                this.each(function() {
+                this.each(function () {
                     var t, r, i, s;
                     t = n(this);
                     i = (s = e.context) != null ? s : n.fn[g].defaults.context;
@@ -4089,30 +4069,30 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 n[m]("refresh");
                 return this;
             },
-            disable: function() {
+            disable: function () {
                 return d._invoke(this, "disable");
             },
-            enable: function() {
+            enable: function () {
                 return d._invoke(this, "enable");
             },
-            destroy: function() {
+            destroy: function () {
                 return d._invoke(this, "destroy");
             },
-            prev: function(t, e) {
-                return d._traverse.call(this, t, e, function(t, e, n) {
+            prev: function (t, e) {
+                return d._traverse.call(this, t, e, function (t, e, n) {
                     if (e > 0) {
                         return t.push(n[e - 1]);
                     }
                 });
             },
-            next: function(t, e) {
-                return d._traverse.call(this, t, e, function(t, e, n) {
+            next: function (t, e) {
+                return d._traverse.call(this, t, e, function (t, e, n) {
                     if (e < n.length - 1) {
                         return t.push(n[e + 1]);
                     }
                 });
             },
-            _traverse: function(t, e, i) {
+            _traverse: function (t, e, i) {
                 var o, l;
                 if (t == null) {
                     t = "vertical";
@@ -4122,18 +4102,18 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 }
                 l = h.aggregate(e);
                 o = [];
-                this.each(function() {
+                this.each(function () {
                     var e;
                     e = n.inArray(this, l[t]);
                     return i(o, e, l[t]);
                 });
                 return this.pushStack(o);
             },
-            _invoke: function(t, e) {
-                t.each(function() {
+            _invoke: function (t, e) {
+                t.each(function () {
                     var t;
                     t = l.getWaypointsByElement(this);
-                    return n.each(t, function(t, n) {
+                    return n.each(t, function (t, n) {
                         n[e]();
                         return true;
                     });
@@ -4141,7 +4121,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 return this;
             },
         };
-        n.fn[g] = function() {
+        n.fn[g] = function () {
             var t, r;
             (r = arguments[0]),
                 (t = 2 <= arguments.length ? e.call(arguments, 1) : []);
@@ -4170,16 +4150,16 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             triggerOnce: false,
         };
         h = {
-            refresh: function() {
-                return n.each(a, function(t, e) {
+            refresh: function () {
+                return n.each(a, function (t, e) {
                     return e.refresh();
                 });
             },
-            viewportHeight: function() {
+            viewportHeight: function () {
                 var t;
                 return (t = r.innerHeight) != null ? t : i.height();
             },
-            aggregate: function(t) {
+            aggregate: function (t) {
                 var e, r, i;
                 e = s;
                 if (t) {
@@ -4189,93 +4169,93 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     return [];
                 }
                 r = { horizontal: [], vertical: [] };
-                n.each(r, function(t, i) {
-                    n.each(e[t], function(t, e) {
+                n.each(r, function (t, i) {
+                    n.each(e[t], function (t, e) {
                         return i.push(e);
                     });
-                    i.sort(function(t, e) {
+                    i.sort(function (t, e) {
                         return t.offset - e.offset;
                     });
-                    r[t] = n.map(i, function(t) {
+                    r[t] = n.map(i, function (t) {
                         return t.element;
                     });
                     return (r[t] = n.unique(r[t]));
                 });
                 return r;
             },
-            above: function(t) {
+            above: function (t) {
                 if (t == null) {
                     t = r;
                 }
-                return h._filter(t, "vertical", function(t, e) {
+                return h._filter(t, "vertical", function (t, e) {
                     return e.offset <= t.oldScroll.y;
                 });
             },
-            below: function(t) {
+            below: function (t) {
                 if (t == null) {
                     t = r;
                 }
-                return h._filter(t, "vertical", function(t, e) {
+                return h._filter(t, "vertical", function (t, e) {
                     return e.offset > t.oldScroll.y;
                 });
             },
-            left: function(t) {
+            left: function (t) {
                 if (t == null) {
                     t = r;
                 }
-                return h._filter(t, "horizontal", function(t, e) {
+                return h._filter(t, "horizontal", function (t, e) {
                     return e.offset <= t.oldScroll.x;
                 });
             },
-            right: function(t) {
+            right: function (t) {
                 if (t == null) {
                     t = r;
                 }
-                return h._filter(t, "horizontal", function(t, e) {
+                return h._filter(t, "horizontal", function (t, e) {
                     return e.offset > t.oldScroll.x;
                 });
             },
-            enable: function() {
+            enable: function () {
                 return h._invoke("enable");
             },
-            disable: function() {
+            disable: function () {
                 return h._invoke("disable");
             },
-            destroy: function() {
+            destroy: function () {
                 return h._invoke("destroy");
             },
-            extendFn: function(t, e) {
+            extendFn: function (t, e) {
                 return (d[t] = e);
             },
-            _invoke: function(t) {
+            _invoke: function (t) {
                 var e;
                 e = n.extend({}, s.vertical, s.horizontal);
-                return n.each(e, function(e, n) {
+                return n.each(e, function (e, n) {
                     n[t]();
                     return true;
                 });
             },
-            _filter: function(t, e, r) {
+            _filter: function (t, e, r) {
                 var i, o;
                 i = a[n(t).data(u)];
                 if (!i) {
                     return [];
                 }
                 o = [];
-                n.each(i.waypoints[e], function(t, e) {
+                n.each(i.waypoints[e], function (t, e) {
                     if (r(i, e)) {
                         return o.push(e);
                     }
                 });
-                o.sort(function(t, e) {
+                o.sort(function (t, e) {
                     return t.offset - e.offset;
                 });
-                return n.map(o, function(t) {
+                return n.map(o, function (t) {
                     return t.element;
                 });
             },
         };
-        n[m] = function() {
+        n[m] = function () {
             var t, n;
             (n = arguments[0]),
                 (t = 2 <= arguments.length ? e.call(arguments, 1) : []);
@@ -4286,45 +4266,45 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             }
         };
         n[m].settings = { resizeThrottle: 100, scrollThrottle: 30 };
-        return i.load(function() {
+        return i.load(function () {
             return n[m]("refresh");
         });
     });
 }.call(this));
 
 /*! WOW - v1.1.3 - 2016-05-06
- * Copyright (c) 2016 Matthieu Aussaguel;*/ (function() {
+ * Copyright (c) 2016 Matthieu Aussaguel;*/ (function () {
     var a,
         b,
         c,
         d,
         e,
-        f = function(a, b) {
-            return function() {
+        f = function (a, b) {
+            return function () {
                 return a.apply(b, arguments);
             };
         },
         g =
             [].indexOf ||
-            function(a) {
+            function (a) {
                 for (var b = 0, c = this.length; c > b; b++)
                     if (b in this && this[b] === a) return b;
                 return -1;
             };
-    (b = (function() {
+    (b = (function () {
         function a() {}
         return (
-            (a.prototype.extend = function(a, b) {
+            (a.prototype.extend = function (a, b) {
                 var c, d;
                 for (c in b) (d = b[c]), null == a[c] && (a[c] = d);
                 return a;
             }),
-            (a.prototype.isMobile = function(a) {
+            (a.prototype.isMobile = function (a) {
                 return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
                     a
                 );
             }),
-            (a.prototype.createEvent = function(a, b, c, d) {
+            (a.prototype.createEvent = function (a, b, c, d) {
                 var e;
                 return (
                     null == b && (b = !1),
@@ -4340,7 +4320,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     e
                 );
             }),
-            (a.prototype.emitEvent = function(a, b) {
+            (a.prototype.emitEvent = function (a, b) {
                 return null != a.dispatchEvent
                     ? a.dispatchEvent(b)
                     : b in (null != a)
@@ -4349,21 +4329,21 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     ? a["on" + b]()
                     : void 0;
             }),
-            (a.prototype.addEvent = function(a, b, c) {
+            (a.prototype.addEvent = function (a, b, c) {
                 return null != a.addEventListener
                     ? a.addEventListener(b, c, !1)
                     : null != a.attachEvent
                     ? a.attachEvent("on" + b, c)
                     : (a[b] = c);
             }),
-            (a.prototype.removeEvent = function(a, b, c) {
+            (a.prototype.removeEvent = function (a, b, c) {
                 return null != a.removeEventListener
                     ? a.removeEventListener(b, c, !1)
                     : null != a.detachEvent
                     ? a.detachEvent("on" + b, c)
                     : delete a[b];
             }),
-            (a.prototype.innerHeight = function() {
+            (a.prototype.innerHeight = function () {
                 return "innerHeight" in window
                     ? window.innerHeight
                     : document.documentElement.clientHeight;
@@ -4374,12 +4354,12 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         (c =
             this.WeakMap ||
             this.MozWeakMap ||
-            (c = (function() {
+            (c = (function () {
                 function a() {
                     (this.keys = []), (this.values = []);
                 }
                 return (
-                    (a.prototype.get = function(a) {
+                    (a.prototype.get = function (a) {
                         var b, c, d, e, f;
                         for (
                             f = this.keys, b = d = 0, e = f.length;
@@ -4388,7 +4368,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         )
                             if (((c = f[b]), c === a)) return this.values[b];
                     }),
-                    (a.prototype.set = function(a, b) {
+                    (a.prototype.set = function (a, b) {
                         var c, d, e, f, g;
                         for (
                             g = this.keys, c = e = 0, f = g.length;
@@ -4406,7 +4386,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             this.MutationObserver ||
             this.WebkitMutationObserver ||
             this.MozMutationObserver ||
-            (a = (function() {
+            (a = (function () {
                 function a() {
                     "undefined" != typeof console &&
                         null !== console &&
@@ -4421,20 +4401,20 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 }
                 return (
                     (a.notSupported = !0),
-                    (a.prototype.observe = function() {}),
+                    (a.prototype.observe = function () {}),
                     a
                 );
             })())),
         (d =
             this.getComputedStyle ||
-            function(a, b) {
+            function (a, b) {
                 return (
-                    (this.getPropertyValue = function(b) {
+                    (this.getPropertyValue = function (b) {
                         var c;
                         return (
                             "float" === b && (b = "styleFloat"),
                             e.test(b) &&
-                                b.replace(e, function(a, b) {
+                                b.replace(e, function (a, b) {
                                     return b.toUpperCase();
                                 }),
                             (null != (c = a.currentStyle) ? c[b] : void 0) ||
@@ -4445,7 +4425,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 );
             }),
         (e = /(\-([a-z]){1})/g),
-        (this.WOW = (function() {
+        (this.WOW = (function () {
             function e(a) {
                 null == a && (a = {}),
                     (this.scrollCallback = f(this.scrollCallback, this)),
@@ -4473,7 +4453,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     callback: null,
                     scrollContainer: null,
                 }),
-                (e.prototype.init = function() {
+                (e.prototype.init = function () {
                     var a;
                     return (
                         (this.element = window.document.documentElement),
@@ -4488,11 +4468,11 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         (this.finished = [])
                     );
                 }),
-                (e.prototype.start = function() {
+                (e.prototype.start = function () {
                     var b, c, d, e;
                     if (
                         ((this.stopped = !1),
-                        (this.boxes = function() {
+                        (this.boxes = function () {
                             var a, c, d, e;
                             for (
                                 d = this.element.querySelectorAll(
@@ -4507,7 +4487,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                                 (b = d[a]), e.push(b);
                             return e;
                         }.call(this)),
-                        (this.all = function() {
+                        (this.all = function () {
                             var a, c, d, e;
                             for (
                                 d = this.boxes, e = [], a = 0, c = d.length;
@@ -4545,8 +4525,8 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             ))),
                         this.config.live
                             ? new a(
-                                  (function(a) {
-                                      return function(b) {
+                                  (function (a) {
+                                      return function (b) {
                                           var c, d, e, f, g;
                                           for (
                                               g = [], c = 0, d = b.length;
@@ -4555,7 +4535,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                                           )
                                               (f = b[c]),
                                                   g.push(
-                                                      function() {
+                                                      function () {
                                                           var a, b, c, d;
                                                           for (
                                                               c =
@@ -4586,7 +4566,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             : void 0
                     );
                 }),
-                (e.prototype.stop = function() {
+                (e.prototype.stop = function () {
                     return (
                         (this.stopped = !0),
                         this.util().removeEvent(
@@ -4604,10 +4584,10 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             : void 0
                     );
                 }),
-                (e.prototype.sync = function(b) {
+                (e.prototype.sync = function (b) {
                     return a.notSupported ? this.doSync(this.element) : void 0;
                 }),
-                (e.prototype.doSync = function(a) {
+                (e.prototype.doSync = function (a) {
                     var b, c, d, e, f;
                     if ((null == a && (a = this.element), 1 === a.nodeType)) {
                         for (
@@ -4633,7 +4613,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         return f;
                     }
                 }),
-                (e.prototype.show = function(a) {
+                (e.prototype.show = function (a) {
                     return (
                         this.applyStyle(a),
                         (a.className =
@@ -4663,31 +4643,31 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         a
                     );
                 }),
-                (e.prototype.applyStyle = function(a, b) {
+                (e.prototype.applyStyle = function (a, b) {
                     var c, d, e;
                     return (
                         (d = a.getAttribute("data-wow-duration")),
                         (c = a.getAttribute("data-wow-delay")),
                         (e = a.getAttribute("data-wow-iteration")),
                         this.animate(
-                            (function(f) {
-                                return function() {
+                            (function (f) {
+                                return function () {
                                     return f.customStyle(a, b, d, c, e);
                                 };
                             })(this)
                         )
                     );
                 }),
-                (e.prototype.animate = (function() {
+                (e.prototype.animate = (function () {
                     return "requestAnimationFrame" in window
-                        ? function(a) {
+                        ? function (a) {
                               return window.requestAnimationFrame(a);
                           }
-                        : function(a) {
+                        : function (a) {
                               return a();
                           };
                 })()),
-                (e.prototype.resetStyle = function() {
+                (e.prototype.resetStyle = function () {
                     var a, b, c, d, e;
                     for (
                         d = this.boxes, e = [], b = 0, c = d.length;
@@ -4697,7 +4677,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         (a = d[b]), e.push((a.style.visibility = "visible"));
                     return e;
                 }),
-                (e.prototype.resetAnimation = function(a) {
+                (e.prototype.resetAnimation = function (a) {
                     var b;
                     return a.type.toLowerCase().indexOf("animationend") >= 0
                         ? ((b = a.target || a.srcElement),
@@ -4706,7 +4686,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                               .trim()))
                         : void 0;
                 }),
-                (e.prototype.customStyle = function(a, b, c, d, e) {
+                (e.prototype.customStyle = function (a, b, c, d, e) {
                     return (
                         b && this.cacheAnimationName(a),
                         (a.style.visibility = b ? "hidden" : "visible"),
@@ -4725,14 +4705,14 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     );
                 }),
                 (e.prototype.vendors = ["moz", "webkit"]),
-                (e.prototype.vendorSet = function(a, b) {
+                (e.prototype.vendorSet = function (a, b) {
                     var c, d, e, f;
                     d = [];
                     for (c in b)
                         (e = b[c]),
                             (a["" + c] = e),
                             d.push(
-                                function() {
+                                function () {
                                     var b, d, g, h;
                                     for (
                                         g = this.vendors,
@@ -4758,7 +4738,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             );
                     return d;
                 }),
-                (e.prototype.vendorCSS = function(a, b) {
+                (e.prototype.vendorCSS = function (a, b) {
                     var c, e, f, g, h, i;
                     for (
                         h = d(a),
@@ -4773,7 +4753,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             (g = g || h.getPropertyCSSValue("-" + i + "-" + b));
                     return g;
                 }),
-                (e.prototype.animationName = function(a) {
+                (e.prototype.animationName = function (a) {
                     var b;
                     try {
                         b = this.vendorCSS(a, "animation-name").cssText;
@@ -4782,23 +4762,23 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     }
                     return "none" === b ? "" : b;
                 }),
-                (e.prototype.cacheAnimationName = function(a) {
+                (e.prototype.cacheAnimationName = function (a) {
                     return this.animationNameCache.set(
                         a,
                         this.animationName(a)
                     );
                 }),
-                (e.prototype.cachedAnimationName = function(a) {
+                (e.prototype.cachedAnimationName = function (a) {
                     return this.animationNameCache.get(a);
                 }),
-                (e.prototype.scrollHandler = function() {
+                (e.prototype.scrollHandler = function () {
                     return (this.scrolled = !0);
                 }),
-                (e.prototype.scrollCallback = function() {
+                (e.prototype.scrollCallback = function () {
                     var a;
                     return !this.scrolled ||
                         ((this.scrolled = !1),
-                        (this.boxes = function() {
+                        (this.boxes = function () {
                             var b, c, d, e;
                             for (
                                 d = this.boxes, e = [], b = 0, c = d.length;
@@ -4816,13 +4796,13 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         ? void 0
                         : this.stop();
                 }),
-                (e.prototype.offsetTop = function(a) {
+                (e.prototype.offsetTop = function (a) {
                     for (var b; void 0 === a.offsetTop; ) a = a.parentNode;
                     for (b = a.offsetTop; (a = a.offsetParent); )
                         b += a.offsetTop;
                     return b;
                 }),
-                (e.prototype.isVisible = function(a) {
+                (e.prototype.isVisible = function (a) {
                     var b, c, d, e, f;
                     return (
                         (c =
@@ -4844,12 +4824,12 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         e >= d && b >= f
                     );
                 }),
-                (e.prototype.util = function() {
+                (e.prototype.util = function () {
                     return null != this._util
                         ? this._util
                         : (this._util = new b());
                 }),
-                (e.prototype.disabled = function() {
+                (e.prototype.disabled = function () {
                     return (
                         !this.config.mobile &&
                         this.util().isMobile(navigator.userAgent)
@@ -4869,13 +4849,13 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
  * @licence MIT
  * @preserve
  */
-!(function(i) {
+!(function (i) {
     if ("function" == typeof define && define.amd) define(["jquery"], i);
     else if ("object" == typeof module && module.exports) {
         var t = require("jquery");
         i(t), (module.exports = t);
     } else i(jQuery);
-})(function(i) {
+})(function (i) {
     function t(i) {
         this.init(i);
     }
@@ -4898,7 +4878,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         radius: 0,
         arcFill: null,
         lastFrameValue: 0,
-        init: function(t) {
+        init: function (t) {
             i.extend(this, t),
                 (this.radius = this.size / 2),
                 this.initWidget(),
@@ -4906,7 +4886,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 this.draw(),
                 this.el.trigger("circle-inited");
         },
-        initWidget: function() {
+        initWidget: function () {
             this.canvas ||
                 (this.canvas = i("<canvas>")[
                     "prepend" == this.insertMode ? "prependTo" : "appendTo"
@@ -4924,7 +4904,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     this.ctx.scale(e, e);
             }
         },
-        initFill: function() {
+        initFill: function () {
             function t() {
                 var t = i("<canvas>")[0];
                 (t.width = e.size),
@@ -4975,18 +4955,18 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     g.complete ? t() : (g.onload = t);
             }
         },
-        draw: function() {
+        draw: function () {
             this.animation
                 ? this.drawAnimated(this.value)
                 : this.drawFrame(this.value);
         },
-        drawFrame: function(i) {
+        drawFrame: function (i) {
             (this.lastFrameValue = i),
                 this.ctx.clearRect(0, 0, this.size, this.size),
                 this.drawEmptyArc(i),
                 this.drawArc(i);
         },
-        drawArc: function(i) {
+        drawArc: function (i) {
             if (0 !== i) {
                 var t = this.ctx,
                     e = this.radius,
@@ -5004,7 +4984,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     t.restore();
             }
         },
-        drawEmptyArc: function(i) {
+        drawEmptyArc: function (i) {
             var t = this.ctx,
                 e = this.radius,
                 a = this.getThickness(),
@@ -5022,7 +5002,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 t.stroke(),
                 t.restore());
         },
-        drawAnimated: function(t) {
+        drawAnimated: function (t) {
             var e = this,
                 a = this.el,
                 n = i(this.canvas);
@@ -5033,7 +5013,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     .animate(
                         { animationProgress: 1 },
                         i.extend({}, this.animation, {
-                            step: function(i) {
+                            step: function (i) {
                                 var n = e.animationStartValue * (1 - i) + t * i;
                                 e.drawFrame(n),
                                     a.trigger("circle-animation-progress", [
@@ -5044,31 +5024,31 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         })
                     )
                     .promise()
-                    .always(function() {
+                    .always(function () {
                         a.trigger("circle-animation-end");
                     });
         },
-        getThickness: function() {
+        getThickness: function () {
             return i.isNumeric(this.thickness)
                 ? this.thickness
                 : this.size / 14;
         },
-        getValue: function() {
+        getValue: function () {
             return this.value;
         },
-        setValue: function(i) {
+        setValue: function (i) {
             this.animation && (this.animationStartValue = this.lastFrameValue),
                 (this.value = i),
                 this.draw();
         },
     }),
         (i.circleProgress = { defaults: t.prototype }),
-        (i.easing.circleProgressEasing = function(i) {
+        (i.easing.circleProgressEasing = function (i) {
             return i < 0.5
                 ? ((i = 2 * i), 0.5 * i * i * i)
                 : ((i = 2 - 2 * i), 1 - 0.5 * i * i * i);
         }),
-        (i.fn.circleProgress = function(e, a) {
+        (i.fn.circleProgress = function (e, a) {
             var n = "circle-progress",
                 r = this.data(n);
             if ("widget" == e) {
@@ -5085,13 +5065,11 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     );
                 if ("undefined" == typeof a) return r.getValue();
                 var s = arguments[1];
-                return this.each(function() {
-                    i(this)
-                        .data(n)
-                        .setValue(s);
+                return this.each(function () {
+                    i(this).data(n).setValue(s);
                 });
             }
-            return this.each(function() {
+            return this.each(function () {
                 var a = i(this),
                     r = a.data(n),
                     s = i.isPlainObject(e) ? e : {};
@@ -5116,8 +5094,8 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
  * Copyright (c) 2018 Designing World - https://themeforest.net/user/designing-world
  */
 
-(function($) {
-    $.fn.classyNav = function(options) {
+(function ($) {
+    $.fn.classyNav = function (options) {
         // Variables
         var navContainer = $(".classy-nav-container");
         var classy_nav = $(".classynav ul");
@@ -5144,7 +5122,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             options
         );
 
-        return this.each(function() {
+        return this.each(function () {
             // light or dark theme
             if (defaultOpt.theme === "light" || defaultOpt.theme === "dark") {
                 navContainer.addClass(defaultOpt.theme);
@@ -5164,13 +5142,13 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             }
 
             // navbar toggler
-            navbarToggler.on("click", function() {
+            navbarToggler.on("click", function () {
                 navToggler.toggleClass("active");
                 classyMenu.toggleClass("menu-on");
             });
 
             // close icon
-            closeIcon.on("click", function() {
+            closeIcon.on("click", function () {
                 classyMenu.removeClass("menu-on");
                 navToggler.removeClass("active");
             });
@@ -5180,7 +5158,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             classy_navli.has(".megamenu").addClass("megamenu-item");
 
             // adds toggle button to li items that have children
-            classy_nav.find("li a").each(function() {
+            classy_nav.find("li a").each(function () {
                 if ($(this).next().length > 0) {
                     $(this)
                         .parent("li")
@@ -5190,23 +5168,21 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             });
 
             // expands the dropdown menu on each click
-            classy_nav.find("li .dd-trigger").on("click", function(e) {
+            classy_nav.find("li .dd-trigger").on("click", function (e) {
                 e.preventDefault();
                 $(this)
                     .parent("li")
                     .children("ul")
                     .stop(true, true)
                     .slideToggle(defaultOpt.openCloseSpeed);
-                $(this)
-                    .parent("li")
-                    .toggleClass("active");
+                $(this).parent("li").toggleClass("active");
             });
 
             // add padding in dropdown & megamenu item
             $(".megamenu-item").removeClass("has-down");
 
             // expands the megamenu on each click
-            classy_nav.find("li .dd-trigger").on("click", function(e) {
+            classy_nav.find("li .dd-trigger").on("click", function (e) {
                 e.preventDefault();
                 $(this)
                     .parent("li")
@@ -5230,7 +5206,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
             breakpointCheck();
 
-            var_window.on("resize", function() {
+            var_window.on("resize", function () {
                 breakpointCheck();
             });
 
@@ -5243,7 +5219,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
             // sticky
             if (defaultOpt.stickyNav === true) {
-                var_window.on("scroll", function() {
+                var_window.on("scroll", function () {
                     if (var_window.scrollTop() > 0) {
                         navContainer.addClass("classy-sticky");
                     } else {
@@ -5272,7 +5248,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 //              It will only set the 'top' and 'position' of your element, you
 //              might need to adjust the width in some cases.
 
-(function(factory) {
+(function (factory) {
     if (typeof define === "function" && define.amd) {
         // AMD. Register as an anonymous module.
         define(["jquery"], factory);
@@ -5283,7 +5259,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         // Browser globals
         factory(jQuery);
     }
-})(function($) {
+})(function ($) {
     var slice = Array.prototype.slice; // save ref to original slice()
     var splice = Array.prototype.splice; // save ref to original slice()
 
@@ -5302,7 +5278,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         $document = $(document),
         sticked = [],
         windowHeight = $window.height(),
-        scroller = function() {
+        scroller = function () {
             var scrollTop = $window.scrollTop(),
                 documentHeight = $document.height(),
                 dwh = documentHeight - windowHeight,
@@ -5418,7 +5394,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 }
             }
         },
-        resizer = function() {
+        resizer = function () {
             windowHeight = $window.height();
 
             for (var i = 0, l = sticked.length; i < l; i++) {
@@ -5437,8 +5413,8 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             }
         },
         methods = {
-            init: function(options) {
-                return this.each(function() {
+            init: function (options) {
+                return this.each(function () {
                     var o = $.extend({}, defaults, options);
                     var stickyElement = $(this);
 
@@ -5450,7 +5426,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         .attr("id", wrapperId)
                         .addClass(o.wrapperClassName);
 
-                    stickyElement.wrapAll(function() {
+                    stickyElement.wrapAll(function () {
                         if ($(this).parent("#" + wrapperId).length == 0) {
                             return wrapper;
                         }
@@ -5484,7 +5460,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 });
             },
 
-            setWrapperHeight: function(stickyElement) {
+            setWrapperHeight: function (stickyElement) {
                 var element = $(stickyElement);
                 var stickyWrapper = element.parent();
                 if (stickyWrapper) {
@@ -5492,18 +5468,18 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 }
             },
 
-            setupChangeListeners: function(stickyElement) {
+            setupChangeListeners: function (stickyElement) {
                 if (window.MutationObserver) {
-                    var mutationObserver = new window.MutationObserver(function(
-                        mutations
-                    ) {
-                        if (
-                            mutations[0].addedNodes.length ||
-                            mutations[0].removedNodes.length
-                        ) {
-                            methods.setWrapperHeight(stickyElement);
+                    var mutationObserver = new window.MutationObserver(
+                        function (mutations) {
+                            if (
+                                mutations[0].addedNodes.length ||
+                                mutations[0].removedNodes.length
+                            ) {
+                                methods.setWrapperHeight(stickyElement);
+                            }
                         }
-                    });
+                    );
                     mutationObserver.observe(stickyElement, {
                         subtree: true,
                         childList: true,
@@ -5512,14 +5488,14 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     if (window.addEventListener) {
                         stickyElement.addEventListener(
                             "DOMNodeInserted",
-                            function() {
+                            function () {
                                 methods.setWrapperHeight(stickyElement);
                             },
                             false
                         );
                         stickyElement.addEventListener(
                             "DOMNodeRemoved",
-                            function() {
+                            function () {
                                 methods.setWrapperHeight(stickyElement);
                             },
                             false
@@ -5527,13 +5503,13 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     } else if (window.attachEvent) {
                         stickyElement.attachEvent(
                             "onDOMNodeInserted",
-                            function() {
+                            function () {
                                 methods.setWrapperHeight(stickyElement);
                             }
                         );
                         stickyElement.attachEvent(
                             "onDOMNodeRemoved",
-                            function() {
+                            function () {
                                 methods.setWrapperHeight(stickyElement);
                             }
                         );
@@ -5541,8 +5517,8 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 }
             },
             update: scroller,
-            unstick: function(options) {
-                return this.each(function() {
+            unstick: function (options) {
+                return this.each(function () {
                     var that = this;
                     var unstickyElement = $(that);
 
@@ -5577,7 +5553,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         window.attachEvent("onresize", resizer);
     }
 
-    $.fn.sticky = function(method) {
+    $.fn.sticky = function (method) {
         if (methods[method]) {
             return methods[method].apply(this, slice.call(arguments, 1));
         } else if (typeof method === "object" || !method) {
@@ -5587,7 +5563,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         }
     };
 
-    $.fn.unstick = function(method) {
+    $.fn.unstick = function (method) {
         if (methods[method]) {
             return methods[method].apply(this, slice.call(arguments, 1));
         } else if (typeof method === "object" || !method) {
@@ -5596,7 +5572,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             $.error("Method " + method + " does not exist on jQuery.sticky");
         }
     };
-    $(function() {
+    $(function () {
         setTimeout(scroller, 0);
     });
 });
@@ -5606,7 +5582,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
  * Version : 1.10.5
  * Author  : nK <https://nkdev.info>
  * GitHub  : https://github.com/nk-o/jarallax
- */ !(function(o) {
+ */ !(function (o) {
     var n = {};
     function i(e) {
         if (n[e]) return n[e].exports;
@@ -5615,11 +5591,11 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
     }
     (i.m = o),
         (i.c = n),
-        (i.d = function(e, t, o) {
+        (i.d = function (e, t, o) {
             i.o(e, t) ||
                 Object.defineProperty(e, t, { enumerable: !0, get: o });
         }),
-        (i.r = function(e) {
+        (i.r = function (e) {
             "undefined" != typeof Symbol &&
                 Symbol.toStringTag &&
                 Object.defineProperty(e, Symbol.toStringTag, {
@@ -5627,7 +5603,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 }),
                 Object.defineProperty(e, "__esModule", { value: !0 });
         }),
-        (i.t = function(t, e) {
+        (i.t = function (t, e) {
             if ((1 & e && (t = i(t)), 8 & e)) return t;
             if (4 & e && "object" == typeof t && t && t.__esModule) return t;
             var o = Object.create(null);
@@ -5643,24 +5619,24 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     i.d(
                         o,
                         n,
-                        function(e) {
+                        function (e) {
                             return t[e];
                         }.bind(null, n)
                     );
             return o;
         }),
-        (i.n = function(e) {
+        (i.n = function (e) {
             var t =
                 e && e.__esModule
-                    ? function() {
+                    ? function () {
                           return e.default;
                       }
-                    : function() {
+                    : function () {
                           return e;
                       };
             return i.d(t, "a", t), t;
         }),
-        (i.o = function(e, t) {
+        (i.o = function (e, t) {
             return Object.prototype.hasOwnProperty.call(e, t);
         }),
         (i.p = ""),
@@ -5668,14 +5644,14 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 })([
     ,
     ,
-    function(e, t, o) {
+    function (e, t, o) {
         "use strict";
-        e.exports = function(e) {
+        e.exports = function (e) {
             "complete" === document.readyState ||
             "interactive" === document.readyState
                 ? e.call()
                 : document.attachEvent
-                ? document.attachEvent("onreadystatechange", function() {
+                ? document.attachEvent("onreadystatechange", function () {
                       "interactive" === document.readyState && e.call();
                   })
                 : document.addEventListener &&
@@ -5683,9 +5659,9 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         };
     },
     ,
-    function(o, e, t) {
+    function (o, e, t) {
         "use strict";
-        (function(e) {
+        (function (e) {
             var t;
             (t =
                 "undefined" != typeof window
@@ -5698,16 +5674,16 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 (o.exports = t);
         }.call(this, t(5)));
     },
-    function(e, t, o) {
+    function (e, t, o) {
         "use strict";
         var n,
             i =
                 "function" == typeof Symbol &&
                 "symbol" == typeof Symbol.iterator
-                    ? function(e) {
+                    ? function (e) {
                           return typeof e;
                       }
-                    : function(e) {
+                    : function (e) {
                           return e &&
                               "function" == typeof Symbol &&
                               e.constructor === Symbol &&
@@ -5715,7 +5691,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                               ? "symbol"
                               : typeof e;
                       };
-        n = (function() {
+        n = (function () {
             return this;
         })();
         try {
@@ -5732,18 +5708,18 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
     ,
     ,
     ,
-    function(e, t, o) {
+    function (e, t, o) {
         e.exports = o(12);
     },
-    function(e, t, o) {
+    function (e, t, o) {
         "use strict";
         var n =
                 "function" == typeof Symbol &&
                 "symbol" == typeof Symbol.iterator
-                    ? function(e) {
+                    ? function (e) {
                           return typeof e;
                       }
-                    : function(e) {
+                    : function (e) {
                           return e &&
                               "function" == typeof Symbol &&
                               e.constructor === Symbol &&
@@ -5760,12 +5736,12 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
         var s = a.window.jarallax;
         if (
             ((a.window.jarallax = r.default),
-            (a.window.jarallax.noConflict = function() {
+            (a.window.jarallax.noConflict = function () {
                 return (a.window.jarallax = s), this;
             }),
             void 0 !== a.jQuery)
         ) {
-            var c = function() {
+            var c = function () {
                 var e = arguments || [];
                 Array.prototype.unshift.call(e, this);
                 var t = r.default.apply(a.window, e);
@@ -5776,22 +5752,22 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             c.constructor = r.default.constructor;
             var u = a.jQuery.fn.jarallax;
             (a.jQuery.fn.jarallax = c),
-                (a.jQuery.fn.jarallax.noConflict = function() {
+                (a.jQuery.fn.jarallax.noConflict = function () {
                     return (a.jQuery.fn.jarallax = u), this;
                 });
         }
-        (0, i.default)(function() {
+        (0, i.default)(function () {
             (0, r.default)(document.querySelectorAll("[data-jarallax]"));
         });
     },
-    function(e, j, S) {
+    function (e, j, S) {
         "use strict";
-        (function(e) {
+        (function (e) {
             Object.defineProperty(j, "__esModule", { value: !0 });
-            var d = function(e, t) {
+            var d = function (e, t) {
                     if (Array.isArray(e)) return e;
                     if (Symbol.iterator in Object(e))
-                        return (function(e, t) {
+                        return (function (e, t) {
                             var o = [],
                                 n = !0,
                                 i = !1,
@@ -5818,7 +5794,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         "Invalid attempt to destructure non-iterable instance"
                     );
                 },
-                t = (function() {
+                t = (function () {
                     function n(e, t) {
                         for (var o = 0; o < t.length; o++) {
                             var n = t[o];
@@ -5828,17 +5804,17 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                                 Object.defineProperty(e, n.key, n);
                         }
                     }
-                    return function(e, t, o) {
+                    return function (e, t, o) {
                         return t && n(e.prototype, t), o && n(e, o), e;
                     };
                 })(),
                 p =
                     "function" == typeof Symbol &&
                     "symbol" == typeof Symbol.iterator
-                        ? function(e) {
+                        ? function (e) {
                               return typeof e;
                           }
-                        : function(e) {
+                        : function (e) {
                               return e &&
                                   "function" == typeof Symbol &&
                                   e.constructor === Symbol &&
@@ -5856,7 +5832,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                     -1 < navigator.userAgent.indexOf("MSIE ") ||
                     -1 < navigator.userAgent.indexOf("Trident/") ||
                     -1 < navigator.userAgent.indexOf("Edge/"),
-                r = (function() {
+                r = (function () {
                     for (
                         var e = "transform WebkitTransform MozTransform".split(
                                 " "
@@ -5889,7 +5865,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                 i.window.addEventListener("resize", m),
                 i.window.addEventListener("orientationchange", m),
                 i.window.addEventListener("load", m),
-                (0, o.default)(function() {
+                (0, o.default)(function () {
                     m({ type: "dom-loaded" });
                 });
             var f = [],
@@ -5908,7 +5884,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         o = u || t || !y || y.y !== l;
                     (u = c = !1),
                         (t || o) &&
-                            (f.forEach(function(e) {
+                            (f.forEach(function (e) {
                                 t && e.onResize(), o && e.onScroll();
                             }),
                             (y = { width: b, height: v, y: l })),
@@ -5917,11 +5893,11 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             }
             var h =
                     !!e.ResizeObserver &&
-                    new e.ResizeObserver(function(e) {
+                    new e.ResizeObserver(function (e) {
                         e &&
                             e.length &&
-                            (0, n.default)(function() {
-                                e.forEach(function(e) {
+                            (0, n.default)(function () {
+                                e.forEach(function (e) {
                                     e.target &&
                                         e.target.jarallax &&
                                         (c || e.target.jarallax.onResize(),
@@ -5930,9 +5906,9 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             });
                     }),
                 x = 0,
-                w = (function() {
+                w = (function () {
                     function u(e, t) {
-                        !(function(e, t) {
+                        !(function (e, t) {
                             if (!(e instanceof t))
                                 throw new TypeError(
                                     "Cannot call a class as a function"
@@ -5974,14 +5950,14 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         var a = o.$item.dataset || {},
                             r = {};
                         if (
-                            (Object.keys(a).forEach(function(e) {
+                            (Object.keys(a).forEach(function (e) {
                                 var t =
                                     e.substr(0, 1).toLowerCase() + e.substr(1);
                                 t && void 0 !== o.defaults[t] && (r[t] = a[e]);
                             }),
                             (o.options = o.extend({}, o.defaults, i, r, t)),
                             (o.pureOptions = o.extend({}, o.options)),
-                            Object.keys(o.options).forEach(function(e) {
+                            Object.keys(o.options).forEach(function (e) {
                                 "true" === o.options[e]
                                     ? (o.options[e] = !0)
                                     : "false" === o.options[e] &&
@@ -6009,13 +5985,13 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             o.options.disableParallax instanceof RegExp)
                         ) {
                             var l = o.options.disableParallax;
-                            o.options.disableParallax = function() {
+                            o.options.disableParallax = function () {
                                 return l.test(navigator.userAgent);
                             };
                         }
                         if (
                             ("function" != typeof o.options.disableParallax &&
-                                (o.options.disableParallax = function() {
+                                (o.options.disableParallax = function () {
                                     return !1;
                                 }),
                             "string" == typeof o.options.disableVideo &&
@@ -6025,12 +6001,12 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             o.options.disableVideo instanceof RegExp)
                         ) {
                             var s = o.options.disableVideo;
-                            o.options.disableVideo = function() {
+                            o.options.disableVideo = function () {
                                 return s.test(navigator.userAgent);
                             };
                         }
                         "function" != typeof o.options.disableVideo &&
-                            (o.options.disableVideo = function() {
+                            (o.options.disableVideo = function () {
                                 return !1;
                             });
                         var c = o.options.elementInViewport;
@@ -6056,7 +6032,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         t(u, [
                             {
                                 key: "css",
-                                value: function(t, o) {
+                                value: function (t, o) {
                                     return "string" == typeof o
                                         ? i.window
                                               .getComputedStyle(t)
@@ -6064,7 +6040,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                                         : (o.transform &&
                                               r &&
                                               (o[r] = o.transform),
-                                          Object.keys(o).forEach(function(e) {
+                                          Object.keys(o).forEach(function (e) {
                                               t.style[e] = o[e];
                                           }),
                                           t);
@@ -6072,33 +6048,33 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             },
                             {
                                 key: "extend",
-                                value: function(o) {
+                                value: function (o) {
                                     var n = arguments;
                                     return (
                                         (o = o || {}),
-                                        Object.keys(arguments).forEach(function(
-                                            t
-                                        ) {
-                                            n[t] &&
-                                                Object.keys(n[t]).forEach(
-                                                    function(e) {
-                                                        o[e] = n[t][e];
-                                                    }
-                                                );
-                                        }),
+                                        Object.keys(arguments).forEach(
+                                            function (t) {
+                                                n[t] &&
+                                                    Object.keys(n[t]).forEach(
+                                                        function (e) {
+                                                            o[e] = n[t][e];
+                                                        }
+                                                    );
+                                            }
+                                        ),
                                         o
                                     );
                                 },
                             },
                             {
                                 key: "getWindowData",
-                                value: function() {
+                                value: function () {
                                     return { width: b, height: v, y: l };
                                 },
                             },
                             {
                                 key: "initImg",
-                                value: function() {
+                                value: function () {
                                     var e = this,
                                         t = e.options.imgElement;
                                     return (
@@ -6133,13 +6109,13 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             },
                             {
                                 key: "canInitParallax",
-                                value: function() {
+                                value: function () {
                                     return r && !this.options.disableParallax();
                                 },
                             },
                             {
                                 key: "init",
-                                value: function() {
+                                value: function () {
                                     var e = this,
                                         t = {
                                             position: "absolute",
@@ -6287,15 +6263,15 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             },
                             {
                                 key: "addToParallaxList",
-                                value: function() {
+                                value: function () {
                                     f.push(this), 1 === f.length && g();
                                 },
                             },
                             {
                                 key: "removeFromParallaxList",
-                                value: function() {
+                                value: function () {
                                     var o = this;
-                                    f.forEach(function(e, t) {
+                                    f.forEach(function (e, t) {
                                         e.instanceID === o.instanceID &&
                                             f.splice(t, 1);
                                     });
@@ -6303,7 +6279,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             },
                             {
                                 key: "destroy",
-                                value: function() {
+                                value: function () {
                                     var e = this;
                                     e.removeFromParallaxList();
                                     var t = e.$item.getAttribute(
@@ -6352,7 +6328,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             },
                             {
                                 key: "clipContainer",
-                                value: function() {
+                                value: function () {
                                     if ("fixed" === this.image.position) {
                                         var e = this,
                                             t = e.image.$container.getBoundingClientRect(),
@@ -6397,7 +6373,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             },
                             {
                                 key: "coverImage",
-                                value: function() {
+                                value: function () {
                                     var e = this,
                                         t = e.image.$container.getBoundingClientRect(),
                                         o = t.height,
@@ -6444,13 +6420,13 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             },
                             {
                                 key: "isVisible",
-                                value: function() {
+                                value: function () {
                                     return this.isElementInViewport || !1;
                                 },
                             },
                             {
                                 key: "onScroll",
-                                value: function(e) {
+                                value: function (e) {
                                     var t = this,
                                         o = t.$item.getBoundingClientRect(),
                                         n = o.top,
@@ -6535,7 +6511,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                             },
                             {
                                 key: "onResize",
-                                value: function() {
+                                value: function () {
                                     this.coverImage(), this.clipContainer();
                                 },
                             },
@@ -6543,7 +6519,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
                         u
                     );
                 })(),
-                $ = function(e) {
+                $ = function (e) {
                     ("object" ===
                     ("undefined" == typeof HTMLElement
                         ? "undefined"
@@ -6581,14 +6557,14 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
             ($.constructor = w), (j.default = $);
         }.call(this, S(5)));
     },
-    function(e, t, o) {
+    function (e, t, o) {
         "use strict";
         var n = o(4),
             i =
                 n.requestAnimationFrame ||
                 n.webkitRequestAnimationFrame ||
                 n.mozRequestAnimationFrame ||
-                function(e) {
+                function (e) {
                     var t = +new Date(),
                         o = Math.max(0, 16 - (t - a)),
                         n = setTimeout(e, o);

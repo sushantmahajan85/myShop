@@ -49,18 +49,6 @@ const Footer = () => {
                                             <img src={logo} />
                                         </a>
                                     </div>
-                                    <div className="footer-social-icon">
-                                        <span>Follow us</span>
-                                        <a href="#">
-                                            <i className="fab fa-facebook-f facebook-bg"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i className="fab fa-twitter twitter-bg"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i className="fab fa-google-plus-g google-bg"></i>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
@@ -94,8 +82,11 @@ const Footer = () => {
                                     </div>
                                     <div className="footer-text mb-25">
                                         <p>
-                                            Don’t miss to subscribe to our new
-                                            feeds, kindly fill the form below.
+                                            Mahajan Cyber World was started in
+                                            2008 with only four computer
+                                            systems. At Mahajan Cyber World, we
+                                            deal in all kinds of computer
+                                            software/hardware solutions.
                                         </p>
                                     </div>
                                 </div>
