@@ -4,7 +4,6 @@ import message from "./img/core-img/message.png";
 import call2 from "./img/core-img/call2.png";
 import { Helmet } from "react-helmet";
 import react from "react";
-import ScriptTag from "react-script-tag";
 
 class Navbar extends react.Component {
     // constructor(props) {
@@ -136,11 +135,6 @@ class Navbar extends react.Component {
                         </div>
                     </div>
                 </header>
-                <ScriptTag
-                    type="text/javascript"
-                    src="/js/plugins/plugins.js"
-                />
-                <ScriptTag type="text/javascript" src="/js/active.js" />
                 <Helmet>
                     <script
                         src="/js/jquery/jquery-2.2.4.min.js"
