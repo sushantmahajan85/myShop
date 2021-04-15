@@ -61,16 +61,21 @@ const Footer = () => {
                                             <a href="/">Home</a>
                                         </li>
                                         <li>
-                                            <a href="/#services">Services</a>
+                                            <a href="/#/applications">
+                                                Applications
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="/pricing">Pricing</a>
+                                            <a href="/#/services">Services</a>
                                         </li>
                                         <li>
-                                            <a href="/#contact">Contact</a>
+                                            <a href="/#/pricing">Pricing</a>
                                         </li>
                                         <li>
-                                            <a href="/about">About Us</a>
+                                            <a href="/#/contact">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="/#/about">About Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -83,10 +88,11 @@ const Footer = () => {
                                     <div className="footer-text mb-25">
                                         <p>
                                             Mahajan Cyber World was started in
-                                            2008 with only four computer
-                                            systems. At Mahajan Cyber World, we
+                                            2008. At Mahajan Cyber World, we
                                             deal in all kinds of computer
-                                            software/hardware solutions.
+                                            software/hardware solutions. For
+                                            collaboration, make a call at
+                                            9815144901.
                                         </p>
                                     </div>
                                 </div>
@@ -111,12 +117,13 @@ const Footer = () => {
                                         <li>
                                             <a href="#">Home</a>
                                         </li>
+
                                         <li>
-                                            <a href="#">Terms</a>
+                                            <a href="/#/applications">
+                                                Applications
+                                            </a>
                                         </li>
-                                        <li>
-                                            <a href="#">Privacy</a>
-                                        </li>
+
                                         <li>
                                             <a href="#">Policy</a>
                                         </li>
