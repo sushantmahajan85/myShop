@@ -6,6 +6,8 @@ import Applications from "./Applications";
 import About from "./About";
 import Footer from "./Footer";
 import Form from "./Form";
+import Services from "./Services";
+import Contact from "./Contact";
 import { Route } from "react-router-dom";
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
                 <Route exact path="/applications" component={Applications} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/xyzform" component={Form} />
+                <Route exact path="/services" component={Services}></Route>
+                <Route exact path="/contact" component={Contact}></Route>
             </div>
             <Footer />
         </div>
