@@ -4,22 +4,26 @@ import message from "./img/core-img/message.png";
 import call2 from "./img/core-img/call2.png";
 import { Helmet } from "react-helmet";
 import react from "react";
+import { Link } from "react-router-dom";
 
 class Navbar extends react.Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = { display: "none" };
-    // }
-    // handleToggler = (display) => {
-    //     this.setState({
+    constructor() {
+        super();
 
-    //     document.getElementById("classy-menu").style.display = "block";
-    //         // display: "block",
-    //     });
-    //     console.log("hey there");
-    // };
+        this.state = {
+            display: false,
+        };
+    }
+    w3_open() {
+        this.setState({ display: !this.state.display });
+    }
+
+    w3_close() {
+        this.setState({ display: !this.state.display });
+    }
+
     render() {
-        // const { display } = this.state;
+        let ham_class = this.state.display ? "w3-sidebar-on" : "w3-sidebar";
         return (
             <div className="Navbar">
                 <header className="header-area">
@@ -71,18 +75,40 @@ class Navbar extends react.Component {
                                     className="classy-navbar justify-content-between"
                                     id="creditNav"
                                 >
-                                    <div
-                                        className="classy-navbar-toggler"
-                                        id="classy-navbar-toggler"
-                                        // onClick={() =>
-                                        //     this.handleToggler(display)
-                                        // }
-                                    >
-                                        <span className="navbarToggler">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </span>
+                                    <div className={ham_class} id="mySidebar">
+                                        <button
+                                            onClick={() => this.w3_close()}
+                                            className="w3-bar-item w3-large"
+                                        >
+                                            Close &times;
+                                        </button>
+                                        <a
+                                            href="#"
+                                            className="w3-bar-item w3-button"
+                                        >
+                                            Link 1
+                                        </a>
+                                        <a
+                                            href="#"
+                                            className="w3-bar-item w3-button"
+                                        >
+                                            Link 2
+                                        </a>
+                                        <a
+                                            href="#"
+                                            className="w3-bar-item w3-button"
+                                        >
+                                            Link 3
+                                        </a>
+                                    </div>
+
+                                    <div className="w3-teal">
+                                        <button
+                                            className="w3_teal"
+                                            onClick={() => this.w3_open()}
+                                        >
+                                            ☰
+                                        </button>
                                     </div>
                                     <div className="classy-menu">
                                         <div className="classycloseIcon">
@@ -94,32 +120,32 @@ class Navbar extends react.Component {
                                         <div className="classynav">
                                             <ul>
                                                 <li>
-                                                    <a href="/">Home</a>
+                                                    <Link to="/">Home</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/applications">
+                                                    <Link to="/applications">
                                                         Applications
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/#services">
+                                                    <Link to="/services">
                                                         Services
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/pricing">
+                                                    <Link to="/pricing">
                                                         Pricing
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/#contact">
+                                                    <Link to="/contact">
                                                         Contact
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/about">
+                                                    <Link to="/about">
                                                         About Us
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -136,6 +162,10 @@ class Navbar extends react.Component {
                     </div>
                 </header>
                 <Helmet>
+                    <link
+                        rel="stylesheet"
+                        href="https://www.w3schools.com/w3css/4/w3.css"
+                    />
                     <script
                         src="/js/jquery/jquery-2.2.4.min.js"
                         type="text/javascript"
