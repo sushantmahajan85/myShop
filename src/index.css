@@ -10878,3 +10878,11 @@ tbody tr:hover {
 .w3-sidebar-on {
     display: block;
 }
+.w3-sidebar {
+    height: unset !important;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 2 !important;
+    overflow: auto;
+}

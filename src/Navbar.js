@@ -24,6 +24,7 @@ class Navbar extends react.Component {
 
     render() {
         let ham_class = this.state.display ? "w3-sidebar-on" : "w3-sidebar";
+        let classes = `w3-sidebar w3-bar-block w3-border-right ${ham_class}`;
         return (
             <div className="Navbar">
                 <header className="header-area">
@@ -75,7 +76,10 @@ class Navbar extends react.Component {
                                     className="classy-navbar justify-content-between"
                                     id="creditNav"
                                 >
-                                    <div className={ham_class} id="mySidebar">
+                                    <div
+                                        className={classes}
+                                        id="mySidebar"
+                                    >
                                         <button
                                             onClick={() => this.w3_close()}
                                             className="w3-bar-item w3-large"
@@ -102,7 +106,7 @@ class Navbar extends react.Component {
                                         </a>
                                     </div>
 
-                                    <div className="w3-teal">
+                                    <div className="w3-teal w3-button w3-xlarge">
                                         <button
                                             className="w3_teal"
                                             onClick={() => this.w3_open()}
