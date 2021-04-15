@@ -5,6 +5,7 @@ import call2 from "./img/core-img/call2.png";
 import { Helmet } from "react-helmet";
 import react from "react";
 import { Link } from "react-router-dom";
+import ReactTooltip from 'react-tooltip';
 
 class Navbar extends react.Component {
     constructor() {
@@ -41,20 +42,23 @@ class Navbar extends react.Component {
                                     </div>
 
                                     <div className="top-contact-info d-flex align-items-center">
+                                    <ReactTooltip />
                                         <a
                                             href="#"
-                                            data-toggle="tooltip"
+                                            data-tip="Mugrala road,Dinanagar,Pb"
                                             data-placement="bottom"
                                             title="Mugrala road, Dinanagar, Pb"
                                         >
+                                            
                                             <img src={placeholder} alt="" />
                                             <span>
                                                 Mugrala road, Dinanagar, Pb
                                             </span>
                                         </a>
+                                        <ReactTooltip />
                                         <a
                                             href="#"
-                                            data-toggle="tooltip"
+                                            data-tip="mahajan.cyber1@gmail.com"
                                             data-placement="bottom"
                                             title="mahajan.cyber1@gmail.com"
                                         >

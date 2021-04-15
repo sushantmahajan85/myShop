@@ -35,7 +35,7 @@ class Pricing extends react.Component {
                         <div className="col-sm-4 col-md-3 box-product-outer">
                             <div className="box-product">
                                 <div className="img-wrapper">
-                                    <a href="detail.html">
+                                    <a href="#">
                                         <img alt="Product" src={keyboard} />
                                     </a>
                                 </div>
@@ -50,7 +50,7 @@ class Pricing extends react.Component {
                                             ₹ 600
                                         </span>
                                     </div>
-                                    <span className="price-old">$15.00</span>
+                                    {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
                                     Minimum 40% OFF
@@ -60,7 +60,7 @@ class Pricing extends react.Component {
                         <div className="col-sm-4 col-md-3 box-product-outer">
                             <div className="box-product">
                                 <div className="img-wrapper">
-                                    <a href="detail.html">
+                                    <a href="#">
                                         <img alt="Product" src={mouse} />
                                     </a>
                                 </div>
@@ -75,7 +75,7 @@ class Pricing extends react.Component {
                                             ₹ 600
                                         </span>
                                     </div>
-                                    <span className="price-old">$15.00</span>
+                                    {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
                                     Minimum 40% OFF
@@ -85,7 +85,7 @@ class Pricing extends react.Component {
                         <div className="col-sm-4 col-md-3 box-product-outer">
                             <div className="box-product">
                                 <div className="img-wrapper">
-                                    <a href="detail.html">
+                                    <a href="#">
                                         <img alt="Product" src={webcam} />
                                     </a>
                                 </div>
@@ -100,7 +100,7 @@ class Pricing extends react.Component {
                                             ₹ 600
                                         </span>
                                     </div>
-                                    <span className="price-old">$15.00</span>
+                                    {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
                                     Minimum 40% OFF
@@ -110,7 +110,7 @@ class Pricing extends react.Component {
                         <div className="col-sm-4 col-md-3 hidden-sm hidden-xs box-product-outer">
                             <div className="box-product">
                                 <div className="img-wrapper">
-                                    <a href="detail.html">
+                                    <a href="#">
                                         <img alt="Product" src={mousepad} />
                                     </a>
                                 </div>
@@ -125,7 +125,7 @@ class Pricing extends react.Component {
                                             ₹ 600
                                         </span>
                                     </div>
-                                    <span className="price-old">$15.00</span>
+                                    {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
                                     Minimum 40% OFF
@@ -137,7 +137,7 @@ class Pricing extends react.Component {
                         <div className="col-sm-4 col-md-3 box-product-outer">
                             <div className="box-product">
                                 <div className="img-wrapper">
-                                    <a href="detail.html">
+                                    <a href="#">
                                         <img alt="Product" src={pendrive} />
                                     </a>
                                 </div>
@@ -152,7 +152,7 @@ class Pricing extends react.Component {
                                             ₹ 600
                                         </span>
                                     </div>
-                                    <span className="price-old">$15.00</span>
+                                    {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
                                     Minimum 40% OFF
@@ -162,7 +162,7 @@ class Pricing extends react.Component {
                         <div className="col-sm-4 col-md-3 hidden-xs box-product-outer">
                             <div className="box-product">
                                 <div className="img-wrapper">
-                                    <a href="detail.html">
+                                    <a href="#">
                                         <img alt="Product" src={antivirus} />
                                     </a>
                                 </div>
@@ -177,7 +177,7 @@ class Pricing extends react.Component {
                                             ₹ 600
                                         </span>
                                     </div>
-                                    <span className="price-old">$15.00</span>
+                                    {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
                                     Minimum 40% OFF
@@ -187,7 +187,7 @@ class Pricing extends react.Component {
                         <div className="col-sm-4 col-md-3 hidden-xs box-product-outer">
                             <div className="box-product">
                                 <div className="img-wrapper">
-                                    <a href="detail.html">
+                                    <a href="#">
                                         <img alt="Product" src={headphone} />
                                     </a>
                                 </div>
@@ -202,7 +202,7 @@ class Pricing extends react.Component {
                                             ₹ 600
                                         </span>
                                     </div>
-                                    <span className="price-old">$15.00</span>
+                                    {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
                                     Minimum 40% OFF
@@ -212,7 +212,7 @@ class Pricing extends react.Component {
                         <div className="col-sm-4 col-md-3 hidden-sm hidden-xs box-product-outer">
                             <div className="box-product">
                                 <div className="img-wrapper">
-                                    <a href="detail.html">
+                                    <a href="#">
                                         <img alt="Product" src={speaker} />
                                     </a>
                                 </div>
@@ -227,7 +227,7 @@ class Pricing extends react.Component {
                                             ₹ 600
                                         </span>
                                     </div>
-                                    <span className="price-old">$15.00</span>
+                                    {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
                                     {/* <strong className="price-down">Sale</strong>{" "} */}
