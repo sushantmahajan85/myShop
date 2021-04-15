@@ -4,6 +4,7 @@ import message from "./img/core-img/message.png";
 import call2 from "./img/core-img/call2.png";
 import { Helmet } from "react-helmet";
 import react from "react";
+import { Link } from "react-router-dom";
 
 class Navbar extends react.Component {
     // constructor(props) {
@@ -94,32 +95,32 @@ class Navbar extends react.Component {
                                         <div className="classynav">
                                             <ul>
                                                 <li>
-                                                    <a href="/">Home</a>
+                                                    <Link to="/">Home</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/applications">
+                                                    <Link to="/applications">
                                                         Applications
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/#services">
+                                                    <Link to="/services">
                                                         Services
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/pricing">
+                                                    <Link to="/pricing">
                                                         Pricing
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/#contact">
+                                                    <Link to="/contact">
                                                         Contact
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/about">
+                                                    <Link to="/about">
                                                         About Us
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
