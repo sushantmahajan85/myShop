@@ -6,29 +6,21 @@ import Applications from "./Applications";
 import About from "./About";
 import Footer from "./Footer";
 import Form from "./Form";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 const App = () => {
     return (
-        <BrowserRouter>
-            <div className="App">
-                <Navbar />
-                <div className="content">
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/pricing" component={Pricing} />
-                        <Route
-                            exact
-                            path="/applications"
-                            component={Applications}
-                        />
-                        <Route exact path="/about" component={About} />
-                        <Route exact path="/xyzform" component={Form} />
-                    </Switch>
-                </div>
-                <Footer />
+        <div className="App">
+            <Navbar />
+            <div className="content">
+                <Route exact path="/" component={Home} />
+                <Route exact path="/pricing" component={Pricing} />
+                <Route exact path="/applications" component={Applications} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/xyzform" component={Form} />
             </div>
-        </BrowserRouter>
+            <Footer />
+        </div>
     );
 };
 
