@@ -5,7 +5,7 @@ import call2 from "./img/core-img/call2.png";
 import { Helmet } from "react-helmet";
 import react from "react";
 import { Link } from "react-router-dom";
-import ReactTooltip from 'react-tooltip';
+import ReactTooltip from "react-tooltip";
 
 class Navbar extends react.Component {
     constructor() {
@@ -42,14 +42,13 @@ class Navbar extends react.Component {
                                     </div>
 
                                     <div className="top-contact-info d-flex align-items-center">
-                                    <ReactTooltip />
+                                        <ReactTooltip />
                                         <a
                                             href="#"
                                             data-tip="Mugrala road,Dinanagar,Pb"
                                             data-placement="bottom"
                                             title="Mugrala road, Dinanagar, Pb"
                                         >
-                                            
                                             <img src={placeholder} alt="" />
                                             <span>
                                                 Mugrala road, Dinanagar, Pb
@@ -80,37 +79,58 @@ class Navbar extends react.Component {
                                     className="classy-navbar justify-content-between"
                                     id="creditNav"
                                 >
-                                    <div
-                                        className={classes}
-                                        id="mySidebar"
-                                    >
+                                    <div className={classes} id="mySidebar">
                                         <button
                                             onClick={() => this.w3_close()}
                                             className="w3-bar-item w3-large"
                                         >
-                                            Close &times;
+                                            &times;
                                         </button>
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="/"
+                                            onClick={() => this.w3_close()}
                                             className="w3-bar-item w3-button"
                                         >
-                                            Link 1
-                                        </a>
-                                        <a
-                                            href="#"
+                                            Home
+                                        </Link>
+                                        <Link
+                                            to="/applications"
+                                            onClick={() => this.w3_close()}
                                             className="w3-bar-item w3-button"
                                         >
-                                            Link 2
-                                        </a>
-                                        <a
-                                            href="#"
+                                            Applications
+                                        </Link>
+                                        <Link
+                                            to="/services"
+                                            onClick={() => this.w3_close()}
                                             className="w3-bar-item w3-button"
                                         >
-                                            Link 3
-                                        </a>
+                                            Services
+                                        </Link>
+                                        <Link
+                                            to="/pricing"
+                                            onClick={() => this.w3_close()}
+                                            className="w3-bar-item w3-button"
+                                        >
+                                            Pricing
+                                        </Link>
+                                        <Link
+                                            to="/contact"
+                                            onClick={() => this.w3_close()}
+                                            className="w3-bar-item w3-button"
+                                        >
+                                            Contact
+                                        </Link>
+                                        <Link
+                                            to="/about"
+                                            onClick={() => this.w3_close()}
+                                            className="w3-bar-item w3-button"
+                                        >
+                                            About Us
+                                        </Link>
                                     </div>
 
-                                    <div className="w3-teal w3-button w3-xlarge">
+                                    <div className="w3-button w3-xlarge">
                                         <button
                                             className="w3_teal"
                                             onClick={() => this.w3_open()}
