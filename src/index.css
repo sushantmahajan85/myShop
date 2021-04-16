@@ -102,7 +102,7 @@ img {
 }
 
 .mb-100 {
-    margin-bottom: 80px !important;
+    margin-bottom: 46px !important;
 }
 
 .ml-15 {
@@ -2183,7 +2183,7 @@ img {
 }
 
 .single-service-area {
-    position: relative;
+    /* position: relative; */
     z-index: 1;
 }
 .single-service-area .icon {
@@ -3014,7 +3014,7 @@ ul {
         /* margin-right: 30px; */
     }
     .logo_mahajan {
-        font-size: 16px;
+        font-size: 15px;
     }
     .breakpoint-off .classynav {
         display: none;
