@@ -10896,6 +10896,12 @@ tbody tr:hover {
     display: none !important;
 }
 
+@media (max-width: 600px) {
+    .w3-button {
+        display: block !important;
+    }
+}
+
 .w3-sidebar {
     display: none;
 }
