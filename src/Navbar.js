@@ -112,7 +112,7 @@ class Navbar extends react.Component {
                                             onClick={() => this.w3_close()}
                                             className="w3-bar-item w3-button"
                                         >
-                                            Pricing
+                                            Products
                                         </Link>
                                         <Link
                                             to="/contact"
@@ -162,7 +162,7 @@ class Navbar extends react.Component {
                                                 </li>
                                                 <li>
                                                     <Link to="/pricing">
-                                                        Pricing
+                                                        Products
                                                     </Link>
                                                 </li>
                                                 <li>
