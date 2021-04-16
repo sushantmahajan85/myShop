@@ -10893,7 +10893,7 @@ tbody tr:hover {
 }
 
 .w3-button {
-    display: none;
+    display: none !important;
 }
 
 .w3-sidebar {
