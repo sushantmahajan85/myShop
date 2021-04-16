@@ -19,9 +19,10 @@ class Pricing extends react.Component {
         return (
             <div className="Pricing">
                 <div className="container">
-                    <div className="row">
+                    <div className="row" >
                         <div className="col-12">
                             <div
+                            style={{marginTop:"30px"}}
                                 className="section-heading text-center mb-100 wow fadeInUp"
                                 data-wow-delay="100ms"
                             >

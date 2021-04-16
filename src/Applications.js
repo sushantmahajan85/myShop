@@ -32,7 +32,7 @@ class Applications extends Component {
         return (
             <div className="Applications">
                 <div className="limiter">
-                <div className="row" style={{backgroundColor:"#eeee",paddingTop:"32px",marginBottom:"-43px"}}>
+                <div className="row" style={{backgroundColor:"#eeee",paddingTop:"32px",marginBottom:""}}>
                         <div className="col-12">
                             <div
                                 className="section-heading text-center mb-100 wow fadeInUp"
