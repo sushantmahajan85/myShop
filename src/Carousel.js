@@ -1,6 +1,7 @@
 import "./index.css";
 import img from "./img/carouselImages/carouselImg.jpg";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
     return (
@@ -28,7 +29,8 @@ const Carousel = () => {
                                             data-animation="fadeInUp"
                                             data-delay="300ms"
                                         >
-                                            get your <span>passport</span> now
+                                            get the latest{" "}
+                                            <span>applications</span>
                                         </h2>
                                         <p
                                             data-animation="fadeInUp"
@@ -40,14 +42,14 @@ const Carousel = () => {
                                             pharetra turpis, eget finibus erat
                                             porta placerat. */}
                                         </p>
-                                        <a
-                                            href="#"
+                                        <Link
+                                            to="/applications"
                                             className="btn credit-btn mt-50"
                                             data-animation="fadeInUp"
                                             data-delay="700ms"
                                         >
                                             Discover
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
