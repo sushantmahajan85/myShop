@@ -111,7 +111,7 @@ class Form extends Component {
                                             Last Date
                                         </label>
                                         <input
-                                            type="date"
+                                            type="text"
                                             name="lastDate"
                                             value={lastDate}
                                             onChange={this.changeHandler}

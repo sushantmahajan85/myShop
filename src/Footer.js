@@ -90,7 +90,10 @@ const Footer = () => {
                                             Mahajan Cyber World was started in
                                             2008. At Mahajan Cyber World, we
                                             deal in all kinds of computer
-                                            software/hardware solutions. For
+                                            software/hardware solutions.
+                                            
+                                            <br />
+                                             For
                                             collaboration, make a call at
                                             9815144901.
                                         </p>
@@ -106,7 +109,7 @@ const Footer = () => {
                             <div className="col-xl-6 col-lg-6 text-center text-lg-left">
                                 <div className="copyright-text">
                                     <p>
-                                        Copyright &copy; 2018, All Right
+                                        Copyright &copy; 2021, All Right
                                         Reserved
                                     </p>
                                 </div>

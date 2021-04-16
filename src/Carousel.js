@@ -29,7 +29,8 @@ const Carousel = () => {
                                             data-animation="fadeInUp"
                                             data-delay="300ms"
                                         >
-                                            get the latest{" "}
+                                            get latest{" "}
+                                            
                                             <span>applications</span>
                                         </h2>
                                         <p

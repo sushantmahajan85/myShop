@@ -74,7 +74,7 @@ img {
 }
 
 .mt-50 {
-    margin-top: 50px !important;
+    margin-top: 25px !important;
 }
 
 .mt-70 {
@@ -893,8 +893,9 @@ img {
     color: #ffffff;
     margin-bottom: 15px;
 }
+
 .single-slide .welcome-text h2 {
-    font-size: 70px;
+    font-size: 60px;
     color: #ffffff;
     font-weight: 600;
     margin-bottom: 10px;
@@ -10900,6 +10901,9 @@ tbody tr:hover {
     .w3-button {
         display: block !important;
     }
+    .single-slide .welcome-text p {
+        font-size: 13px !important;
+    }
 }
 
 .w3-sidebar {
@@ -10913,15 +10917,12 @@ tbody tr:hover {
     width: 200px;
     background-color: #eee !important;
     position: fixed !important;
+    top: 0;
+    left: 0;
     z-index: 2 !important;
     overflow: auto;
 }
 
 .w3-sidebar button {
     text-align: right !important;
-}
-
-#mySidebar {
-    margin-top: 437px;
-    margin-left: -15px;
 }
