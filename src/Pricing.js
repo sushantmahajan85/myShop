@@ -47,13 +47,13 @@ class Pricing extends react.Component {
                                         Starting from{" "}
                                         <span className="price-down">
                                             {" "}
-                                            ₹ 600
+                                            ₹ 250
                                         </span>
                                     </div>
                                     {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
-                                    Minimum 40% OFF
+                                    Minimum 30% OFF
                                 </span>
                             </div>
                         </div>
@@ -72,13 +72,13 @@ class Pricing extends react.Component {
                                         Starting from{" "}
                                         <span className="price-down">
                                             {" "}
-                                            ₹ 600
+                                            ₹ 80
                                         </span>
                                     </div>
                                     {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
-                                    Minimum 40% OFF
+                                    Minimum 30% OFF
                                 </span>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ class Pricing extends react.Component {
                                     {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
-                                    Minimum 40% OFF
+                                    Minimum 30% OFF
                                 </span>
                             </div>
                         </div>
@@ -122,13 +122,13 @@ class Pricing extends react.Component {
                                         Starting from{" "}
                                         <span className="price-down">
                                             {" "}
-                                            ₹ 600
+                                            ₹ 30
                                         </span>
                                     </div>
                                     {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
-                                    Minimum 40% OFF
+                                    Minimum 20% OFF
                                 </span>
                             </div>
                         </div>
@@ -149,7 +149,7 @@ class Pricing extends react.Component {
                                         Starting from{" "}
                                         <span className="price-down">
                                             {" "}
-                                            ₹ 600
+                                            ₹ 250
                                         </span>
                                     </div>
                                     {/* <span className="price-old">$15.00</span> */}
@@ -174,13 +174,13 @@ class Pricing extends react.Component {
                                         Starting from{" "}
                                         <span className="price-down">
                                             {" "}
-                                            ₹ 600
+                                            ₹ 325
                                         </span>
                                     </div>
                                     {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
-                                    Minimum 40% OFF
+                                    Minimum 30% OFF
                                 </span>
                             </div>
                         </div>
@@ -199,13 +199,13 @@ class Pricing extends react.Component {
                                         Starting from{" "}
                                         <span className="price-down">
                                             {" "}
-                                            ₹ 600
+                                            ₹ 250
                                         </span>
                                     </div>
                                     {/* <span className="price-old">$15.00</span> */}
                                 </div>
                                 <span className="price-old">
-                                    Minimum 40% OFF
+                                    Minimum 30% OFF
                                 </span>
                             </div>
                         </div>
@@ -224,7 +224,7 @@ class Pricing extends react.Component {
                                         Starting from{" "}
                                         <span className="price-down">
                                             {" "}
-                                            ₹ 600
+                                            ₹ 300
                                         </span>
                                     </div>
                                     {/* <span className="price-old">$15.00</span> */}

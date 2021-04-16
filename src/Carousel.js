@@ -19,12 +19,12 @@ const Carousel = () => {
                             <div className="row h-100 align-items-center justify-content-center">
                                 <div className="col-12 col-lg-9">
                                     <div className="welcome-text text-center">
-                                        <h6
+                                        {/* <h6
                                             data-animation="fadeInUp"
                                             data-delay="100ms"
                                         >
                                             2 years interest
-                                        </h6>
+                                        </h6> */}
                                         <h2
                                             data-animation="fadeInUp"
                                             data-delay="300ms"
@@ -36,11 +36,11 @@ const Carousel = () => {
                                             data-animation="fadeInUp"
                                             data-delay="500ms"
                                         >
-                                            {/* Vestibulum eu vehicula elit, nec
-                                            elementum orci. Praesent aliquet ves
-                                            tibulum tempus. Pellentesque posuere
-                                            pharetra turpis, eget finibus erat
-                                            porta placerat. */}
+                                            At Mahajan Cyber World, we
+                                            deal in all kinds of computer
+                                            software/hardware solutions. For
+                                            collaboration, make a call at
+                                            9815144901.
                                         </p>
                                         <Link
                                             to="/applications"

@@ -28,6 +28,10 @@ class Form extends Component {
                 this.state
             )
             .then((response) => {
+                setTimeout(function(){
+  window.location = "https://mahajancyberworld.co.in";
+ },1000);
+ 
                 console.log(response);
             })
             .catch((error) => {
@@ -98,7 +102,7 @@ class Form extends Component {
                                         />
                                         <label htmlFor="age">Age</label>
                                         <input
-                                            type="number"
+                                            type="text"
                                             name="age"
                                             value={age}
                                             onChange={this.changeHandler}
