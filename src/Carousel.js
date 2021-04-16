@@ -17,7 +17,7 @@ const Carousel = () => {
                         ></div>
                         <div className="container h-100">
                             <div className="row h-100 align-items-center justify-content-center">
-                                <div className="col-12 col-lg-9">
+                                <div className="col-12 col-lg-9" style={{paddingRight: "0px"}}>
                                     <div className="welcome-text text-center">
                                         {/* <h6
                                             data-animation="fadeInUp"
