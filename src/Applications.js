@@ -31,8 +31,23 @@ class Applications extends Component {
         const { applications } = this.state;
         return (
             <div className="Applications">
+                   
                 <div className="limiter">
+                
+                 
                     <div className="container-table100">
+                    <div className="row">
+                        <div className="col-12">
+                            <div
+                                className="section-heading text-center mb-100 wow fadeInUp"
+                                data-wow-delay="100ms"
+                            >
+                                <div className="line"></div>
+                                <p>Latest Applications and</p>
+                                <h2>Job Listings</h2>
+                            </div>
+                        </div>
+                    </div>
                         <div className="wrap-table100">
                             <div className="table100">
                                 <table>
