@@ -375,7 +375,10 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.row {
+    margin-right: unset !important;
+    margin-right: unset !important;
+}
 .bg-white {
     background-color: #ffffff !important;
 }
@@ -3271,13 +3274,13 @@ tbody tr:hover {
         top: 0;
     }
     table tbody tr td:nth-child(1):before {
-        content: "Organization";
+        content: "Department";
     }
     table tbody tr td:nth-child(2):before {
-        content: "Vacancy type";
+        content: "Post type";
     }
     table tbody tr td:nth-child(3):before {
-        content: "No. of Vacancies";
+        content: "Posts";
     }
     table tbody tr td:nth-child(4):before {
         content: "Qualification";

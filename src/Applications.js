@@ -57,7 +57,7 @@ class Applications extends Component {
                                                 Vacancy type
                                             </th>
                                             <th className="column3">
-                                                No. of Vacancies
+                                                Vacancies
                                             </th>
                                             <th className="column4">
                                                 Qualification
@@ -71,7 +71,7 @@ class Applications extends Component {
                                     <tbody>
                                         {applications.length
                                             ? applications
-                                                  .slice(0, 14)
+                                                  .slice(0, 8)
                                                   .map((application) => (
                                                       <tr>
                                                           <td className="column1">
