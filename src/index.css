@@ -10892,6 +10892,10 @@ tbody tr:hover {
     }
 }
 
+.w3-button {
+    display: none;
+}
+
 .w3-sidebar {
     display: none;
 }
