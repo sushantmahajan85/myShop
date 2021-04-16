@@ -32,6 +32,18 @@ class Applications extends Component {
         return (
             <div className="Applications">
                 <div className="limiter">
+                <div className="row" style={{backgroundColor:"#eeee",paddingTop:"32px",marginBottom:"-43px"}}>
+                        <div className="col-12">
+                            <div
+                                className="section-heading text-center mb-100 wow fadeInUp"
+                                data-wow-delay="100ms"
+                            >
+                                <div className="line"></div>
+                                <p>Latest Job Listings &</p>
+                                <h2>Applications</h2>
+                            </div>
+                        </div>
+                    </div>
                     <div className="container-table100">
                         <div className="wrap-table100">
                             <div className="table100">
