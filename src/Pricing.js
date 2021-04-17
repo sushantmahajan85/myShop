@@ -19,10 +19,10 @@ class Pricing extends react.Component {
         return (
             <div className="Pricing">
                 <div className="container">
-                    <div className="row" >
+                    <div className="row">
                         <div className="col-12">
                             <div
-                            style={{marginTop:"30px"}}
+                                style={{ marginTop: "30px" }}
                                 className="section-heading text-center mb-100 wow fadeInUp"
                                 data-wow-delay="100ms"
                             >
@@ -240,7 +240,7 @@ class Pricing extends react.Component {
                 </div>
                 <Helmet>
                     <link
-                        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+                        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
                         rel="stylesheet"
                     />
                 </Helmet>
