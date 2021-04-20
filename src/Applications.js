@@ -1,6 +1,7 @@
 import "./index.css";
 import React, { Component } from "react";
 import axios from "axios";
+import moment from "moment";
 
 class Applications extends Component {
     constructor() {
@@ -32,7 +33,13 @@ class Applications extends Component {
         return (
             <div className="Applications">
                 <div className="limiter">
-                <div className="row" style={{backgroundColor:"#eeee",paddingTop:"32px",marginBottom:""}}>
+                    <div
+                        className="row"
+                        style={{
+                            backgroundColor: "#eeee",
+                            paddingTop: "32px",
+                        }}
+                    >
                         <div className="col-12">
                             <div
                                 className="section-heading text-center mb-100 wow fadeInUp"
@@ -98,9 +105,11 @@ class Applications extends Component {
                                                               {application.age}
                                                           </td>
                                                           <td className="column6">
-                                                              {
+                                                              {moment(
                                                                   application.lastDate
-                                                              }
+                                                              ).format(
+                                                                  "DD-MM-YYYY"
+                                                              )}
                                                           </td>
                                                       </tr>
                                                   ))

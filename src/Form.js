@@ -28,10 +28,10 @@ class Form extends Component {
                 this.state
             )
             .then((response) => {
-                setTimeout(function(){
-  window.location = "https://mahajancyberworld.co.in";
- },1000);
- 
+                setTimeout(function () {
+                    window.location = "https://mahajancyberworld.co.in";
+                }, 1000);
+
                 console.log(response);
             })
             .catch((error) => {
@@ -111,7 +111,7 @@ class Form extends Component {
                                             Last Date
                                         </label>
                                         <input
-                                            type="text"
+                                            type="date"
                                             name="lastDate"
                                             value={lastDate}
                                             onChange={this.changeHandler}
