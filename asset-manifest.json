@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5edb394e.chunk.css",
-    "main.js": "/static/js/main.050eb38e.chunk.js",
-    "main.js.map": "/static/js/main.050eb38e.chunk.js.map",
+    "main.js": "/static/js/main.8f5b0f92.chunk.js",
+    "main.js.map": "/static/js/main.8f5b0f92.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc78e5d3.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc78e5d3.js.map",
     "static/js/2.6fbec620.chunk.js": "/static/js/2.6fbec620.chunk.js",
@@ -10,22 +10,22 @@
     "index.html": "/index.html",
     "static/css/main.5edb394e.chunk.css.map": "/static/css/main.5edb394e.chunk.css.map",
     "static/js/2.6fbec620.chunk.js.LICENSE.txt": "/static/js/2.6fbec620.chunk.js.LICENSE.txt",
-    "static/media/antivirus.d3c32727.jpg": "/static/media/antivirus.d3c32727.jpg",
+    "static/media/antivirus.866ba34f.jpg": "/static/media/antivirus.866ba34f.jpg",
     "static/media/carouselImg.453a7ec6.jpg": "/static/media/carouselImg.453a7ec6.jpg",
     "static/media/index.css": "/static/media/icomoon.c04ea144.eot",
-    "static/media/contact_thumb.a36dc2d9.png": "/static/media/contact_thumb.a36dc2d9.png",
-    "static/media/headphone.45198ad9.jpg": "/static/media/headphone.45198ad9.jpg",
-    "static/media/keyboard.3d5c66ee.jpg": "/static/media/keyboard.3d5c66ee.jpg",
+    "static/media/contact_thumb.4fc71144.jpg": "/static/media/contact_thumb.4fc71144.jpg",
+    "static/media/headphone.89dda0d6.jpg": "/static/media/headphone.89dda0d6.jpg",
+    "static/media/keyboard.b4b3eca5.jpg": "/static/media/keyboard.b4b3eca5.jpg",
     "static/media/mouse.40d14e9a.png": "/static/media/mouse.40d14e9a.png",
-    "static/media/mousepad.c323751f.jpg": "/static/media/mousepad.c323751f.jpg",
-    "static/media/pendrive.88772fba.jpg": "/static/media/pendrive.88772fba.jpg",
-    "static/media/speaker.2e01ada4.jpg": "/static/media/speaker.2e01ada4.jpg",
+    "static/media/mousepad.1d93cb8b.jpg": "/static/media/mousepad.1d93cb8b.jpg",
+    "static/media/pendrive.2c6c6594.jpg": "/static/media/pendrive.2c6c6594.jpg",
+    "static/media/speaker.e1f42c3c.jpg": "/static/media/speaker.e1f42c3c.jpg",
     "static/media/webcam.84f6c711.jpg": "/static/media/webcam.84f6c711.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cc78e5d3.js",
     "static/js/2.6fbec620.chunk.js",
     "static/css/main.5edb394e.chunk.css",
-    "static/js/main.050eb38e.chunk.js"
+    "static/js/main.8f5b0f92.chunk.js"
   ]
 }
